@@ -1,0 +1,65 @@
+@use "global" as *;
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: rem(14);
+    width: rem(202);
+    height: rem(54);
+    color: $white;
+    font-family: $english-font;
+    background-color: $accent;
+    border: 1px solid $accent;
+    position: relative;
+    text-transform: capitalize;
+    transition: 0.3s background-color, color;
+    z-index: 100;
+}
+.btn::before {
+    content: "";
+    border: 1px solid $accent;
+    position: absolute;
+    width: rem(202);
+    height: rem(54);
+    top: rem(4);
+    left: rem(4);
+    transition: 0.3s border;
+    z-index: -1;
+}
+
+.btn span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: rem(8);
+    width: rem(40);
+    height: rem(1);
+    background-color: $white;
+    border-radius: rem(1);
+    position: relative;
+    transition: 0.3s background-color;
+}
+.btn span::before {
+    content: "";
+    display: block;
+    width: rem(10);
+    height: rem(1);
+    background-color: $white;
+    position: absolute;
+    top: rem(-3.2);
+    right: rem(-1.5);
+    border-radius: rem(1);
+    transform: rotate(45deg);
+    transition: 0.3s background-color;
+}
+
+.btn:hover {
+    background-color: $white;
+    color: $accent;
+}
+.btn span:hover {
+    background-color: $accent;
+}
+.btn span:hover:before {
+    background-color: $accent;
+}
