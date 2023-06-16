@@ -60,6 +60,6 @@
 .btn span:hover {
     background-color: $accent;
 }
-.btn span:hover:before {
+.btn:hover　.btn span:hover::before {
     background-color: $accent;
 }
