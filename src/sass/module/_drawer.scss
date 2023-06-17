@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.drawer {
+    position: absolute;
+    top: rem(80);
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    height: 100vh;
+    min-height: rem(200);
+    display: none;
+    background-color: $accent;
+    overflow-y: scroll;
+    padding: rem(8) 0 rem(111);
+}
+.drawer__nav {
+    display: flex;
+    justify-content: left;
+}
+.drawer__img {
+    width: rem(18);
+    padding-top: rem(4);
+}
+.drawer__img img {
+    aspect-ratio: 18/18;
+    width: rem(18);
+    height: 100%;
+    object-fit: cover;
+}
+.drawer__item a {
+    color: $white;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.drawer__text {
+    padding-left: rem(4);
+}
+.drawer__item {
+    padding: rem(12) 0 rem(12) rem(15);
+}
+.drawer__text-blank {
+    padding-left: rem(18);
+}

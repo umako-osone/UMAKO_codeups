@@ -11,23 +11,22 @@
     font-family: $english-font;
     background-color: $accent;
     border: 1px solid $accent;
-    position: relative;
     text-transform: capitalize;
     transition: 0.3s background-color, color;
+    position: relative;
     z-index: 100;
 }
+
 .btn::before {
     content: "";
-    border: 1px solid $accent;
+    border: 1px solid #000;
     position: absolute;
     width: rem(202);
     height: rem(54);
     top: rem(4);
     left: rem(4);
     transition: 0.3s border;
-    z-index: -1;
 }
-
 .btn span {
     display: inline-block;
     vertical-align: middle;
@@ -52,14 +51,13 @@
     transform: rotate(45deg);
     transition: 0.3s background-color;
 }
-
 .btn:hover {
     background-color: $white;
     color: $accent;
 }
-.btn span:hover {
+.btn:hover span,
+.btn:hover span::before {
     background-color: $accent;
 }
-.btn:hover　.btn span:hover::before {
-    background-color: $accent;
-}
+
+
