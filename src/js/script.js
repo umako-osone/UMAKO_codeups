@@ -27,8 +27,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
     // スワイパー
     const swiper = new Swiper('.swiper', {
-        direction: 'vertical',
         loop: true,
+        speed: 3000,
+        autoplay: {
+            delay: 3000,
+        },
     });
 
     });
