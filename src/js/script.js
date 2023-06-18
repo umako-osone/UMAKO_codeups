@@ -26,7 +26,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
 
     // スワイパー
-    const swiper = new Swiper('.swiper', {
+    const fvSwiper = new Swiper('.fv-swiper', {
         loop: true,
         speed: 3000,
         autoplay: {
