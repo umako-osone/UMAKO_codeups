@@ -18,32 +18,3 @@
     justify-content: center;
     gap: 1%;
 }
-.drawer__img {
-    width: rem(18);
-    padding-top: rem(4);
-}
-.drawer__img img {
-    aspect-ratio: 18/18;
-    width: rem(18);
-    height: 100%;
-    object-fit: cover;
-}
-.drawer__item a {
-    color: $white;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-}
-.drawer__text {
-    padding-left: rem(4);
-}
-.drawer__item {
-    padding: rem(12.5) 0 rem(11) rem(15);
-}
-.drawer__text-blank {
-    padding-left: rem(18);
-}
-.drawer__items {
-    max-width: rem(187);
-    width: 100%;
-}
