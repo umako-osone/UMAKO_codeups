@@ -2,13 +2,12 @@
 
 .navigation__img {
     width: rem(18);
+    height: rem(18);
     padding-top: rem(4);
+    flex-grow: 1;
 }
-.navigation__img img {
-    aspect-ratio: 18/18;
-    width: rem(18);
-    height: 100%;
-    object-fit: cover;
+.navigation__text {
+    width: 100%;
 }
 .navigation__item a {
     color: $white;
@@ -20,12 +19,20 @@
     padding-left: rem(4);
 }
 .navigation__item {
+    display: block;
     padding: rem(12.5) 0 rem(11) rem(15);
 }
 .navigation__text-blank {
     padding-left: rem(18);
+    display: block;
+    width: 100%;
 }
 .navigation__items {
-    max-width: rem(187);
-    width: 100%;
+    display: block;
+}
+.navigation__block {
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
