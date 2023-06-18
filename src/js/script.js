@@ -5,11 +5,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(function () {
         $('.js-hamburger').on('click', function() {
             $('.js-hamburger').toggleClass('is-active');
+            $('.js-header').toggleClass('is-active');
             $('.js-drawer').fadeToggle();
             $('body').toggleClass('no-scroll');
         });
         $('.js-drawer').on('click', function() {
             $('.js-hamburger').removeClass('is-active');
+            $('.js-header').removeClass('is-active');
             $('.js-drawer').fadeOut();
             $('body').removeClass('no-scroll');
         });
