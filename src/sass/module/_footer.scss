@@ -39,7 +39,7 @@
     text-align: center;
     color: $white;
     width: 100vw;
-    margin: calc(50% - 50vw);
+    margin: 0 calc(50% - 50vw);
     @include mq(md) {
         margin-top: $margin-pc;
     }

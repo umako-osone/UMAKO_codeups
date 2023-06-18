@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.card__img img {
+    aspect-ratio: 280/188;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md) {
+        aspect-ratio: 333/223;
+    }
+}
+.card__category {
+    display: inline-block;
+    font-size: rem(12);
+    font-weight: $regular;
+    line-height: 1.83;
+    color: $accent;
+    border: 1px solid $accent;
+}
+.card__title {
+    font-weight: $medium;
+    line-height: 1.5;
+    border-bottom: 1px solid $accent;
+}
+.card__text {
+    font-size: rem(14);
+    line-height: 2.4;
+}
+.card__text.card__text--center {
+    font-size: rem(14);
+    line-height: 2.4;
+    text-align: center;
+}
+.card__price-block {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+.card__price {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: $english-font2;
+}
+.card__price-decoration {
+    font-size: rem(20);
+    font-weight: bold;
+    text-decoration: line-through 3px solid $red;
+}
