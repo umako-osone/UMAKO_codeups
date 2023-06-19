@@ -9,6 +9,13 @@
         margin-top: rem(132);
     }
 }
+.aboutUs__inner {
+    max-width: rem(600);
+    width: 100%;
+    @include mq(md) {
+    max-width: initial;
+    }
+}
 .aboutUs__img-block {
     margin-top: rem(27);
     @include mq(md) {
@@ -103,8 +110,10 @@
         margin-top: rem(36);
     }
 }
-.aboutUs__bg {
+.aboutUs__bg img {
+    width: rem(194);
+    height: rem(181);
     position: absolute;
-    bottom: -12%;
-    right: 6%;
+    bottom: rem(-94);
+    right: rem(83);
 }
