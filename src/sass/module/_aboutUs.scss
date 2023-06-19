@@ -1,15 +1,18 @@
 @use "global" as *;
 
+.aboutUs {
+    position: relative;
+}
 .aboutUs-top {
     margin-top: rem(80);
     @include mq(md) {
-        margin-top: rem(140);
+        margin-top: rem(132);
     }
 }
 .aboutUs__img-block {
-    margin-top: rem(30);
+    margin-top: rem(27);
     @include mq(md) {
-        margin-top: rem(35);
+        margin-top: rem(37);
     }
 }
 .aboutUs__img.aboutUs__img--left {
@@ -36,7 +39,7 @@
     width: 81.45%;
     height: 87.736%;
     margin-top: -47.264%;
-    margin-left: 18.55%;
+    margin-left: 18.8%;
     @include mq(md) {
         max-width: rem(880);
         width: 81%;
@@ -56,23 +59,52 @@
     }
 }
 .aboutUs__text-body {
+    margin-top: rem(40);
     @include mq(md) {
+        max-width: rem(840);
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: rem(40);
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 56.5%;
+        left: 55.5%;
         transform: translate(-50%, -50%);
+        margin-top: 0;
     }
 }
 .aboutUs__text--main {
     font-size: rem(40);
-    font-family: $english-font2;
+    font-family: $english-font;
     color: $accent;
+    line-height: 1;
     @include mq(md) {
         font-size: rem(80);
         line-height: 1.25;
         color: $white;
+        line-height: 1.2;
     }
 }
 .aboutUs__text {
     line-height: 1.5;
+    @include mq(md) {
+        color: $white;
+    }
+}
+.aboutUs__text-info {
+    margin-top: 1rem;
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+.aboutUs__btn {
+    margin-top: rem(18);
+    @include mq(md) {
+        margin-top: rem(36);
+    }
+}
+.aboutUs__bg {
+    position: absolute;
+    bottom: -12%;
+    right: 6%;
 }
