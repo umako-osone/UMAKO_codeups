@@ -2,11 +2,13 @@
 
 .card__img img {
     aspect-ratio: 280/188;
-    width: 100%;
-    height: 100%;
+    width: rem(280);
+    height: rem(188);
     object-fit: cover;
     @include mq(md) {
         aspect-ratio: 333/223;
+        width: rem(333);
+        height: rem(223);
     }
 }
 .card__category {
@@ -16,19 +18,24 @@
     line-height: 1.83;
     color: $accent;
     border: 1px solid $accent;
+    padding: rem(3) rem(11);
 }
 .card__title {
     font-weight: $medium;
     line-height: 1.5;
-    border-bottom: 1px solid $accent;
+    margin-top: rem(4);
+}
+.card__body {
+    padding: 1rem;
 }
 .card__text {
     font-size: rem(14);
-    line-height: 2.4;
+    line-height: 2;
+    border-top: 1px solid $accent;
+    padding-top: rem(4);
+    margin-top: rem(8);
 }
 .card__text.card__text--center {
-    font-size: rem(14);
-    line-height: 2.4;
     text-align: center;
 }
 .card__price-block {
@@ -41,8 +48,10 @@
     font-size: 2rem;
     font-weight: bold;
     font-family: $english-font2;
+    color: $accent;
 }
 .card__price-decoration {
+    font-family: $english-font2;
     font-size: rem(20);
     font-weight: bold;
     text-decoration: line-through 3px solid $red;

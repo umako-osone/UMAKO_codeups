@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .title--en {
-  text-transform: capitalize;
   font-size: rem(32);
   text-align: center;
   font-weight: $regular;
@@ -11,6 +10,7 @@
   }
 }
 .title--en span {
+  text-transform: uppercase;
   color: $accent;
 }
 .title--ja {

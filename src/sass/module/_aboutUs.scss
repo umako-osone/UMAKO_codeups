@@ -1,0 +1,78 @@
+@use "global" as *;
+
+.aboutUs-top {
+    margin-top: rem(80);
+    @include mq(md) {
+        margin-top: rem(140);
+    }
+}
+.aboutUs__img-block {
+    margin-top: rem(30);
+    @include mq(md) {
+        margin-top: rem(35);
+    }
+}
+.aboutUs__img.aboutUs__img--left {
+    width: 36.26%;
+    height: 91.51%;
+    position: relative;
+    @include mq(md) {
+        max-width: rem(399);
+        width: 37.389%;
+        max-height: rem(606);
+        height: 89.645%;
+    }
+}
+.aboutUs__img---left img {
+    aspect-ratio: 132/194;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md) {
+        aspect-ratio: 399/606;
+    }
+}
+.aboutUs__img.aboutUs__img--right {
+    width: 81.45%;
+    height: 87.736%;
+    margin-top: -47.264%;
+    margin-left: 18.55%;
+    @include mq(md) {
+        max-width: rem(880);
+        width: 81%;
+        max-height: rem(581);
+        height: 87%;
+        margin-top: -48.464%;
+        margin-left: 18.55%;
+    }
+}
+.aboutUs__img--right img {
+    aspect-ratio: 281/186;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md) {
+        aspect-ratio: 880/581;
+    }
+}
+.aboutUs__text-body {
+    @include mq(md) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.aboutUs__text--main {
+    font-size: rem(40);
+    font-family: $english-font2;
+    color: $accent;
+    @include mq(md) {
+        font-size: rem(80);
+        line-height: 1.25;
+        color: $white;
+    }
+}
+.aboutUs__text {
+    line-height: 1.5;
+}
