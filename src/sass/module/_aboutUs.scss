@@ -12,14 +12,22 @@
 .aboutUs__inner {
     max-width: rem(600);
     width: 100%;
+    padding-left: $margin-sp;
+    padding-right: $margin-sp;
+    margin: auto;
     @include mq(md) {
-    max-width: initial;
+        max-width: rem(1247);
+        width: 100%;
+        padding-left: $margin-pc;
+        padding-right: $margin-pc;
     }
 }
 .aboutUs__img-block {
     margin-top: rem(27);
     @include mq(md) {
         margin-top: rem(37);
+        max-width: rem(1080);
+        width: 100%;
     }
 }
 .aboutUs__img.aboutUs__img--left {
@@ -27,9 +35,9 @@
     height: 91.51%;
     position: relative;
     @include mq(md) {
-        max-width: rem(399);
+        // max-width: rem(399);
         width: 37.389%;
-        max-height: rem(606);
+        // max-height: rem(606);
         height: 89.645%;
     }
 }
@@ -47,13 +55,15 @@
     height: 87.736%;
     margin-top: -47.264%;
     margin-left: 18.8%;
+    position: relative;
+    z-index: -1;
     @include mq(md) {
-        max-width: rem(880);
+        // max-width: rem(880);
         width: 81%;
-        max-height: rem(581);
+        // max-height: rem(581);
         height: 87%;
-        margin-top: -48.464%;
-        margin-left: 18.55%;
+        margin-top: -49.464%;
+        margin-left: 19.05%;
     }
 }
 .aboutUs__img--right img {
@@ -74,7 +84,7 @@
         grid-template-columns: 1fr 1fr;
         gap: rem(40);
         position: absolute;
-        top: 56.5%;
+        top: 56.3%;
         left: 55.5%;
         transform: translate(-50%, -50%);
         margin-top: 0;
@@ -110,10 +120,16 @@
         margin-top: rem(36);
     }
 }
-.aboutUs__bg img {
-    width: rem(194);
-    height: rem(181);
+.aboutUs__bg {
+    width: 20.57%;
+    height: 29%;
     position: absolute;
-    bottom: rem(-94);
-    right: rem(83);
+    right: -11.6%;
+    transform: translateY(-48.3%);
+}
+.aboutUs__bg img {
+    aspect-ratio: 194/181;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

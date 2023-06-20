@@ -1,5 +1,10 @@
 @use "global" as *;
 
+.campaign {
+    @include mq(md) {
+        overflow: hidden;
+    }
+}
 .campaign-top {
     margin-top: $margin-sp;
     @include mq(md) {
@@ -12,7 +17,7 @@
         margin-top: rem(40);
         width: 100vw;
         margin-right: calc(50% - 50vw);
-        overflow: hidden;
+        // overflow: hidden;
     }
 }
 .campaign__card {
