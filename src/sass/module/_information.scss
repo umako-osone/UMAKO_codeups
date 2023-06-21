@@ -1,33 +1,42 @@
 @use "global" as *;
 
 .information {
-    @include mq(md) {
         background-color: $light;
-        // padding: rem(80) calc(50vw - 50%);
         width: 100%;
-        // margin-right: calc(50% - 50vw);
-        // margin-left: calc(50% - 50vw);
-    }
 }
 .information-top {
     margin-top: rem(140);
 }
 .information__inner {
+    padding-top: rem(80);
+    padding-bottom: rem(80);
     @include mq(md) {
         padding-top: rem(100) ;
         padding-bottom: rem(100) ;
     }
 }
 .information__img-block {
+    margin-top: rem(24);
     @include mq(md) {
-        // max-width: rem(1080);
-        // width: 100%;
+        margin-top: rem(40);
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
 .information__img {
-    aspect-ratio: 345/277;
+    position: relative;
+}
+.information__img .color {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: $accent;
+}
+.information__img img {
+    aspect-ratio: 345/227;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -36,7 +45,9 @@
     }
 }
 .information__text-body {
+    margin-top: rem(24);
     @include mq(md) {
+        padding-top: rem(35);
         margin-left: 3rem;
     }
 }
@@ -52,7 +63,13 @@
     line-height: 1.5;
     padding-top: rem(8);
     border-top: 1px solid $accent;
+    margin-top: rem(4);
+    text-transform: uppercase;
+    @include mq(md) {
+        margin-top: rem(8);
+    }
 }
 .information__btn {
     text-align: center;
+    margin-top: rem(40);
 }
