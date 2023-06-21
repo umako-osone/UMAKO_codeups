@@ -22,8 +22,8 @@
 }
 .campaign__card {
     display: block;
-    max-width: rem(280);
-    width: 100%;
+    // max-width: rem(280);
+    // width: 100%;
     background-color: $white;
     box-shadow: 0 rem(4) rem(4) rgba($color:#000, $alpha:0.25);
     @include mq(md) {

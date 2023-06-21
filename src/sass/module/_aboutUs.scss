@@ -12,14 +12,14 @@
 .aboutUs__inner {
     max-width: rem(600);
     width: 100%;
-    padding-left: $margin-sp;
-    padding-right: $margin-sp;
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
     margin: auto;
     @include mq(md) {
         max-width: rem(1247);
         width: 100%;
-        padding-left: $margin-pc;
-        padding-right: $margin-pc;
+        padding-left: 5.7%;
+        padding-right: 5.7%;
     }
 }
 .aboutUs__img-block {
