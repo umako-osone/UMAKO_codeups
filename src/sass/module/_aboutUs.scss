@@ -16,7 +16,7 @@
     padding-right: $padding-sp;
     margin: auto;
     @include mq(md) {
-        max-width: rem(1247);
+        max-width: rem(1244);
         width: 100%;
         padding-left: 5.7%;
         padding-right: 5.7%;
@@ -25,7 +25,7 @@
 .aboutUs__img-block {
     margin-top: rem(27);
     @include mq(md) {
-        margin-top: rem(37);
+        margin-top: rem(40);
         max-width: rem(1080);
         width: 100%;
     }
@@ -36,9 +36,9 @@
     position: relative;
     @include mq(md) {
         // max-width: rem(399);
-        width: 37.389%;
+        width: 36.9498%;
         // max-height: rem(606);
-        height: 89.645%;
+        height: 100%;
     }
 }
 .aboutUs__img---left img {
@@ -58,12 +58,10 @@
     position: relative;
     z-index: -1;
     @include mq(md) {
-        // max-width: rem(880);
-        width: 81%;
-        // max-height: rem(581);
+        width: 81.4938%;
         height: 87%;
-        margin-top: -49.164%;
-        margin-left: 19.05%;
+        margin-top: -48.164%;
+        margin-left: 18.55%;
     }
 }
 .aboutUs__img--right img {
@@ -124,8 +122,8 @@
     width: 21.97%;
     height: 31%;
     position: absolute;
-    right: -11.4%;
-    transform: translateY(-48.3%);
+    right: -11.3%;
+    bottom: rem(-86);
 }
 .aboutUs__bg img {
     aspect-ratio: 194/181;
