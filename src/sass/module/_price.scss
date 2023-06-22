@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.price__img-sp img {
+    aspect-ratio: 345/227;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.price__img-pc img {
+    @include mq(md) {
+        aspect-ratio: 746/492;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
