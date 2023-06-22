@@ -23,3 +23,10 @@
   color: $white;
   text-transform: capitalize;
 }
+.title--sub {
+  font-size: rem(14);
+  line-height: 1.2858;
+  color: $accent;
+  text-align: center;
+  margin-top: rem(8);
+}

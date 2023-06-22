@@ -1,14 +1,21 @@
 @use "global" as *;
 
+.contact__inner {
+    box-shadow: rem(4) rem(4) rem(10) rgba($color:#000, $alpha:0.25);
+}
 .contact__items {
-    padding: rem(80) rem(82) rem(80) rem(50);
+    padding: rem(81) rem(82) rem(80) rem(48);
 }
 .contact__logo {
     width: rem(200);
     height: rem(75);
 }
 .contact__item {
-    line-height: 1.5;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+}
+.contact__tel {
+    text-transform: uppercase;
 }
 .contact__logo {
     margin: auto;
@@ -22,7 +29,7 @@
 .contact__img {
     width: rem(273);
     height: rem(148);
-    margin-left: rem(21);
+    margin-left: rem(9);
 }
 .contact__img img {
     aspect-ratio: 273/148;
@@ -33,13 +40,27 @@
 .contact__info {
     display: flex;
     padding-top: rem(24);
+    margin-top: rem(8);
     border-top: 1px solid $accent;
 }
 .contact__inner {
     display: flex;
-
+    
 }
 .contact__title {
-    padding-left: rem(82);
+    margin-top: rem(80);
+    padding-top: rem(22);
+    padding-bottom: rem(22);
+    padding-left: rem(80);
+    line-height: 1;
     border-left: 1px solid $accent;
+}
+.contact__title .title--ja {
+    line-height: 1;
+}
+.contact__title .title--en {
+    font-size: rem(80);
+}
+.contact__btn {
+    margin-top: rem(40);
 }
