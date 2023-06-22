@@ -75,7 +75,6 @@
 .voice__card  .card__text {
     border-top: none;
 }
-
 .voice__card .card__title-block {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -101,5 +100,22 @@
     object-fit: cover;
     @include mq(md) {
         aspect-ratio: 180/140;
+    }
+}
+.voice__card-category {
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.voice__card-category .card__title-gender {
+    font-size: rem(12);
+    display: flex;
+    align-items: end;
+}
+.voice__btn {
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(80);
     }
 }

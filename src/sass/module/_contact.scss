@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.contact__items {
+    padding: rem(80) rem(82) rem(80) rem(50);
+}
+.contact__logo {
+    width: rem(200);
+    height: rem(75);
+}
+.contact__item {
+    line-height: 1.5;
+}
+.contact__logo {
+    margin: auto;
+}
+.contact__logo img {
+    aspect-ratio: 200/75;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact__img {
+    width: rem(273);
+    height: rem(148);
+    margin-left: rem(21);
+}
+.contact__img img {
+    aspect-ratio: 273/148;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact__info {
+    display: flex;
+    padding-top: rem(24);
+    border-top: 1px solid $accent;
+}
+.contact__inner {
+    display: flex;
+
+}
+.contact__title {
+    padding-left: rem(82);
+    border-left: 1px solid $accent;
+}
