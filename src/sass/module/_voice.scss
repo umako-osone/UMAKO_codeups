@@ -68,28 +68,36 @@
 .voice__card-item {
     width: 100%;
     display: block;
-    padding: rem(15) 1rem rem(24);
+    padding: rem(20) rem(25) rem(24);
     background-color: $white;
     box-shadow: rem(2) rem(2) rem(10) rgba($color:#000, $alpha:0.25);
+}
+.voice__card-item .card__item-category {
+    @include mq(md) {
+        max-width: rem(276);
+        width: 100%;
+    }
 }
 .voice__card  .card__text {
     border-top: none;
 }
 .voice__card .card__title-block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    gap: 4%;
     align-items: end;
 }
 .voice__card .card__title-category {
     border-bottom: 1px solid $accent;
+    @include mq(md) {
+        width: 58%;
+    }
 }
 .voice__card-img {
-    margin-left: rem(13);
     width: rem(151);
     height: rem(117);
     @include mq(md) {
-        margin-left: 1rem;
-        width: rem(180);
+        width: 38%;
         height: rem(140);
     }
 }
@@ -100,6 +108,12 @@
     object-fit: cover;
     @include mq(md) {
         aspect-ratio: 180/140;
+    }
+}
+.voice__card-item h4 {
+    font-size: 1rem;
+    @include mq(md) {
+        font-size: rem(24);
     }
 }
 .voice__card-category {

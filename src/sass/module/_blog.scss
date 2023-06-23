@@ -1,5 +1,8 @@
 @use "global" as *;
 
+.blog {
+    overflow: hidden;
+}
 .blog__title {
     @include mq(md) {
         background-image: url(../images/common/blog-bg.jpg);

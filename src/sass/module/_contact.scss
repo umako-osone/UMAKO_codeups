@@ -1,18 +1,47 @@
 @use "global" as *;
 
+.contact {
+    position: relative;
+}
+.contact-top {
+    margin-top: rem(54);
+    @include mq(md) {
+        margin-top: rem(100);
+    }
+}
 .contact__inner {
+    display: flex;
     box-shadow: rem(4) rem(4) rem(10) rgba($color:#000, $alpha:0.25);
 }
+.contact__bg {
+    width: rem(109);
+    height: rem(50);
+    position: absolute;
+    top: rem(-40);
+    right: rem(58);
+    @include mq(md) {
+        width: rem(301);
+        height: rem(138);
+    }
+}
+.contact__bg img {
+    aspect-ratio: 109/50;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md) {
+        aspect-ratio: 301/138;
+    }
+}
 .contact__items {
-    padding: rem(81) rem(82) rem(80) rem(48);
+    padding: rem(80) rem(82) rem(80) rem(46);
 }
 .contact__logo {
     width: rem(200);
     height: rem(75);
 }
 .contact__item {
-    line-height: 1.7;
-    letter-spacing: 0.05em;
+    line-height: 1.73;
 }
 .contact__tel {
     text-transform: uppercase;
@@ -29,7 +58,7 @@
 .contact__img {
     width: rem(273);
     height: rem(148);
-    margin-left: rem(9);
+    margin-left: rem(22);
 }
 .contact__img img {
     aspect-ratio: 273/148;
@@ -39,13 +68,9 @@
 }
 .contact__info {
     display: flex;
-    padding-top: rem(24);
-    margin-top: rem(8);
+    padding-top: rem(23);
+    margin-top: rem(7);
     border-top: 1px solid $accent;
-}
-.contact__inner {
-    display: flex;
-    
 }
 .contact__title {
     margin-top: rem(80);
@@ -62,5 +87,5 @@
     font-size: rem(80);
 }
 .contact__btn {
-    margin-top: rem(40);
+    margin-top: rem(39);
 }
