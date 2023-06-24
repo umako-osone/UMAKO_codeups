@@ -3,6 +3,7 @@
 .campaign {
     @include mq(md) {
         overflow: hidden;
+        position: relative;
     }
 }
 .campaign-top {
@@ -32,12 +33,18 @@
 .campaign__btn {
     margin-top: rem(36);
     @include mq(md) {
-        margin-top: rem(107);
+        margin-top: rem(80);
     }
 }
 .campaign__pagination {
-    display: flex;
-    justify-content: end;
+    display: none;
+    @include mq(md) {
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        top: 2%;
+        right: 12.5%;
+    }
 }
 .campaign__next {
     margin-left: rem(80);
