@@ -1,11 +1,5 @@
 @use "global" as *;
 
-// .header {
-//     height: rem(80);
-//     @include mq(md) {
-//         height: rem(90);
-//     }
-// }
 .header__inner.is-active {
     background-color: $accent;
 }
@@ -68,7 +62,25 @@
     justify-content: center;
     align-items: center;
     white-space: nowrap;
+    position: relative;
 }
+
+.header__item a::after {
+    background-color: $white;
+    bottom: 15px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+    width: 100%;
+}
+.header__item a:hover::after {
+    transform: scale(1, 1);
+}
+
 .header__item--en {
     font-size: rem(18);
     font-family: $english-font;
@@ -81,4 +93,9 @@
     font-size: rem(10);
     line-height: 150%;
     color: $white;
+}
+.header__inner.headerColorScroll {
+    @include mq(md) {
+        background-color: #9a9a9a;
+    }
 }

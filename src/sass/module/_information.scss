@@ -3,11 +3,13 @@
 .information {
     background-color: $light;
     width: 100%;
+    position: relative;
+    z-index: -2;
 }
 .information-top {
     margin-top: rem(86);
     @include mq(md) {
-        margin-top: rem(136);
+        margin-top: rem(193);
     }
 }
 .information__inner {
@@ -28,6 +30,7 @@
 }
 .information__img {
     position: relative;
+
 }
 .information__img .color {
     position: absolute;
@@ -76,4 +79,5 @@
 .information__btn {
     text-align: center;
     margin-top: rem(40);
+    padding-bottom: rem(10);
 }

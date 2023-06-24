@@ -4,33 +4,35 @@
     position: relative;
 }
 .aboutUs-top {
-    margin-top: rem(80);
+    margin-top: rem(70);
     @include mq(md) {
-        margin-top: rem(132);
+        margin-top: rem(122);
     }
 }
 .aboutUs__inner {
     max-width: rem(600);
     width: 100%;
     margin: auto;
+    position: relative;
+    @include mq(md) {
+        max-width: rem(1080);
+        margin: auto;
+        padding-right: rem(20);
+        padding-left: rem(20);
+    }
 }
-.aboutUs__img-block {
+.aboutUs__img {
     margin-top: rem(27);
     @include mq(md) {
         margin-top: rem(40);
-        margin-right: auto;
-        margin-left: auto;
+
     }
 }
-.aboutUs__img.aboutUs__img--left {
-    width: 36.26%;
-    height: 91.51%;
+.aboutUs__img--left {
+    width: rem(132);
     position: relative;
     @include mq(md) {
-        // max-width: rem(399);
-        width: 36.9498%;
-        // max-height: rem(606);
-        height: 100%;
+        width: rem(399);
     }
 }
 .aboutUs__img---left img {
@@ -42,18 +44,14 @@
         aspect-ratio: 399/606;
     }
 }
-.aboutUs__img.aboutUs__img--right {
-    width: 81.45%;
-    height: 87.736%;
-    margin-top: -47.264%;
-    margin-left: 18.8%;
-    position: relative;
+.aboutUs__img--right {
+    width: rem(281);
+    position: absolute;
+    top: rem(196);
+    right: rem(20);
     z-index: -1;
     @include mq(md) {
-        width: 81.4938%;
-        height: 87%;
-        margin-top: -48.664%;
-        margin-left: 18.55%;
+        width: rem(880);
     }
 }
 .aboutUs__img--right img {
@@ -65,6 +63,7 @@
         aspect-ratio: 880/581;
     }
 }
+
 .aboutUs__text-body {
     margin-top: rem(40);
     @include mq(md) {
@@ -74,8 +73,8 @@
         grid-template-columns: 1fr 1fr;
         gap: rem(40);
         position: absolute;
-        top: 56%;
-        left: 55.5%;
+        top: 60%;
+        left: 57%;
         transform: translate(-50%, -50%);
         margin-top: 0;
     }
@@ -89,7 +88,6 @@
         font-size: rem(80);
         line-height: 1.25;
         color: $white;
-        line-height: 1.2;
     }
 }
 .aboutUs__text {
@@ -107,15 +105,15 @@
 .aboutUs__btn {
     margin-top: 1rem;
     @include mq(md) {
-        margin-top: rem(36);
+        margin-top: rem(40);
     }
 }
 .aboutUs__bg {
     width: rem(194);
     height: rem(181);
     position: absolute;
-    right: 6%;
-    bottom: -11.4%;
+    right: rem(-77);
+    bottom: rem(-143);
 }
 .aboutUs__bg img {
     aspect-ratio: 194/181;

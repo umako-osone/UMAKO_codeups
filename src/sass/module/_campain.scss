@@ -33,6 +33,7 @@
 }
 .campaign__btn {
     margin-top: rem(26);
+    padding-bottom: rem(10);
     @include mq(md) {
         margin-top: rem(70);
     }
@@ -91,9 +92,6 @@
     top: rem(-4);
     transform: rotate(45deg);
 }
-// .campaign__slide .campaign-swiper{
-//     overflow: initial; // 初期化
-// }
-// .campaign__slide .campaign-swiper{
-//     padding-bottom: 10px;
-// }
+.campaign__slide .campaign-swiper{
+    padding-bottom: 10px;
+}

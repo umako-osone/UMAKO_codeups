@@ -57,7 +57,7 @@
 .voice-card__item {
     font-size: 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: rem(13);
     @include mq(md) {
         font-size: rem(24);
@@ -66,7 +66,6 @@
 .voice-card__title-block {
     @include mq(md) {
         margin-top: rem(34);
-        width: rem(276);
     }
 }
 .voice-card__title h4 {
@@ -132,10 +131,7 @@
     }
 }
 .voice__btn {
-    margin-top: rem(80);
-    @include mq(md) {
-        margin-top: rem(80);
-    }
+    margin-top: rem(70);
 }
 .voice--bg {
     @include mq(md) {
