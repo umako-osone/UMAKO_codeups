@@ -6,9 +6,9 @@
     }
 }
 .campaign-top {
-    margin-top: $margin-sp;
+    margin-top: rem(35);
     @include mq(md) {
-        margin-top: $margin-pc;
+        margin-top: rem(107);
     }
 }
 .campaign-swiper {
@@ -17,7 +17,6 @@
         margin-top: rem(40);
         width: 100vw;
         margin-right: calc(50% - 50vw);
-        // overflow: hidden;
     }
 }
 .campaign__card {
@@ -31,8 +30,49 @@
     }
 }
 .campaign__btn {
-    margin-top: $margin-sp;
+    margin-top: rem(36);
     @include mq(md) {
-        margin-top: $margin-pc;
+        margin-top: rem(107);
     }
+}
+.campaign__prev,
+.campaign__next {
+    width: rem(80);
+    height: rem(80);
+    border: 1px solid $accent;
+    border-radius: 50%;
+}
+.campaign__prev span,
+.campaign__next span {
+    display: inline-block;
+    width: rem(40);
+    height: rem(1);
+    background-color: $accent;
+    vertical-align: middle;
+    position: relative;
+    top: 34%;
+    left: 10___5;
+    margin-left: rem(8);
+}
+.campaign__prev span:before {
+    content: "";
+    background-color: $accent;
+    display: block;
+    width: rem(10);
+    height: rem(1);
+    position: absolute;
+    right: rem(1.5);
+    top: rem(-4);
+    transform: rotate(45deg);
+}
+.campaign__next span:before {
+    content: "";
+    background-color: $accent;
+    display: block;
+    width: rem(10);
+    height: rem(1);
+    position: absolute;
+    left: rem(1.5);
+    top: rem(-4);
+    transform: rotate(-45deg);
 }

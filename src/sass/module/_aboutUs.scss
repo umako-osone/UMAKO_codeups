@@ -60,7 +60,7 @@
     @include mq(md) {
         width: 81.4938%;
         height: 87%;
-        margin-top: -48.164%;
+        margin-top: -48.664%;
         margin-left: 18.55%;
     }
 }
@@ -82,7 +82,7 @@
         grid-template-columns: 1fr 1fr;
         gap: rem(40);
         position: absolute;
-        top: 56.3%;
+        top: 56%;
         left: 55.5%;
         transform: translate(-50%, -50%);
         margin-top: 0;
@@ -113,7 +113,7 @@
     }
 }
 .aboutUs__btn {
-    margin-top: rem(18);
+    margin-top: 1rem;
     @include mq(md) {
         margin-top: rem(36);
     }

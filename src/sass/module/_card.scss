@@ -18,7 +18,7 @@
     line-height: 1.83;
     color: $accent;
     border: 1px solid $accent;
-    padding: rem(5) rem(15);
+    padding: rem(3) rem(11);
 }
 .card__title {
     font-weight: $medium;
@@ -26,14 +26,14 @@
     margin-top: rem(4);
 }
 .card__body {
-    padding: rem(23) rem(15) ;
+    padding: rem(18) rem(15) ;
 }
 .card__text {
     font-size: rem(14);
     line-height: 2;
     border-top: 1px solid $accent;
-    padding-top: rem(13);
-    margin-top: rem(8);
+    padding-top: rem(7);
+    margin-top: rem(6);
 }
 .card__text.card__text--center {
     text-align: center;
@@ -43,7 +43,7 @@
     justify-content: center;
     gap: 1rem;
     align-items: center;
-    margin-top: rem(4);
+    margin-top: rem(-1);
 }
 .card__price {
     font-size: 2rem;
