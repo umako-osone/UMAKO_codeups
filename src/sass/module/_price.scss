@@ -36,6 +36,9 @@
     }
 }
 .price__img-pc {
+    position: relative;
+}
+    .price__img-pc .color {
     position: absolute;
     top: 0;
     right: 0;

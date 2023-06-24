@@ -116,6 +116,7 @@
     width: rem(151);
     height: rem(117);
     margin-top: rem(8);
+    position: relative;
     @include mq(md) {
         width: rem(180);
         height: rem(140);
