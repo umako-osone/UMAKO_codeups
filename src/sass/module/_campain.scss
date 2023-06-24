@@ -25,16 +25,16 @@
     max-width: rem(280);
     width: 100%;
     background-color: $white;
-    // box-shadow: 0 rem(4) rem(4) rgba($color:#000, $alpha:0.25);
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 rem(4) rem(4) rgba($color:#000, $alpha:0.25);
+    // box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
     @include mq(md) {
     max-width: rem(333);
     }
 }
 .campaign__btn {
-    margin-top: rem(36);
+    margin-top: rem(26);
     @include mq(md) {
-        margin-top: rem(80);
+        margin-top: rem(70);
     }
 }
 .campaign__pagination {
@@ -91,3 +91,9 @@
     top: rem(-4);
     transform: rotate(45deg);
 }
+// .campaign__slide .campaign-swiper{
+//     overflow: initial; // 初期化
+// }
+// .campaign__slide .campaign-swiper{
+//     padding-bottom: 10px;
+// }
