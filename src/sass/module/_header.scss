@@ -95,7 +95,5 @@
     color: $white;
 }
 .header__inner.headerColorScroll {
-    @include mq(md) {
-        background-color: #9a9a9a;
-    }
+    background-color: #9a9a9a;
 }

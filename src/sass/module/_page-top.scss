@@ -2,9 +2,9 @@
 
 .page-top-button {
     position: fixed;
-    z-index: 9000;
-    right: 50px;
-    bottom: 20px;
+    z-index: 900;
+    right: rem(20);
+    bottom: rem(578);
     width: rem(80);
     height: rem(80);
     border: 1px solid $accent;
@@ -18,7 +18,7 @@
     height: rem(40);
     background-color: $accent;
     left: 50%;
-    top: 20%;
+    top: 25%;
     position: relative;
 }
 .page-top-button span::before {

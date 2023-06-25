@@ -21,6 +21,10 @@
 .navigation__item {
     display: block;
     padding: rem(12.5) 0 rem(11) rem(15);
+    @include mq(md) {
+        padding: rem(17) 0 rem(11) rem(17);
+        line-height: 1;
+    }
 }
 .navigation__text-blank {
     padding-left: rem(18);

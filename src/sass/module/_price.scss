@@ -53,7 +53,7 @@
     font-weight: bold;
     line-height: 1.9;
     @include mq(md) {
-        line-height: 1.6;
+        line-height: 1.8;
     }
 }
 .price__heading:not:not(:first-of-type) {
@@ -68,7 +68,7 @@
     @include mq(md) {
         max-width: rem(492);
         font-size: 1rem;
-        padding-top: rem(9);
+        padding-top: rem(8);
         line-height: 1.5;
         width: 100%;
     }
