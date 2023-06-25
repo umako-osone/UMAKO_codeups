@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.page-top-button {
+    position: fixed;
+    z-index: 9000;
+    right: 50px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.page-top-button::after {
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    width: 10px;
+    height: 10px;
+    content: "";
+    transform: rotate(-45deg) translate(-50%, -50%);
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
