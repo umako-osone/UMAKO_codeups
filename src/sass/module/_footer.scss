@@ -43,8 +43,9 @@
         aspect-ratio: 200/75;
     }
 }
-.footer__img--sns a {
+.footer__img--sns {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 .footer__img--sns a {
@@ -56,7 +57,6 @@
         width: rem(32);
         height: rem(32);
     }
-}
 }
 .footer__nav {
     width: 100%;
