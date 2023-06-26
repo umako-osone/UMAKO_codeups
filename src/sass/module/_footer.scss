@@ -44,11 +44,15 @@
     }
 }
 .footer__img--sns {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
 }
 .footer__img--sns a {
+    padding-right: rem(8);
+    padding-left: rem(8);
     width: rem(24);
     height: rem(24);
     display: flex;
