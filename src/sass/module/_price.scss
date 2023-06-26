@@ -58,6 +58,9 @@
 }
 .price__heading:not:not(:first-of-type) {
     margin-top: rem(39);
+    @include mq(md) {
+        margin-top: rem(37);
+    }
 }
 .price__items {
     font-size: rem(14);
@@ -109,7 +112,7 @@
     width: rem(437);
     height: rem(201);
     position: absolute;
-    bottom: 5%;
+    bottom: 5.5%;
     left: 7%;
 }
 .price__bg img {
