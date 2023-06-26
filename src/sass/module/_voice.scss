@@ -4,7 +4,7 @@
     position: relative;
 }
 .voice-top {
-    margin-top: rem(80);
+    margin-top: rem(100);
     @include mq(md) {
         margin-top: rem(150);
     }
@@ -142,10 +142,7 @@
     }
 }
 .voice__btn {
-    margin-top: rem(70);
-    @include mq(md) {
-        margin-top: rem(80);
-    }
+    margin-top: rem(80);
 }
 .voice--bg {
     @include mq(md) {

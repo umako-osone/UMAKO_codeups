@@ -11,7 +11,7 @@
 .price-top {
     margin-top: rem(84);
     padding-top: rem(76);
-    padding-bottom: rem(84);
+    padding-bottom: rem(75);
     @include mq(md) {
         padding-top: rem(93);
         padding-bottom: rem(100);
@@ -57,11 +57,11 @@
     }
 }
 .price__heading:not:not(:first-of-type) {
-    margin-top: rem(37);
+    margin-top: rem(39);
 }
 .price__items {
     font-size: rem(14);
-    padding-top: rem(8);
+    padding-top: rem(9);
     line-height: 1.6;
     display: flex;
     justify-content: space-between;

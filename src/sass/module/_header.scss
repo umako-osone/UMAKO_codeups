@@ -13,6 +13,7 @@
     align-items: center;
     background-color: rgba($color: $font, $alpha: 0.68);
     z-index: 999;
+    transition: 0.3s background-color;
     @include mq(md) {
         height: rem(90);
         padding: 0 rem(20);
@@ -96,4 +97,6 @@
 }
 .header__inner.headerColorScroll {
     background-color: #9a9a9a;
+    transition: 0.3;
+    opacity: 1;
 }
