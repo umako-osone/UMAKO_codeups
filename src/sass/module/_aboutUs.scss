@@ -32,14 +32,15 @@
     margin-top: rem(28);
     @include mq(md) {
         max-width: rem(1217);
-        padding-right: 8.2417%;
+        padding-right: $padding-sp;
         padding-left: $padding-pc;
-        margin-top: rem(40);
+        margin: rem(40) auto 0;
     }
 }
 .aboutUs--bg {
     @include mq(md) {
-        
+        position: relative;
+        left: 4%;
     }
 }
 .aboutUs--bg img {
@@ -53,7 +54,7 @@
 }
 
 .aboutUs__text-body {
-    margin-top: rem(63);
+    margin-top: rem(40);
     @include mq(md) {
         max-width: rem(840);
         width: 100%;
@@ -61,8 +62,8 @@
         grid-template-columns: 1fr 1fr;
         gap: 4%;
         position: absolute;
-        top: 63.1%;
-        left: 56.9%;
+        top: 52.1%;
+        left: 55.9%;
         transform: translate(-50.3%, -57.3%);
         margin-top: 0;
     }

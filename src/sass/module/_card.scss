@@ -29,7 +29,7 @@
     margin-top: rem(4);
 }
 .card__body {
-    padding: rem(18) rem(15) ;
+    padding: rem(16) rem(15) ;
     @include mq(md) {
         padding: rem(24) 1rem rem(42);
     }
