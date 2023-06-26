@@ -44,15 +44,17 @@
     }
 }
 .footer__img--sns {
+    padding-right: rem(8);
+    padding-left: rem(8);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
     @include mq(md) {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
+        justify-content: center;
     }
 }
 .footer__img--sns a {
-    padding-right: rem(8);
-    padding-left: rem(8);
     width: rem(24);
     height: rem(24);
     display: flex;
