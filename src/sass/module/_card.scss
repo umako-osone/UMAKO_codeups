@@ -64,10 +64,10 @@
     font-size: 2rem;
     font-weight: bold;
     font-family: $english-font2;
+    color: $accent;
     @include mq(md) {
         font-size: rem(40);
     }
-    color: $accent;
 }
 .card__price-decoration {
     font-family: $english-font2;

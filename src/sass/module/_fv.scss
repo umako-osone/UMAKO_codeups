@@ -37,3 +37,45 @@
     font-family: $english-font;
     text-align: center;
 }
+
+
+.fv__inner {
+    @include mq(md) {
+        width: 100%;
+        height: 100vh;
+        min-height: rem(400);
+        background-color: $white;
+        position: relative;
+    }
+}
+.fv__title--start {
+    @include mq(md) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 54%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+    }
+}
+.fv__title--green-main {
+    @include mq(md) {
+        color: $accent;
+        font-size: rem(80);
+        text-transform: uppercase;
+        font-family: $english-font2;
+        font-weight: $medium;
+        letter-spacing: 0.53em;
+        text-indent: 0.49em;
+        line-height: 1;
+    }
+}
+.fv__title--green-sub {
+    @include mq(md) {
+        color: $accent;
+        font-size: rem(20);
+        margin-top: rem(9);
+    }
+}
+
