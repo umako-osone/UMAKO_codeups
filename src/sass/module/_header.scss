@@ -68,9 +68,9 @@
 
 .header__item a::after {
     background-color: $white;
-    bottom: 15px;
+    bottom: rem(15);
     content: "";
-    height: 2px;
+    height: rem(1);
     left: 0;
     position: absolute;
     transform: scale(0, 1);
