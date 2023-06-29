@@ -2,20 +2,17 @@
 
 .information {
     background-color: $light;
-    width: 100%;
     position: relative;
     z-index: -2;
 }
-.information-top {
-    margin-top: rem(86);
-    @include mq(md) {
-        margin-top: rem(42);
-    }
-}
 .information__inner {
+    max-width: rem(600);
+    width: 100%;
     padding-top: rem(80);
     padding-bottom: rem(72);
     @include mq(md) {
+        max-width: 100%;
+        width: 100%;
         padding-top: rem(100) ;
         padding-bottom: rem(100) ;
     }
@@ -51,7 +48,7 @@
     }
 }
 .information__text-body {
-    margin-top: rem(24);
+    margin-top: rem(31);
     @include mq(md) {
         padding-top: rem(35);
         margin-left: 3rem;
@@ -77,7 +74,9 @@
     }
 }
 .information__btn {
-    text-align: center;
-    margin-top: rem(40);
+    margin-top: rem(38);
     padding-bottom: rem(10);
+    @include mq(md) {
+        margin-top: rem(40);
+    }
 }

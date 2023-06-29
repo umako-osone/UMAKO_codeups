@@ -1,21 +1,27 @@
 @use "global" as *;
 
-.header__inner.is-active {
-    background-color: $accent;
-}
-.header__inner {
+.header {
     width: 100%;
     height: rem(80);
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
-    align-items: center;
     background-color: rgba($color: $font, $alpha: 0.68);
-    z-index: 999;
     transition: 0.3s background-color;
+    z-index: 998;
     @include mq(md) {
         height: rem(90);
+    }
+}
+.header.is-active {
+    background-color: $accent;
+}
+.header__inner {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    @include mq(md) {
+        height: inherit;
         padding: 0 rem(20);
         justify-content: center;
     }
@@ -95,7 +101,7 @@
     line-height: 150%;
     color: $white;
 }
-.header__inner.headerColorScroll {
+.header.headerColorScroll {
     background-color: #9a9a9a;
     transition: 0.3;
     opacity: 1;

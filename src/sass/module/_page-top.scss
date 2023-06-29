@@ -3,18 +3,21 @@
 .page-top-button {
     position: fixed;
     z-index: 900;
-    right: rem(15);
-    bottom: rem(528);
+    right: 1.4%;
+    bottom: 3%;
     width: rem(48);
     height: rem(48);
     border: 1px solid $accent;
     border-radius: 50%;
     @include mq(md) {
-        bottom: rem(578);
+        // bottom: rem(578);
         width: rem(80);
         height: rem(80);
-        right: rem(20);
+        // right: rem(20);
     }
+}
+.page-top-button:hover {
+    opacity: .6;
 }
 .page-top-button span {
     display: inline-block;
@@ -40,7 +43,7 @@
     right: -1%;
     top: 12%;
     @include mq(md) {
-        top: 7%;
+        top: 10%;
     }
 }
 

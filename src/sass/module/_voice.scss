@@ -3,12 +3,6 @@
 .voice {
     position: relative;
 }
-.voice-top {
-    margin-top: rem(100);
-    @include mq(md) {
-        margin-top: rem(150);
-    }
-}
 .voice__title {
     margin-top: rem(-30);
 }
@@ -23,8 +17,8 @@
         height: auto;
         margin-right: auto;
         margin-left: auto;
-        padding-right: $margin-pc;
-        padding-left: $padding-sp;
+        padding-right: $padding-pc;
+        padding-left: $padding-pc;
     }
 }
 .voice-card {
@@ -48,7 +42,7 @@
 .voice-card__items {
     width: 100%;
     display: block;
-    padding: rem(15) 1rem rem(24);
+    padding: rem(15) rem(12) rem(24);
     background-color: $white;
     box-shadow: rem(2) rem(2) rem(10) rgba($color:#000, $alpha:0.25);
     @include mq(md) {
@@ -70,7 +64,7 @@
     }
 }
 .voice-card__title h4 {
-    margin-top: rem(2);
+    margin-top: rem(4);
     font-weight: $medium;
     padding-bottom: rem(3);
     border-bottom: 1px solid $accent;
@@ -142,7 +136,7 @@
     }
 }
 .voice__btn {
-    margin-top: rem(80);
+    margin-top: rem(78);
 }
 .voice--bg {
     @include mq(md) {
@@ -177,4 +171,7 @@
     height: 100%;
     object-fit: cover;
     }
+}
+.voice__card-category .card__title {
+    margin-top: rem(5);
 }

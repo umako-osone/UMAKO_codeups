@@ -5,13 +5,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(function () {
         $('.js-hamburger').on('click', function() {
             $('.js-hamburger').toggleClass('is-active');
-            $('.js-header__inner').toggleClass('is-active');
+            $('.js-header').toggleClass('is-active');
             $('.js-drawer').fadeToggle();
             $('body').toggleClass('no-scroll');
         });
         $('.js-drawer').on('click', function() {
             $('.js-hamburger').removeClass('is-active');
-            $('.js-header__inner').removeClass('is-active');
+            $('.js-header').removeClass('is-active');
             $('.js-drawer').fadeOut();
             $('body').removeClass('no-scroll');
         });
@@ -121,9 +121,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(window).on("scroll", function () {
         const sliderHeight = $(".fv").height();
         if (sliderHeight - 30 < $(this).scrollTop()) {
-        $(".js-header__inner").addClass("headerColorScroll");
+        $(".js-header").addClass("headerColorScroll");
         } else {
-        $(".js-header__inner").removeClass("headerColorScroll");
+        $(".js-header").removeClass("headerColorScroll");
         }
     });
     });

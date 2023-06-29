@@ -1,23 +1,17 @@
 @use "global" as *;
 
 .campaign {
+    overflow: hidden;
     @include mq(md) {
-        overflow: hidden;
         position: relative;
-    }
-}
-.campaign-top {
-    margin-top: rem(38);
-    @include mq(md) {
-        margin-top: rem(110);
     }
 }
 .campaign-swiper {
     margin-top: rem(27);
+    width: 100vw;
+    margin-right: calc(50% - 50vw);
     @include mq(md) {
         margin-top: rem(40);
-        width: 100vw;
-        margin-right: calc(50% - 50vw);
     }
 }
 .campaign__card {

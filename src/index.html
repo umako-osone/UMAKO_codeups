@@ -33,8 +33,8 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <div class="header__inner js-header__inner">
+      <header class="header js-header">
+        <div class="header__inner">
           <h1 class="header__logo">
             <a href="index.html">
               <img src="./assets/images/common/logo-header.svg" alt="codeups">
@@ -272,14 +272,14 @@
               <h2 class="fv__title--main">diving</h2>
               <p class="fv__title--sub">into the ocean</p>
             </div>
-            <div class="fv__title--start">
+            <!-- <div class="fv__title--start">
               <h2 class="fv__title--green-main">diving</h2>
               <p class="fv__title--green-sub">into the ocean</p>
-            </div>
+            </div> -->
           </div>
         </section>
         <!-- キャンペーン -->
-        <section class="campaign campaign-top">
+        <section class="campaign top--campaign">
           <div class="campaign__inner inner">
             <div class="campaign__title title">
               <div class="title__inner">
@@ -370,7 +370,7 @@
           </div>
         </section>
         <!-- 私たちについて -->
-        <section class="aboutUs aboutUs-top">
+        <section class="aboutUs top--aboutUs">
           <div class="aboutUs__inner">
             <div class="aboutUs__title title">
               <div class="title__inner">
@@ -378,11 +378,14 @@
                 <p class="title--ja">私たちについて</p>
               </div>
             </div>
-            <div class="aboutUs--bg-block">
-              <picture class="aboutUs--bg">
+            <div class="aboutUs__img--block">
+              <picture class="aboutUs__img">
                 <source srcset="./assets/images/common/aboutUs-bg-sp.jpg" media="(max-width: 768px)">
                 <img src="./assets/images/common/aboutUs-bg.jpg" alt="">
               </picture>
+              <figure class="aboutUs__point u-desktop">
+                <img src="./assets/images/common/coral.png" alt="サンゴのイラスト">
+              </figure>
             </div>
             <div class="aboutUs__text-body">
               <div class="aboutUs__text--main">Dive into <br class="u-mobile">the Ocean</div>
@@ -397,7 +400,7 @@
             </div>
         </section>
         <!-- インフォメーション -->
-        <section class="information information-top">
+        <section class="information top--information">
           <div class="information__inner inner">
             <div class="information__title title">
               <div class="title__inner">
@@ -413,15 +416,15 @@
                 <h4 class="information__title">ライセンス講習</h4>
                 <p class="information__text">当店はダイビングライセンス（cカード）世界最大の教育機関padiの「正規店」として店舗登録されています。<br>
                   正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。</p>
-                <div class="information__btn">
-                  <a href="#" class="btn">View more<span></span></a>
-                </div>
+                  <div class="information__btn">
+                    <a href="#" class="btn">View more<span></span></a>
+                  </div>
               </div>
             </div>
           </div>
         </section>
         <!-- ブログ -->
-        <section class="blog blog-top">
+        <section class="blog top--blog">
           <div class="blog__inner">
             <div class="blog__title title">
               <div class="title__inner">
@@ -479,7 +482,7 @@
           </div>
         </section>
         <!-- ボイス -->
-        <section class="voice voice-top">
+        <section class="voice top--voice">
           <figure class="voice--bg u-desktop">
             <img src="./assets/images/common/fishi2.png" alt="魚のイラスト">
           </figure>
@@ -541,7 +544,7 @@
           </div>
         </section>
         <!-- プライス -->
-        <section class="price price-top">
+        <section class="price top--price">
           <div class="price__inner inner">
             <div class="price__block">
               <div class="price__title title">
@@ -626,38 +629,40 @@
           </figure>
         </section>
         <!-- コンタクト -->
-        <section class="contact contact-top">
+        <section class="contact top--contact">
           <div class="contact__inner inner">
-            <figure class="contact__bg">
-              <img src="./assets/images/common/fish.png" alt="魚のイラスト">
-            </figure>
-            <div class="contact__items">
-              <figure class="contact__logo">
-                <img src="./assets/images/common/logo-green.svg" alt="コードアップス">
+            <div class="contact__body">
+              <figure class="contact__bg">
+                <img src="./assets/images/common/fish.png" alt="魚のイラスト">
               </figure>
-              <div class="contact__info">
-                <ul class="contact__item">
-                  <li class="contact__address">沖縄県那覇市1-1</li>
-                  <li class="contact__tel">
-                    <a href="tel:01200000000">tel:0120-000-0000</a>
-                  </li>
-                  <li>営業時間:8:30-19:00</li>
-                  <li>定休日:毎週火曜日
-                  </li>
-                </ul>
-                <figure class="contact__img">
-                  <img src="https://placehold.jp/1500x1500.png" alt="ダミー画像">
+              <div class="contact__items">
+                <figure class="contact__logo">
+                  <img src="./assets/images/common/logo-green.svg" alt="コードアップス">
                 </figure>
+                <div class="contact__info">
+                  <ul class="contact__item">
+                    <li class="contact__address">沖縄県那覇市1-1</li>
+                    <li class="contact__tel">
+                      <a href="tel:01200000000">tel:0120-000-0000</a>
+                    </li>
+                    <li>営業時間:8:30-19:00</li>
+                    <li>定休日:毎週火曜日
+                    </li>
+                  </ul>
+                  <figure class="contact__img">
+                    <img src="https://placehold.jp/1500x1500.png" alt="ダミー画像">
+                  </figure>
+                </div>
               </div>
-            </div>
-            <div class="contact__access">
-              <div class="contact__title title">
-                <div class="title__inner">
-                  <h3 class="title--en"><span>c</span>ontact</h3>
-                  <p class="title--ja">お問い合わせ</p>
-                  <p class="title--sub">ご予約・お問い合わせはコチラ</p>
-                  <div class="contact__btn">
-                    <a href="#" class="btn">contact&ensp;us<span></span></a>
+              <div class="contact__access">
+                <div class="contact__title title">
+                  <div class="title__inner">
+                    <h3 class="title--en"><span>c</span>ontact</h3>
+                    <p class="title--ja">お問い合わせ</p>
+                    <p class="title--sub">ご予約・お問い合わせはコチラ</p>
+                    <div class="contact__btn">
+                      <a href="#" class="btn">contact&ensp;us<span></span></a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -666,7 +671,7 @@
         </section>
         <a href="#" class="page-top-button js-page-top"><span></span></a>
       </main>
-      <footer class="footer footer-top">
+      <footer class="footer top--footer">
         <div class="footer__inner">
           <div class="footer__img-block">
             <figure class="footer__img">
