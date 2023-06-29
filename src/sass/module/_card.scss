@@ -28,21 +28,27 @@
     line-height: 1.5;
     margin-top: rem(4);
 }
-.card__body {
-    padding: rem(16) rem(15) ;
+.card__title-body {
+    padding: 1rem rem(15) 0;
     @include mq(md) {
-        padding: rem(24) 1rem rem(42);
+        padding: rem(24) 1rem rem(8);
+    }
+}
+.card__price-body {
+    @include mq(md) {
+        padding: 0 1rem rem(40);
+        margin-top: auto;
     }
 }
 .card__text {
     font-size: rem(14);
     line-height: 2;
     border-top: 1px solid $accent;
-    padding-top: rem(7);
-    margin-top: rem(6);
+    // padding-top: rem(7);
+    // margin-top: rem(6);
     @include mq(md) {
-        margin-top: rem(6);
-        padding-top: rem(14);
+        // margin-top: rem(6);
+        padding-top: rem(10);
         font-size: 1rem;
     }
 }
@@ -54,7 +60,6 @@
     justify-content: center;
     gap: 1rem;
     align-items: center;
-    margin-top: rem(-1);
     @include mq(md) {
         line-height: 1;
         align-items: end;

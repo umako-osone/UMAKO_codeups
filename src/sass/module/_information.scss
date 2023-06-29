@@ -3,7 +3,6 @@
 .information {
     background-color: $light;
     position: relative;
-    z-index: -2;
 }
 .information__inner {
     max-width: rem(600);
@@ -50,8 +49,7 @@
 .information__text-body {
     margin-top: rem(31);
     @include mq(md) {
-        padding-top: rem(35);
-        margin-left: 3rem;
+        margin: rem(60) 0 0 3rem;
     }
 }
 .information__title {

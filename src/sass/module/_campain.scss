@@ -11,25 +11,30 @@
     width: 100vw;
     margin-right: calc(50% - 50vw);
     @include mq(md) {
-        margin-top: rem(40);
+        margin-top: rem(37);
     }
 }
 .campaign__card {
     display: block;
     max-width: rem(280);
     width: 100%;
+    height: auto;
     background-color: $white;
     box-shadow: 0 rem(4) rem(4) rgba($color:#000, $alpha:0.25);
-    // box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
     @include mq(md) {
     max-width: rem(333);
     }
+}
+.campaign__card a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .campaign__btn {
     margin-top: rem(26);
     padding-bottom: rem(10);
     @include mq(md) {
-        margin-top: rem(70);
+        margin-top: rem(74);
     }
 }
 .campaign__pagination {

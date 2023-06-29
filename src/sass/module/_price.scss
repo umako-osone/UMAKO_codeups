@@ -3,7 +3,6 @@
 .price {
     background-color: $light;
     position: relative;
-    z-index: -2;
     @include mq(md) {
         position: relative;
     }
@@ -66,6 +65,7 @@ background-color: $accent;
     line-height: 1.6;
     display: flex;
     justify-content: space-between;
+    gap: rem(30);
     @include mq(md) {
         max-width: rem(492);
         font-size: 1rem;
