@@ -49,6 +49,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
                 spaceBetween: 40,
             },
         },
+        loopAdditionalSlides: 1,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+        },
     });
 
     // 背景色の後に画像
