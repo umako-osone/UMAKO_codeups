@@ -56,6 +56,7 @@
     padding: 1rem 1rem rem(24);
     box-shadow: 0 rem(4) rem(4) rgba($color:#000, $alpha:0.25);
     position: relative;
+    transition: .3s background-color;
 }
 .blog-card__img img {
     aspect-ratio: 301/201;
@@ -78,7 +79,7 @@
         margin-top: rem(80);
     }
 }
-.blog-card__item a:hover::before {
+.blog-card__item:hover::before {
     content: "";
     position: absolute;
     top: 0;
