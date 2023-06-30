@@ -27,17 +27,15 @@
 .aboutUs__img--block {
     margin-top: rem(28);
     @include mq(md) {
-        width: 84.6767%;
-        margin: rem(40) auto 0;
-        position: relative;
+        margin-top: rem(40);
     }
 }
 .aboutUs__img {
     @include mq(md) {
-        max-width: rem(1130);
-        width: 100%;
-        margin-left: rem(25);
-        margin-right: rem(25);
+        display: block;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 .aboutUs__img img {
@@ -52,13 +50,13 @@
 .aboutUs__text-body {
     margin-top: rem(47);
     @include mq(md) {
-        width: 77%;
+        width: 60%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 4%;
+        gap: 2%;
         position: absolute;
-        top: 55.8%;
-        left: 55.7%;
+        top: 52%;
+        left: 53%;
         transform: translate(-50.3%, -57.3%);
         margin-top: 0;
     }
