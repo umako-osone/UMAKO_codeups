@@ -34,7 +34,7 @@
 .aboutUs__img {
     @include mq(md) {
         display: block;
-        width: 85%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -51,15 +51,15 @@
 .aboutUs__text-body {
     margin-top: rem(47);
     @include mq(md) {
-        width: 60%;
+        width: 58%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2%;
+        gap: 3.9%;
         position: absolute;
-        top: 52%;
-        left: 53%;
-        transform: translate(-50.3%, -57.3%);
-        margin-top: 0;
+        top: 46%;
+        left: 56.2%;
+        transform: translate(-54%, -54%);
+        margin-top: rem(100);
     }
 }
 .aboutUs__text--main {
