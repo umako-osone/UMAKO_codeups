@@ -35,6 +35,9 @@
     }
 }
 .card__price-body {
+    padding-top: 6px;
+    margin: 7px 16px 13px;
+    border-top: 1px solid #408F95;
     @include mq(md) {
         padding: 0 1rem rem(40);
         margin-top: auto;
@@ -43,11 +46,7 @@
 .card__text {
     font-size: rem(14);
     line-height: 2;
-    border-top: 1px solid $accent;
-    // padding-top: rem(7);
-    // margin-top: rem(6);
     @include mq(md) {
-        // margin-top: rem(6);
         padding-top: rem(10);
         font-size: 1rem;
     }

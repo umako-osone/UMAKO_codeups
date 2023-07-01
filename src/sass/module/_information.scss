@@ -62,9 +62,9 @@
 }
 .information__text {
     line-height: 1.5;
-    padding-top: rem(8);
+    padding-top: rem(7);
     border-top: 1px solid $accent;
-    margin-top: rem(4);
+    margin-top: rem(3);
     text-transform: uppercase;
     @include mq(md) {
         margin-top: rem(6);

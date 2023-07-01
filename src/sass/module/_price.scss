@@ -16,7 +16,10 @@
     }
 }
 .price__img-sp {
-    margin-top: rem(27);
+    margin-top: rem(30);
+    @include mq(md) {
+        margin-top: rem(27);
+    }
 }
 .price__img-sp img {
     aspect-ratio: 345/227;
@@ -78,7 +81,7 @@ background-color: $accent;
     line-height: 1.5;
 }
 .price__list--block {
-    margin-top: rem(44);
+    margin-top: rem(43);
     @include mq(md) {
         display: grid;
         grid-template-columns: 1fr 1fr;
