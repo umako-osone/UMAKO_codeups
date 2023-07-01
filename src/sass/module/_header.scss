@@ -20,14 +20,13 @@
     height: inherit;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     @include mq(md) {
         height: inherit;
         padding: 0 rem(20);
-        justify-content: center;
     }
 }
 .header__logo {
-    margin-right: auto;
     height: inherit;
     padding: 0 rem(15);
     display: flex;

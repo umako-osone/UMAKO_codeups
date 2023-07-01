@@ -1,10 +1,12 @@
 @use "global" as *;
 
 .hamburger {
+    width: rem(40);
     height: inherit;
+    margin-right: rem(8);
     position: relative;
-    right: 13%;
     z-index: 999;
+    cursor: pointer;
 }
 
 .hamburger span {
@@ -14,9 +16,6 @@
     border-radius: rem(1);
     background-color: $white;
     transition: 0.3s transform;
-}
-.hamburger.is-active {
-    right: 13.8%;
 }
 .hamburger.is-active span {
     width: rem(40);

@@ -34,6 +34,7 @@
 }
 .navigation__items {
     display: block;
+    width: 100%;
 }
 .navigation__block {
     @include mq(md) {
