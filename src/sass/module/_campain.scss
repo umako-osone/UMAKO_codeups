@@ -6,32 +6,19 @@
         position: relative;
     }
 }
-// .campaign__inner {
-//     @include mq(md) {
-//     max-width: rem(1261);
-//     width: 100%;
-//     margin-right: auto;
-//     margin-left: auto;
-//     }
-// }
 .campaign-swiper {
     margin-top: rem(27);
     width: 100vw;
-    margin-right: calc(50% - 25vw);
+    margin-right: calc(50% - 50vw);
     @include mq(md) {
         margin-top: rem(37);
     }
 }
 .campaign__card {
     display: block;
-    max-width: rem(280);
-    width: 100%;
     height: auto;
     background-color: $white;
     box-shadow: 0 rem(4) rem(4) rgba($color:#000, $alpha:0.25);
-    @include mq(md) {
-    max-width: rem(333);
-    }
 }
 .campaign__card a {
     display: flex;
@@ -43,6 +30,7 @@
     padding-bottom: rem(10);
     @include mq(md) {
         margin-top: rem(74);
+        text-align: center;
     }
 }
 .campaign__pagination {
