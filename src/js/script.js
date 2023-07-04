@@ -44,58 +44,26 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             delay: 3000,
         },
         breakpoints: {
-            280: {
-                spaceBetween: 24,
-                slidesPerView: 1,
-            },
             375: {
                 spaceBetween: 24,
                 slidesPerView: 1.34,
-            },
-            444: {
-                spaceBetween: 24,
-                slidesPerView: 1.5,
             },
             584: {
                 spaceBetween: 24,
                 slidesPerView: 2,
             },
-            748: {
-                spaceBetween: 24,
-                slidesPerView: 2.5,
-            },
             768: {
                 spaceBetween: 40,
                 slidesPerView: 2.18,
             },
-            912: {
+            1024: {
                 spaceBetween: 40,
-                slidesPerView: 2.5,
+                slidesPerView: 2.83,
             },
-            996: {
+            1440: {
                 spaceBetween: 40,
-                slidesPerView: 2.75,
+                slidesPerView: 3.96,
             },
-            1079: {
-                spaceBetween: 40,
-                slidesPerView: 3,
-            },
-            1202: {
-                spaceBetween: 40,
-                slidesPerView: 3.25,
-            },
-            1285: {
-                spaceBetween: 40,
-                slidesPerView: 3.5,
-            },
-            1369: {
-                spaceBetween: 40,
-                slidesPerView: 3.75,
-            },
-            1452: {
-                spaceBetween: 40,
-                slidesPerView: 4,
-            }
         },
         loopAdditionalSlides: 1,
             navigation: {

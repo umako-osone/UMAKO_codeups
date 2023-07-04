@@ -6,6 +6,12 @@
         position: relative;
     }
 }
+.campaign__slide {
+    @include mq(md) {
+        max-width: rem(1263);
+        width: 100%;
+    }
+}
 .campaign-swiper {
     margin-top: rem(27);
     width: 100vw;
@@ -28,9 +34,9 @@
 .campaign__btn {
     margin-top: rem(26);
     padding-bottom: rem(10);
+    text-align: center;
     @include mq(md) {
         margin-top: rem(74);
-        text-align: center;
     }
 }
 .campaign__pagination {
