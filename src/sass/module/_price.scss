@@ -105,16 +105,17 @@ background-color: $accent;
 .price__btn {
     margin-top: rem(40);
     padding-bottom: rem(10);
+    text-align: center;
     @include mq(md) {
         margin-top: rem(80);
     }
 }
 .price__bg {
-    width: rem(437);
-    height: rem(201);
+    max-width: 30.6%;
+    width: 100%;
     position: absolute;
-    bottom: 5.5%;
-    left: 7%;
+    bottom: rem(63);
+    left: rem(95);
 }
 .price__bg img {
     aspect-ratio: 437/201;

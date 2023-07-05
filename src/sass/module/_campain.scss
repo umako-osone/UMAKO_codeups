@@ -32,7 +32,7 @@
     height: 100%;
 }
 .campaign__btn {
-    margin-top: rem(26);
+    margin-top: rem(29);
     padding-bottom: rem(10);
     text-align: center;
     @include mq(md) {
@@ -40,7 +40,6 @@
     }
 }
 .campaign__pagination {
-    display: none;
     @include mq(md) {
         display: flex;
         justify-content: center;

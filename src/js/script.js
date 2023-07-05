@@ -42,6 +42,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         spaceBetween: 24,
         autoplay: {
             delay: 3000,
+            disableOnInteraction: false,
         },
         breakpoints: {
             375: {
