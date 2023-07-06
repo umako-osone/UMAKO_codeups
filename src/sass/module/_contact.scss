@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.contact {
+.contact__inner {
     position: relative;
 }
 .contact__items {
@@ -22,10 +22,9 @@
     top: rem(-29);
     right: calc(50% - min(46.5vw, 49%));
     @include mq(md) {
-        max-width: 20.6%;
-    //     width: 100%;
+        max-width: 26.4%;
         top: rem(-45);
-    //     right: calc(50% - min(46.3vw, 49.4%));
+        right: calc(50% - min(49.3vw, 59.4%));
     }
 }
 .contact--bg img {
