@@ -14,20 +14,13 @@
     position: relative;
     padding-right: $padding-sp;
     padding-left: $padding-sp;
-    @include mq(md) {
-        max-width: rem(1440);
-        width: 100%;
-        padding-right: $padding-pc;
-        padding-left: $padding-pc;
-    }
 }
 .aboutUs__img {
     margin-top: rem(28);
     width: 100%;
     @include mq(md) {
-        max-width: rem(1177);
-        width: 100%;
-        margin: rem(40) auto 0;
+        margin: rem(38) auto 0;
+        position: relative;
     }
 }
 .aboutUs__img--left {
@@ -35,10 +28,8 @@
     width: 100%;
     position: relative;
     @include mq(md) {
-        max-width: 33.985%;
+        max-width: 36.785%;
         width: 100%;
-        position: relative;
-        left: 4.2%;
     }
 }
 .aboutUs__img--right {
@@ -46,12 +37,11 @@
     width: 100%;
     margin-top: -50%;
     margin-left: 16%;
-    // margin-left: ;
     @include mq(md) {
-        max-width: 74.767%;
+        max-width: 81.697%;
         width: 100%;
-        margin-top: -45%;
-        margin-left: 21%;
+        margin-top: -48.8%;
+        margin-left: 18.5%;
     }
 }
 .aboutUs__img--left img {
@@ -73,11 +63,11 @@
     }
 }
 .aboutUs__img--point {
-    max-width: 13.483%;
+    max-width: 17.963%;
     width: 100%;
     position: absolute;
-    top: 88.3%;
-    right: 5.9%;
+    top: 86.8%;
+    right: calc(50% - min(47vw, 60%));
 }
 .aboutUs__img--point img {
     @include mq(md) {

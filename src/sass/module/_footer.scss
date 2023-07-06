@@ -13,6 +13,7 @@
     padding-right: rem(15);
     padding-left: rem(15);
     @include mq(md) {
+        padding: 0;
         display: flex;
         gap: rem(40);
         align-items: end;

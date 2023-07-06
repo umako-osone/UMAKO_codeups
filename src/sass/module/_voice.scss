@@ -17,7 +17,7 @@
 .voice-card {
     margin-top: rem(45);
     @include mq(md) {
-        margin-top: rem(32);
+        margin-top: rem(29);
     }
 }
 .voice-card__list {
@@ -132,11 +132,11 @@
 }
 .voice--bg {
     @include mq(md) {
-        max-width: 23.9%;
+        max-width: 26.6%;
         width: 100%;
         position: absolute;
-        top: -17%;
-        right: 74.6%;
+        top: rem(-110.2);
+        left: calc(50% - min(47vw, 60%));
     }
 }
 .voice--bg img {
