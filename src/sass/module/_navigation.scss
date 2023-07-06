@@ -15,17 +15,17 @@
     width: 100%;
     display: flex;
     align-items: flex-start;
+    padding: rem(11.8) 0 rem(11.8) rem(15);
+    @include mq(md) {
+        padding: rem(15) 0 rem(15) rem(17);
+        line-height: 1;
+    }
 }
 .navigation__text.navigation__text-bold {
     font-weight: bold;
 }
 .navigation__item {
     display: block;
-    padding: rem(11.8) 0 rem(11.8) rem(15);
-    @include mq(md) {
-        padding: rem(15) 0 rem(15) rem(17);
-        line-height: 1;
-    }
 }
 .navigation__text-blank {
     padding-left: rem(18);
