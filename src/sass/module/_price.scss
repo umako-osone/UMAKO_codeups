@@ -62,7 +62,7 @@ background-color: $accent;
 }
 .price__items {
     font-size: rem(14);
-    padding-top: rem(9);
+    margin-top: rem(9);
     line-height: 1.6;
     display: flex;
     justify-content: space-between;
@@ -70,7 +70,7 @@ background-color: $accent;
     @include mq(md) {
         max-width: rem(492);
         font-size: 1rem;
-        padding-top: rem(8);
+        margin-top: rem(8);
         line-height: 1.5;
         width: 100%;
     }

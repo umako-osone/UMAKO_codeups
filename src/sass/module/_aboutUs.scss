@@ -67,7 +67,7 @@
     width: 100%;
     position: absolute;
     top: 86.8%;
-    right: calc(50% - min(47vw, 60%));
+    right: calc(50% - min(47vw, 59%));
 }
 .aboutUs__img--point img {
     @include mq(md) {
@@ -80,13 +80,13 @@
 .aboutUs__text-body {
     margin-top: rem(40);
     @include mq(md) {
-        width: 59%;
+        width: 75%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 3.9%;
         position: absolute;
         top: 28%;
-        left: 26.2%;
+        left: 19.7%;
         margin-top: rem(100);
     }
 }

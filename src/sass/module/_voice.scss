@@ -37,10 +37,14 @@
     display: block;
     padding: rem(14) rem(12) rem(24);
     background-color: $white;
+    transition: .3s opacity;
     box-shadow: rem(2) rem(2) rem(10) rgba($color:#000, $alpha:0.25);
     @include mq(md) {
         padding: rem(13) rem(22) rem(24);
     }
+}
+.voice-card__items:hover {
+    opacity: .6;
 }
 .voice-card__item {
     font-size: 1rem;

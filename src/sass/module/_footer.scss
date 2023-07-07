@@ -5,8 +5,10 @@
 }
 .footer__inner {
     padding-top: 3rem;
+    padding-bottom: rem(54);
     @include mq(md) {
         padding-top: rem(80) ;
+        padding-bottom: rem(80);
     }
 }
 .footer__img-block {
@@ -71,14 +73,12 @@
 .footer__copy {
     text-align: center;
     width: 100vw;
-    padding-bottom: rem(54);
     margin: 0 calc(10% - 15vw);
     @include mq(md) {
         width: 100%;
         margin-top: rem(58);
         margin-right: auto;
         margin-left: auto;
-        padding-bottom: rem(80) ;
     }
 }
 .footer__copyright {
