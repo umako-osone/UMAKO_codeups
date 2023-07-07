@@ -17,7 +17,7 @@
     background-color: $accent;
 }
 .header__inner {
-    height: inherit;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,9 +28,9 @@
 }
 .header__logo {
     height: inherit;
-    position: relative;
     display: flex;
     align-items: center;
+    position: relative;
     z-index: 999;
 }
 .header__logo a {
