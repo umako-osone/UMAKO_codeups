@@ -28,11 +28,14 @@
 }
 .header__logo {
     height: inherit;
-    padding: 0 rem(15);
+    position: relative;
     display: flex;
     align-items: center;
-    position: relative;
     z-index: 999;
+}
+.header__logo a {
+    height: inherit;
+    padding: 0 rem(15);
     @include mq(md) {
         padding: 0 rem(20);
     }
