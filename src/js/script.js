@@ -26,13 +26,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
 
     // スワイパー
-    const fvSwiper = new Swiper('.fv-swiper', {
-        loop: true,
-        speed: 3000,
-        autoplay: {
-            delay: 3000,
-        },
-    });
+    // const fvSwiper = new Swiper('.fv-swiper', {
+    //     loop: true,
+    //     speed: 3000,
+    //     autoplay: {
+    //         delay: 3000,
+    //     },
+    // });
 
     // スワイパー
     const campaignSwiper = new Swiper('.campaign-swiper', {
@@ -151,31 +151,50 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
     // ページトップへ
     $(function () {
-    const pageTop = $(".js-page-top");
-    pageTop.hide();
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 20) {
-        pageTop.fadeIn();
-        } else {
-        pageTop.fadeOut();
-        }
-    });
-    pageTop.click(function () {
-        $("body, html").animate(
-        {
-            scrollTop: 0,
-        },
-        300
-        );
-        return false;
-    });
-    
+        const pageTop = $(".js-page-top");
+        pageTop.hide();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 20) {
+            pageTop.fadeIn();
+            } else {
+            pageTop.fadeOut();
+            }
+        });
+        pageTop.click(function () {
+            $("body, html").animate(
+            {
+                scrollTop: 0,
+            },
+            300
+            );
+            return false;
+        });
     });
 
 
+    $(function(){
+        $(".fv-slide--left").animate({top: "-=100vh"}, 2000);
 
+        $(".fv-slide--right").delay("80px").animate({top: "-=100vh"}, 2000);
+
+        $(".fv-slide__heading").fadeOut(2000);
+        $(".fv__title").on("animationend", function() {
+            // アニメーションの完了時にSwiperを開始する処理を実行
+            const fvSwiper = new Swiper('.fv-swiper', {
+                loop: true,
+                speed: 3000,
+                autoplay: {
+                    delay: 3000,
+                },
+            });
+        });
+    });
 
 
 });
+
+
+
+
 
 

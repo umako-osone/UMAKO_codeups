@@ -3,7 +3,6 @@
 .fv__img {
     min-height: rem(200);
 }
-
 .fv__img img {
     aspect-ratio: 1440/769;
     width: 100%;
@@ -19,7 +18,27 @@
     @include mq(md) {
         top: 55.4%;
         left: 51.4%;
-    
+        animation: text-focus-in 3.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+    @-webkit-keyframes text-focus-in {
+        0% {
+            filter: blur(12px);
+            opacity: 0;
+        }
+        100% {
+            filter: blur(0px);
+            opacity: 1;
+        }
+    }
+    @keyframes text-focus-in {
+        0% {
+            filter: blur(12px);
+            opacity: 0;
+        }
+        100% {
+            filter: blur(0px);
+            opacity: 1;
+        }
     }
 }
 .fv__title--main {
@@ -36,7 +55,7 @@
 }
 .fv__title--sub {
     font-size: rem(20);
-    line-height: 1.05;
+    // line-height: 1.05;
     color: $white;
     font-family: $english-font;
     text-align: center;
@@ -49,7 +68,9 @@
         height: 100vh;
         min-height: rem(400);
         background-color: $white;
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
 .fv__title--start {
@@ -82,4 +103,3 @@
         margin-top: rem(9);
     }
 }
-
