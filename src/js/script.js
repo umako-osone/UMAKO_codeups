@@ -175,7 +175,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(function(){
         $(".fv-slide--left").animate({top: "-=100vh"}, 2000);
 
-        $(".fv-slide--right").delay("80px").animate({top: "-=100vh"}, 2000);
+        $(".fv-slide--right").delay(80).animate({top: "-=100vh"}, 2000);
 
         $(".fv-slide__heading").fadeOut(2000);
         $(".fv__title").on("animationend", function() {
