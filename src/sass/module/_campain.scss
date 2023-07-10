@@ -100,3 +100,7 @@
     z-index: 0;
     color: $accent;
 }
+.campaign__prev.swiper-button-prev::after, .swiper-rtl .swiper-button-prev::after,
+.campaign__next.swiper-button-next::after, .swiper-rtl .swiper-button-next::after {
+    content: "";
+}
