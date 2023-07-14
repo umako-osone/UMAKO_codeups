@@ -54,15 +54,23 @@
         line-height: 1.25;
     }
 }
+    .fv__title-main.fv__title-main--green {
+        @include mq(md) {
+            color: $accent;
+            font-weight: $medium;
+        }
+    }
 .fv__title-sub {
     font-size: rem(20);
-    // line-height: 1.05;
     color: $white;
     font-family: $english-font;
     text-align: center;
 }
-
-
+.fv__title-sub.fv__title-sub--green {
+    @include mq(md) {
+        color: $accent;
+    }
+}
 .fv__inner {
     @include mq(md) {
         width: 100%;
@@ -83,24 +91,5 @@
         top: 54%;
         left: 50%;
         transform: translate(-50%, -45%);
-    }
-}
-.fv__title-main.fv__title-main--green {
-    @include mq(md) {
-        color: $accent;
-        font-size: rem(80);
-        text-transform: uppercase;
-        font-family: $english-font2;
-        font-weight: $medium;
-        letter-spacing: 0.53em;
-        text-indent: 0.49em;
-        line-height: 1;
-    }
-}
-.fv__title-sub.fv__title-sub--green {
-    @include mq(md) {
-        color: $accent;
-        font-size: rem(20);
-        margin-top: rem(9);
     }
 }

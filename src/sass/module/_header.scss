@@ -11,7 +11,6 @@
     z-index: 998;
     @include mq(md) {
         height: rem(90);
-        padding: 0 rem(20);
     }
 }
 .header.is-active {
@@ -22,6 +21,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 rem(15);
+    @include mq(md) {
+        padding: 0 rem(20);
+    }
 }
 .header__logo {
     height: inherit;
@@ -85,14 +88,14 @@
     transform: scale(1, 1);
 }
 
-.header__item--en {
+.header__item-en {
     font-size: rem(18);
     font-family: $english-font;
     font-weight: $regular;
     text-transform: capitalize;
     color: $white;
 }
-.header__item--ja {
+.header__item-ja {
     font-family: $base-font;
     font-size: rem(10);
     line-height: 150%;

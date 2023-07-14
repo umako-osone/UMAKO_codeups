@@ -47,9 +47,10 @@
     }
 }
 .information__text-body {
-    margin-top: rem(31);
+    padding-top: rem(31);
     @include mq(md) {
-        margin: rem(60) 0 0 3rem;
+        padding-top: rem(60);
+        margin-left: 3rem;
     }
 }
 .information__title {

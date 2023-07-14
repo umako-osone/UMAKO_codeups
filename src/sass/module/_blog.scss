@@ -3,10 +3,11 @@
 .blog__inner {
     padding-left: $padding-sp;
     padding-right: $padding-sp;
-    overflow: hidden;
+    // overflow: hidden;
     @include mq(md) {
         padding-left: $padding-pc;
         padding-right: $padding-pc;
+        position: relative;
     }
 }
 .blog__title {
@@ -17,8 +18,8 @@
         background-size: cover;
         height: rem(500);
         padding-top: rem(93);
-        margin: 0 calc(50% - 50vw);
         width: 100vw;
+        margin: 0 calc(50% - 50vw);
     }
 }
 .blog-card {
@@ -45,10 +46,22 @@
         gap: rem(40);
         max-width: rem(1120);
         width: 100%;
-        padding-right: rem(20);
-        padding-left: rem(20);
         margin: auto;
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+.blog-card__items::before {
+    @include mq(md) {
+        content: "";
+        background-image: url(../images/common/fish-white.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-width: 37%;
+        width: 100%;
+        height: 32%;
+        position: absolute;
+        top: 4%;
+        left: calc(50% - min(43vw, 54%));
     }
 }
 .blog-card__item {
