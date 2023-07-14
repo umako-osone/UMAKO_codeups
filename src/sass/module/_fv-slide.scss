@@ -14,7 +14,7 @@
     transform: translate(-50%, -50%);
     z-index: 10;
 }
-.fv-slide--left {
+.fv-slide__cover-left {
     width: 50%;
     height: 100vh;
     min-height: rem(400);
@@ -23,7 +23,7 @@
     top: 0;
     left: 0;
 }
-.fv-slide--left img {
+.fv-slide__cover-left img {
     aspect-ratio: 1440/768;
     width: 100%;
     height: 100%;
@@ -37,7 +37,7 @@
         transform: translateY(0);
     }
 }
-.fv-slide--right {
+.fv-slide__cover-right {
     width: 50%;
     height: 100vh;
     min-height: rem(400);
@@ -46,7 +46,7 @@
     top: 0;
     right: 0;
 }
-.fv-slide--right img {
+.fv-slide__cover-right img {
     aspect-ratio: 1440/768;
     width: 100%;
     height: 100%;
