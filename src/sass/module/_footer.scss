@@ -11,9 +11,16 @@
         padding-bottom: rem(80);
     }
 }
+.footer__nav {
+    max-width: rem(600);
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    @include mq(md) {
+    max-width: rem(1130);
+    }
+}
 .footer__img-block {
-    padding-right: rem(15);
-    padding-left: rem(15);
     @include mq(md) {
         padding: 0;
         display: flex;
@@ -39,8 +46,6 @@
     }
 }
 .footer__img--sns {
-    padding-right: rem(8);
-    padding-left: rem(8);
     display: flex;
     justify-content: left;
     align-items: center;
@@ -73,7 +78,7 @@
 .footer__copy {
     text-align: center;
     width: 100vw;
-    margin: 0 calc(10% - 15vw);
+    margin: rem(20) calc(10% - 15vw);
     @include mq(md) {
         width: 100%;
         margin-top: rem(58);

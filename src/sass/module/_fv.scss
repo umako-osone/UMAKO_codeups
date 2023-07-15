@@ -11,13 +11,13 @@
 }
 .fv__title {
     position: absolute;
-    top: 49%;
-    left: 52.7%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 500;
     @include mq(md) {
-        top: 55.4%;
-        left: 51.4%;
+        top: 55%;
+        left: 50%;
         animation: text-focus-in 3.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     }
     @-webkit-keyframes text-focus-in {
@@ -47,6 +47,7 @@
     font-family: $english-font2;
     letter-spacing: 0.52em;
     text-indent: 0.52em;
+    line-height: 1.2;
     text-transform: uppercase;
     color: $white;
     @include mq(md) {
