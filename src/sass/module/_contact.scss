@@ -6,7 +6,7 @@
 .contact__items {
     text-align: center;
     @include mq(md) {
-        padding: rem(74) rem(57) rem(80) rem(26);
+        margin-left: rem(50);
     }
 }
 .contact__inner::before {
@@ -21,14 +21,15 @@
     top: rem(-29);
     right: calc(50% - min(46.5vw, 49%));
     @include mq(md) {
-        max-width: 26.4%;
-        top: rem(-45);
+        max-width: 26.7%;
+        top: rem(-38.6);
         right: calc(50% - min(49.3vw, 59.4%));
     }
 }
 .contact__body {
     @include mq(md) {
         display: flex;
+        padding: rem(80) 0;;
         box-shadow: rem(4) rem(4) rem(10) rgba($color:#000, $alpha:0.25);
     }
 }
@@ -92,27 +93,37 @@
     }
 }
 .contact__info {
-    margin:rem(3) rem(24) 0;
-    padding-top: rem(15);
+    padding-top: 1rem;
+    margin: rem(2) rem(20) 0;
     border-top: 1px solid $accent;
     @include mq(md) {
         display: flex;
-        padding-top: rem(23);
-        margin-top: rem(9);
-        border-top: 1px solid $accent;
+        padding: rem(22) 0 0;
+        margin-top: rem(8);
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.contact__access {
+    margin-top: rem(40);
+    @include mq(md) {
+        padding: 0 rem(80);
+        margin-left: rem(80);
+        border-left: 1px solid $accent;
     }
 }
 .contact__title {
-    margin-top: rem(40);
+    margin-top: rem(20);
     line-height: 1;
     @include mq(md) {
-        margin-top: rem(72);
-        border-left: 1px solid $accent;
+        // padding-left: rem(81);
+        // margin-left: rem(82);
+        // border-left: 1px solid $accent;
     }
 }
 .contact__title .title__inner {
     @include mq(md) {
-        padding: rem(24) rem(82);
+        // padding: rem(24) rem(82);
     }
 }
 .contact__title .title-ja {

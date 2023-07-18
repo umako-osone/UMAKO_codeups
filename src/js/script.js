@@ -26,13 +26,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
 
     // スワイパー
-    // const fvSwiper = new Swiper('.fv-swiper', {
-    //     loop: true,
-    //     speed: 3000,
-    //     autoplay: {
-    //         delay: 3000,
-    //     },
-    // });
+    const fvSwiper = new Swiper('.fv-swiper', {
+        loop: true,
+        speed: 3000,
+        autoplay: {
+            delay: 4000,
+        },
+    });
 
     // スワイパー
     const campaignSwiper = new Swiper('.campaign-swiper', {

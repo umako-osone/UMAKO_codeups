@@ -17,7 +17,7 @@
     align-items: flex-start;
     padding: rem(11.8) 0 rem(11.8) rem(5);
     @include mq(md) {
-        padding: rem(15) 0 rem(15) rem(17);
+        padding: rem(15) 0 rem(15);
         line-height: 1;
     }
 }
