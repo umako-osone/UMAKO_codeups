@@ -24,16 +24,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             $('body').removeClass('no-scroll');
         }
     });
-
-    // スワイパー
-    const fvSwiper = new Swiper('.fv-swiper', {
-        loop: true,
-        speed: 3000,
-        autoplay: {
-            delay: 4000,
-        },
-    });
-
     // スワイパー
     const campaignSwiper = new Swiper('.campaign-swiper', {
         loop: true,
