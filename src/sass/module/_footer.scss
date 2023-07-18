@@ -2,8 +2,6 @@
 
 .footer {
     background-color: $accent;
-}
-.footer__inner {
     padding-top: 3rem;
     padding-bottom: rem(54);
     @include mq(md) {
