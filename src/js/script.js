@@ -161,7 +161,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         });
     });
 
-
+// トップ画像のアニメーション
     $(function(){
         $(".fv-slide__cover-left").animate({top: "-=100vh"}, 2000);
 
