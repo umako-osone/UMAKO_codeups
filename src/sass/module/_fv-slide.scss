@@ -2,7 +2,7 @@
 
 .fv-slide__inner {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     position: relative;
     z-index: 10;
 }
@@ -16,7 +16,7 @@
 }
 .fv-slide__cover-left {
     width: 50%;
-    height: 100vh;
+    height: 100dvh;
     min-height: rem(400);
     background-color: $white;
     position: absolute;
@@ -33,7 +33,7 @@
 }
 .fv-slide__cover-right {
     width: 51%;
-    height: 100vh;
+    height: 100dvh;
     min-height: rem(400);
     background-color: $white;
     position: absolute;

@@ -6,7 +6,7 @@
 .fv__img img {
     aspect-ratio: 1440/769;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     object-fit: cover;
 }
 .fv__title {
@@ -75,7 +75,7 @@
 .fv__inner {
     @include mq(md) {
         width: 100%;
-        height: 100vh;
+        height: 100dvh;
         min-height: rem(400);
         background-color: $white;
         position: absolute;

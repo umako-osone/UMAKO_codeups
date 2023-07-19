@@ -15,7 +15,7 @@
     width: 100%;
     display: flex;
     align-items: flex-start;
-    padding: rem(11.8) 0 rem(11.8) rem(10);
+    padding: rem(11.8) 0 rem(11.8) rem(20);
     @include mq(md) {
         padding: rem(15) 0 rem(15);
         line-height: 1;
@@ -51,5 +51,5 @@
     min-height: rem(400);
     display: flex;
     padding: rem(24) 0 rem(111);
-    overflow-y: scroll;
+    overflow: auto;
 }
