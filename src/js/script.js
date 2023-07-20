@@ -20,6 +20,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(window).on('resize', function() {
         if ($(window).width() >= 768) {
             $('.js-hamburger').removeClass('is-active');
+            $('.js-header').removeClass('is-active');
             $('.js-drawer').fadeOut();
             $('body').removeClass('no-scroll');
         }
