@@ -8,7 +8,7 @@
     left: 0;
     background-color: rgba($color: $font, $alpha: 0.68);
     transition: 0.3s background-color;
-    z-index: 990;
+    z-index: 998;
     @include mq(md) {
         height: rem(90);
     }
