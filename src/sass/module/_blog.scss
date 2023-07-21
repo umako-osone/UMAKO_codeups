@@ -1,9 +1,13 @@
 @use "global" as *;
 
+.blog {
+    @include mq(md) {
+        overflow: hidden;
+    }
+}
 .blog__inner {
     padding-left: $padding-sp;
     padding-right: $padding-sp;
-    // overflow: hidden;
     @include mq(md) {
         padding-left: $padding-pc;
         padding-right: $padding-pc;

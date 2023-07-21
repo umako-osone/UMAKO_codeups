@@ -23,8 +23,8 @@
     @include mq(md) {
         max-width: 26.7%;
         top: rem(-38.6);
-        right: calc(50% - min(49.3vw, 59.4%));
     }
+    right: calc(50% - min(48.5vw, 59.4%));
 }
 .contact__body {
     @include mq(md) {
@@ -116,16 +116,6 @@
 .contact__title {
     margin-top: rem(20);
     line-height: 1;
-    @include mq(md) {
-        // padding-left: rem(81);
-        // margin-left: rem(82);
-        // border-left: 1px solid $accent;
-    }
-}
-.contact__title .title__inner {
-    @include mq(md) {
-        // padding: rem(24) rem(82);
-    }
 }
 .contact__title .title-ja {
     line-height: 1;
