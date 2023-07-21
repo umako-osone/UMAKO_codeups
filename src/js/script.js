@@ -170,6 +170,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
         $(".fv-slide__heading").fadeOut(2000);
         $(".fv__title").on("animationend", function() {
+            // ローディングアニメーションを完了したらSwiperを初期化する関数を定義
+            function initializeSwiper() {
             // アニメーションの完了時にSwiperを開始する処理を実行
             const fvSwiper = new Swiper('.fv-swiper', {
                 loop: true,
@@ -178,6 +180,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
                     delay: 3000,
                 },
             });
+            };
         });
     });
 
