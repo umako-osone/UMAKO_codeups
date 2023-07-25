@@ -43,7 +43,7 @@
     }
 }
 .voice-card {
-    margin-top: rem(45);
+    margin-top: rem(42);
     @include mq(md) {
         margin-top: rem(29);
     }
@@ -63,7 +63,7 @@
 .voice-card__items {
     width: 100%;
     display: block;
-    padding: rem(14) rem(12) rem(24);
+    padding: 1rem rem(12) rem(24);
     background-color: $white;
     transition: .3s opacity;
     box-shadow: rem(2) rem(2) rem(10) rgba($color:#000, $alpha:0.25);
@@ -91,7 +91,7 @@
 .voice-card__title h4 {
     margin-top: rem(4);
     font-weight: $medium;
-    padding-bottom: rem(3);
+    // padding-bottom: rem(3);
     border-bottom: 1px solid $accent;
     @include mq(md) {
         margin-top: rem(7);
@@ -123,7 +123,7 @@
     line-height: 1.83;
     color: $accent;
     border: 1px solid $accent;
-    padding: rem(2) rem(11);
+    padding: rem(3) rem(11);
     @include mq(md) {
         display: flex;
         padding: rem(5) rem(15);
@@ -159,7 +159,7 @@
     }
 }
 .voice__btn {
-    margin-top: rem(78);
+    margin-top: rem(80);
     text-align: center;
 }
 // .voice--bg2 {

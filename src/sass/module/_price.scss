@@ -98,7 +98,7 @@ background-color: $accent;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 8.89%;
-        margin-top: rem(37);
+        margin-top: rem(37.6);
     }
 }
 .price__img {
@@ -115,7 +115,7 @@ background-color: $accent;
     }
 }
 .price__btn {
-    margin-top: rem(40);
+    margin-top: rem(39);
     padding-bottom: rem(10);
     text-align: center;
     @include mq(md) {
