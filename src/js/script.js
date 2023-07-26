@@ -28,6 +28,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     // スワイパー
     const campaignSwiper = new Swiper('.campaign-swiper', {
         loop: true,
+        slidesPerView: "auto",
         speed: 3000,
         slideToClickedSlide: true,
         spaceBetween: 24,
@@ -36,25 +37,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             disableOnInteraction: false,
         },
         breakpoints: {
-            375: {
-                spaceBetween: 24,
-                slidesPerView: 1.34,
-            },
-            584: {
-                spaceBetween: 24,
-                slidesPerView: 2,
-            },
             768: {
                 spaceBetween: 40,
-                slidesPerView: 2.18,
-            },
-            1024: {
-                spaceBetween: 40,
-                slidesPerView: 2.83,
-            },
-            1440: {
-                spaceBetween: 40,
-                slidesPerView: 3.96,
             },
         },
         loopAdditionalSlides: 1,

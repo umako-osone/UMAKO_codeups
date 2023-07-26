@@ -26,6 +26,10 @@
     height: auto;
     background-color: $white;
     box-shadow: 0 rem(4) rem(4) rgba($color:#000, $alpha:0.25);
+    width: rem(280);
+    @include mq(md) {
+        width: rem(333);
+    }
 }
 .campaign__card a {
     display: flex;
