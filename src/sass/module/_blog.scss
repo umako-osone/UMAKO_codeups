@@ -26,73 +26,6 @@
         margin: 0 calc(50% - 50vw);
     }
 }
-.blog-card {
-    margin-top: rem(27);
-    @include mq(md) {
-        margin-top: rem(-252);
-    }
-}
-.blog-card__date {
-    font-size: rem(12);
-    font-family: $english-font;
-    line-height: 1.5;
-}
-.blog-card__title {
-    font-weight: $medium;
-}
-.blog-card__items {
-    display: grid;
-    gap: 2.2rem;
-    max-width: rem(600);
-    width: 100%;
-    margin: auto;
-    @include mq(md) {
-        gap: rem(40);
-        max-width: rem(1120);
-        width: 100%;
-        margin: auto;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-.blog-card__items::before {
-    @include mq(md) {
-        content: "";
-        background-image: url(../images/common/fish-white.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        max-width: 38.4%;
-        width: 100%;
-        height: 35%;
-        position: absolute;
-        top: 3%;
-        left: calc(50% - min(43vw, 56%));
-    }
-}
-.blog-card__item {
-    display: block;
-    background-color: $white;
-    padding: 1rem 1rem rem(24);
-    box-shadow: 0 rem(4) rem(4) rgba($color:#000, $alpha:0.25);
-    position: relative;
-    transition: .3s background-color;
-}
-.blog-card__img img {
-    aspect-ratio: 301/201;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.blog-card__text-block {
-    margin-top: rem(19);
-    @include mq(md) {
-        margin-top: 1rem;
-    }
-}
-.blog-card__text {
-    padding-top: 1rem;
-    margin-top: rem(4);
-    border-top: 1px solid $accent;
-}
 .blog__btn {
     margin-top: rem(40);
     padding-bottom: rem(10);
@@ -100,13 +33,4 @@
     @include mq(md) {
         margin-top: rem(80);
     }
-}
-.blog-card__item:hover::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba($color:$white, $alpha:0.4);
 }
