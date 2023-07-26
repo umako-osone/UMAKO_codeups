@@ -9,7 +9,7 @@
     font-size: rem(40);
   }
 }
-.title-en span {
+.title-en::first-letter {
   text-transform: uppercase;
   color: $accent;
 }
@@ -20,11 +20,23 @@
   text-align: center;
 }
 .title-en.title-en--white {
-  color: $white;
   text-transform: capitalize;
+  color: $font;
+  @include mq(md) {
+    color: $white;
+  }
+}
+.title-en.title-en--white::first-letter {
+  color: $accent;
+  @include mq(md) {
+      color: $white;
+  }
 }
 .title-ja.title-ja--white {
-  color: $white;
+  color: $accent;
+  @include mq(md) {
+    color: $white;
+  }
 }
 .title-sub {
   font-size: rem(14);

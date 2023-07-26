@@ -1,8 +1,21 @@
 @use "global" as *;
 
 .blog {
+    position: relative;
+}
+.blog::before {
     @include mq(md) {
-        overflow: hidden;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: rem(500);
+        background-image: url(../images/common/blog-bg.jpg);
+        // background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 .blog__inner {
@@ -14,16 +27,14 @@
         position: relative;
     }
 }
-.blog__title {
+.blog__title{
     @include mq(md) {
-        background-image: url(../images/common/blog-bg.jpg);
-        background-position: top left;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: rem(500);
-        padding-top: rem(93);
-        width: 100vw;
-        margin: 0 calc(50% - 50vw);
+        padding-top: rem(90);
+    }
+}
+.blog__items {
+    @include mq(md) {
+        margin-top: rem(77);
     }
 }
 .blog__btn {
