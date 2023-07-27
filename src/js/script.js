@@ -145,6 +145,31 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             return false;
         });
     });
+    //フッター手前で止まるボタン
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            var footerOffset = $('footer').offset().top;
+            var backToTopButton = $('.js-page-top');
+            if ($(this).scrollTop() > 100) {
+                backToTopButton.addClass('show');
+            } else {
+                backToTopButton.removeClass('show');
+            }
+
+            if ($(this).scrollTop() + $(window).height() > footerOffset) {
+                backToTopButton.css('bottom', $(this).scrollTop() + $(window).height() - footerOffset + 20);
+            } else {
+                backToTopButton.css('bottom', '20px');
+            }
+        });
+
+            $('#back-to-top').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+    });
+
+
 
 // トップ画像のアニメーション
     $(function(){
