@@ -42,6 +42,12 @@
         right: rem(25);
     }
 }
+.voice__items {
+    margin-top: rem(42);
+    @include mq(md) {
+        margin-top: rem(29);
+    }
+}
 .voice__btn {
     margin-top: rem(80);
     text-align: center;
