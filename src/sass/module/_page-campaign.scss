@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.page-campaign__mv {
+    background-image: url(../images/common/campaign-mv.jpg);
+}
+.page-campaign {
+    position: relative;
+}
+.page-campaign__card-body {
+    display: block;
+    height: auto;
+    margin: auto;
+    background-color: $white;
+    box-shadow: 0 rem(4) rem(4) rgba($color:#000, $alpha:0.25);
+    width: 74.666667%;
+    @include mq(md) {
+        width: 100%;
+    }
+}
+.page-campaign__card {
+    max-width: rem(600);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(40);
+    margin: rem(40) auto 0;
+    @include mq(md) {
+        max-width: rem(1130);
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(80) rem(40);
+    }
+}
+.page-campaign__tag {
+    display: flex;
+    gap: 1rem rem(32);
+    flex-wrap: wrap;
+}
+.page-campaign__category {
+    text-transform: uppercase;
+    color: $accent;
+}
+.page-campaign__category.is-active {
+    color: $white;
+    background-color: $accent;
+}
+.page-campaign__category {
+    display: flex;
+    width: rem(162);
+    height: rem(34);
+    align-items: center;
+    justify-content: center;
+    font-size: rem(14);
+    line-height: rem(22);
+    border: 1px solid $accent;
+}

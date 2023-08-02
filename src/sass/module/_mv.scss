@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.mv {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: rem(548);
+    position: relative;
+}
+.mv::before {
+    content: "";
+    background-image: url(../images/common/fish2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 21%;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: rem(-271);
+    left: calc(50% - min(43vw, 60%));
+}

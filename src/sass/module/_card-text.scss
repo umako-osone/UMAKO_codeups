@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.card-text__block {
+    color: $accent;
+    text-align: center;
+    // line-height: ;
+    @include mq(md) {
+        margin-top: rem(30);
+    }
+}
+.card-text__explanation {
+    @include mq(md) {
+        margin-top: rem(25);
+    }
+}
+.card-text__period {
+    // font-weight: bold;
+    line-height: 1.125;
+    font-family: $english-font2;
+}
+.card-text__info {
+    font-size: rem(14);
+    line-height: 1.2857;
+    margin-top: rem(10);
+}
+.card-text__btn {
+    margin-top: 1rem;
+}
