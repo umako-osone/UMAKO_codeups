@@ -102,7 +102,7 @@
 }
 .card__price-body.card__price-body--big {
     @include mq(md) {
-        padding: rem(13) rem(7) rem(40);
+        padding: rem(13) rem(7) 0;
     }
 }
 .card__price-block.card__price-block--big {
