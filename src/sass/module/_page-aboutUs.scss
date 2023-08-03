@@ -1,5 +1,11 @@
 @use "global" as *;
 
 .page-aboutUs__mv {
-  background-image: url(../images/common/page-aboutUs__mv.jpg);
+  background-image: url(../images/common/page-aboutus-mv.jpg);
+}
+.page-aboutUs__inner {
+  position: relative;
+}
+.page-aboutUs__img.aboutUs__img::after {
+  background-image: none;
 }
