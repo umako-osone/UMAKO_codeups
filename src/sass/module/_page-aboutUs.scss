@@ -9,3 +9,35 @@
 .page-aboutUs__img.aboutUs__img::after {
   background-image: none;
 }
+.page-aboutUs__inner .aboutUs__text-body {
+  @include mq(md) {
+    top: 15%;
+  }
+}
+.page-aboutUs__text-body .aboutUs__text {
+  @include mq(md) {
+    margin-top: rem(50);
+  }
+}
+.page-abooutU__photo-block1 {
+  @include mq(md) {
+    display: grid;
+    
+  }
+}
+.page-abooutU__photo1 {
+  @include mq(md) {
+    aspect-ratio: 746/492;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.page-abooutU__photo2 {
+  @include mq(md) {
+    aspect-ratio: 580/369;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

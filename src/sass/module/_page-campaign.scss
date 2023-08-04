@@ -1,7 +1,10 @@
 @use "global" as *;
 
 .page-campaign__mv {
-    background-image: url(../images/common/campaign-mv.jpg);
+    background-image: url(../images/common/campaign-sp.jpg);
+    @include mq(md) {
+        background-image: url(../images/common/campaign-mv.jpg);
+    }
 }
 .page-campaign {
     position: relative;
@@ -12,7 +15,7 @@
     margin: auto;
     background-color: $white;
     box-shadow: 0 rem(4) rem(4) rgba($color:#000, $alpha:0.25);
-    width: 74.666667%;
+    width: 83.583%;
     @include mq(md) {
         width: 100%;
     }
@@ -32,8 +35,11 @@
 }
 .page-campaign__tag {
     display: flex;
-    gap: 1rem rem(32);
     flex-wrap: wrap;
+    gap: 1rem rem(11);
+    @include mq(md) {
+        gap: 1rem rem(32);
+    }
 }
 .page-campaign__category {
     text-transform: uppercase;

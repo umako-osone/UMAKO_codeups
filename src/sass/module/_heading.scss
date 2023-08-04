@@ -2,14 +2,17 @@
 
 .heading {
     position: relative;
-    top: 62%;
-    transform: translateY(-62%);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: rem(40);
     text-align: center;
-    font-size: rem(80);
     font-weight: $regular;
     font-family: $english-font2;
     color: $white;
     text-transform: capitalize;
-    // letter-spacing: 0.52em;
-    // text-indent:0.52em;
+    @include mq(md) {
+        font-size: rem(80);
+        top: 62%;
+        transform: translateY(-62%);
+    }
 }

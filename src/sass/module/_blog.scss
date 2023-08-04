@@ -33,12 +33,13 @@
     }
 }
 .blog__items {
+    margin-top: rem(28);
     @include mq(md) {
         margin-top: rem(77);
     }
 }
 .blog__btn {
-    margin-top: rem(40);
+    margin-top: rem(37);
     padding-bottom: rem(10);
     text-align: center;
     @include mq(md) {
