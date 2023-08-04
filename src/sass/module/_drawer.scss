@@ -2,16 +2,15 @@
 
 .drawer {
     position: fixed;
-    top: rem(80);
+    top: rem(0);
     left: 0;
     width: 100%;
-    height: 100dvh;
-    height: 100vh;
-    min-height: rem(200);
-    display: none;
+    padding-top: rem(80);
+    // display: none;
     background-color: $accent;
-    overflow-y: scroll;
-    padding: rem(8) rem(15) rem(111);
+}
+.drawer__inner {
+    padding: 0 rem(15);
 }
 .drawer__nav {
     display: flex;
@@ -19,6 +18,11 @@
     gap: 1%;
     max-width: rem(600);
     width: 100%;
+    height: 100dvh;
+    height: 100vh;
+    min-height: rem(200);
     margin: auto;
+    overflow-y: scroll;
+    padding: rem(10) 0 rem(60);
 }
 
