@@ -7,14 +7,14 @@
     top: 0;
     left: 0;
     background-color: rgba($color: $font, $alpha: 0.68);
-    transition: 0.3s opacity;
+    transition: 0.3s background-color;
     z-index: 970;
     @include mq(md) {
         height: rem(90);
     }
 }
 .header.is-active {
-    opacity: 0;
+    background-color: transparent;
 }
 .header__inner {
     height: inherit;
