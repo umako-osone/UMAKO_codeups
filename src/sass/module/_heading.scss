@@ -9,10 +9,12 @@
     font-weight: $regular;
     font-family: $english-font2;
     color: $white;
-    text-transform: capitalize;
     @include mq(md) {
         font-size: rem(80);
         top: 62%;
         transform: translateY(-62%);
     }
+}
+.heading::first-letter {
+    text-transform: uppercase;
 }
