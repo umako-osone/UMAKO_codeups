@@ -6,14 +6,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $('.js-hamburger').on('click', function() {
             $('.js-hamburger').toggleClass('is-active');
             $('.js-header').toggleClass('is-active');
+            $('.js-header.headerColorScroll').toggleClass('is-active');
             $('.js-drawer').fadeToggle();
             $('body').toggleClass('no-scroll');
-        });
-        $('.js-drawer').on('click', function() {
-            $('.js-hamburger').removeClass('is-active');
-            $('.js-header').removeClass('is-active');
-            $('.js-drawer').fadeOut();
-            $('body').removeClass('no-scroll');
         });
     });
     // ウィンドウサイズが変更されたときの処理
@@ -116,7 +111,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     // fv超えたら色が変わる
     $(function () {
     $(window).on("scroll", function () {
-        const sliderHeight = $(".fv").height();
+        const sliderHeight = $(".fv, .mv").height();
         if (sliderHeight - 30 < $(this).scrollTop()) {
         $(".js-header").addClass("headerColorScroll");
         } else {
@@ -157,7 +152,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             }
 
             if ($(this).scrollTop() + $(window).height() > footerOffset) {
-                backToTopButton.css('bottom', $(this).scrollTop() + $(window).height() - footerOffset + 20);
+                backToTopButton.css('bottom', $(this).scrollTop() + $(window).height() - footerOffset + 50);
             } else {
                 backToTopButton.css('bottom', '20px');
             }

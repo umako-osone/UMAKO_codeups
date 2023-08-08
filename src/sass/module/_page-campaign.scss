@@ -20,13 +20,15 @@
         width: 100%;
     }
 }
+.page-campign__card-margin {
+    margin: rem(40) auto 0;
+}
 .page-campaign__card {
     max-width: rem(600);
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     gap: rem(40);
-    margin: rem(40) auto 0;
     @include mq(md) {
         max-width: rem(1130);
         grid-template-columns: repeat(2, 1fr);

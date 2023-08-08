@@ -34,11 +34,11 @@
   <body>
     <header class="header js-header">
       <div class="header__inner">
-        <div class="header__logo">
+        <h1 class="header__logo">
           <a href="index.html">
             <img src="./assets/images/common/logo-header.svg" alt="コードアップス">
           </a>
-        </div>
+        </h1>
         <div class="header__hamburger hamburger js-hamburger u-mobile">
           <span></span>
           <span></span>
@@ -97,74 +97,78 @@
           </ul>
         </nav>
         <div class="header__drawer drawer js-drawer">
-          <div class="drawer__inner">
-            <nav class="drawer__nav navigation u-mobile">
+          <div class="drawer__inner u-mobile">
+            <nav class="drawer__nav navigation">
               <ul class="navigation__items">
-                <li class="navigation__item">
+                <li class="navigation__item navigation__item--top">
                   <a href="page-campaign.html">
                     <figure class="navigation__img">
                     <img src="./assets/images/common/starfish.png" alt="ヒトデイラスト">
                   </figure>
                     <p class="navigation__text navigation__text--bold">キャンペーン</p>
                   </a>
+                  <ul class="navigation__item-block">
+                    <li class="navigation__item">
+                      <a href="page-campaign.html">
+                        <p class="navigation__text-blank">ライセンス取得</p>
+                      </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="page-campaign.html">
+                        <p class="navigation__text-blank">貸切体験ダイビング</p>
+                      </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="page-campaign.html">
+                        <p class="navigation__text-blank">ナイトダイビング</p>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="navigation__item">
-                  <a href="page-campaign.html">
-                    <p class="navigation__text-blank">ライセンス取得</p>
-                  </a>
-                </li>
-                <li class="navigation__item">
-                  <a href="page-campaign.html">
-                    <p class="navigation__text-blank">貸切体験ダイビング</p>
-                  </a>
-                </li>
-                <li class="navigation__item">
-                  <a href="page-campaign.html">
-                    <p class="navigation__text-blank">ナイトダイビング</p>
-                  </a>
-                </li>
-                <li class="navigation__item">
+                <li class="navigation__item navigation__item--top">
                   <a href="page-aboutUs.html">
                     <figure class="navigation__img">
                     <img src="./assets/images/common/starfish.png" alt="ヒトデイラスト">
                   </figure>
                     <p class="navigation__text navigation__text--bold">私たちについて</p>
                   </a>
+                  <ul class="navigation__item-block">
+                    <li class="navigation__item navigation__item--top">
+                      <a href="archive-information.html">
+                        <figure class="navigation__img">
+                        <img src="./assets/images/common/starfish.png" alt="ヒトデイラスト">
+                      </figure>
+                        <p class="navigation__text navigation__text--bold">ダイビング情報</p>
+                      </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="page-campaign.html">
+                        <p class="navigation__text-blank">ライセンス講習</p>
+                      </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="page-campaign.html">
+                        <p class="navigation__text-blank">体験ダイビング</p>
+                      </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="page-campaign.html">
+                        <p class="navigation__text-blank">ファンダイビング</p>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="navigation__item">
-                  <a href="archive-information.html">
-                    <figure class="navigation__img">
-                    <img src="./assets/images/common/starfish.png" alt="ヒトデイラスト">
-                  </figure>
-                    <p class="navigation__text navigation__text--bold">ダイビング情報</p>
-                  </a>
-                </li>
-                <li class="navigation__item">
-                  <a href="page-campaign.html">
-                    <p class="navigation__text-blank">ライセンス講習</p>
-                  </a>
-                </li>
-                <li class="navigation__item">
-                  <a href="page-campaign.html">
-                    <p class="navigation__text-blank">体験ダイビング</p>
-                  </a>
-                </li>
-                <li class="navigation__item">
-                  <a href="page-campaign.html">
-                    <p class="navigation__text-blank">ファンダイビング</p>
-                  </a>
-                </li>
-                <li class="navigation__item">
+                <li class="navigation__item  navigation__item--top">
                   <a href="archive-blog.himl">
                     <figure class="navigation__img">
                     <img src="./assets/images/common/starfish.png" alt="ヒトデイラスト">
                   </figure>
-                    <p class="navigation__text navigation__text--bold">ブログ</p>
+                    <p class="navigation__text">ブログ</p>
                   </a>
                 </li>
               </ul>
-              <ul class="navigation__items">
-                <li class="navigation__item">
+              <ul class="navigation__items-block">
+                <li class="navigation__item navigation__item--top">
                   <a href="archive-voice.html">
                     <figure class="navigation__img">
                     <img src="./assets/images/common/starfish.png" alt="ヒトデイラスト">
@@ -172,46 +176,48 @@
                     <p class="navigation__text navigation__text--bold">お客様の声</p>
                   </a>
                 </li>
-                <li class="navigation__item">
+                <li class="navigation__item  navigation__item--top">
                   <a href="page-price.html">
                     <figure class="navigation__img">
                     <img src="./assets/images/common/starfish.png" alt="ヒトデイラスト">
                   </figure>
                     <p class="navigation__text navigation__text--bold">料金一覧</p>
                   </a>
+                  <ul class="navigation__item-block">
+                    <li class="navigation__item navigation__item--top">
+                      <a href="archive-information.html">
+                        <p class="navigation__text-blank">ライセンス講習</p>
+                      </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="archive-information.html">
+                        <p class="navigation__text-blank">体験ダイビング</p>
+                      </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="archive-information.html">
+                        <p class="navigation__text-blank">ファンダイビング</p>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="navigation__item">
-                  <a href="archive-information.html">
-                    <p class="navigation__text-blank">ライセンス講習</p>
-                  </a>
-                </li>
-                <li class="navigation__item">
-                  <a href="archive-information.html">
-                    <p class="navigation__text-blank">体験ダイビング</p>
-                  </a>
-                </li>
-                <li class="navigation__item">
-                  <a href="archive-information.html">
-                    <p class="navigation__text-blank">ファンダイビング</p>
-                  </a>
-                </li>
-                <li class="navigation__item">
-                  <a href="page-faq.html">
-                    <figure class="navigation__img">
-                    <img src="./assets/images/common/starfish.png" alt="ヒトデイラスト">
-                  </figure>
-                    <p class="navigation__text navigation__text--bold">よくある質問</p>
-                  </a>
-                </li>
-                <li class="navigation__item">
-                  <a href="page-privacyPolicy.html">
-                    <figure class="navigation__img">
-                    <img src="./assets/images/common/starfish.png" alt="ヒトデイラスト">
-                  </figure>
-                    <p class="navigation__text navigation__text--bold">プライバシー<br>ポリシー</p>
-                  </a>
-                </li>
-                <li class="navigation__item">
+                  <li class="navigation__item  navigation__item--top">
+                    <a href="page-faq.html">
+                      <figure class="navigation__img">
+                      <img src="./assets/images/common/starfish.png" alt="ヒトデイラスト">
+                    </figure>
+                      <p class="navigation__text navigation__text--bold">よくある質問</p>
+                    </a>
+                  </li>
+                  <li class="navigation__item  navigation__item--top">
+                    <a href="page-privacyPolicy.html">
+                      <figure class="navigation__img">
+                      <img src="./assets/images/common/starfish.png" alt="ヒトデイラスト">
+                    </figure>
+                      <p class="navigation__text navigation__text--bold">プライバシー<br>ポリシー</p>
+                    </a>
+                  </li>
+                <li class="navigation__item  navigation__item--top">
                   <a href="page-termsOfService.html">
                     <figure class="navigation__img">
                       <img src="./assets/images/common/starfish.png" alt="ヒトデイラスト">
@@ -219,7 +225,7 @@
                     <p class="navigation__text navigation__text--bold">利用規約</p>
                   </a>
                 </li>
-                <li class="navigation__item">
+                <li class="navigation__item navigation__item--top">
                   <a href="page-contact.html">
                     <figure class="navigation__img">
                       <img src="./assets/images/common/starfish.png" alt="ヒトデイラスト">
@@ -248,7 +254,7 @@
             <a href="" class="page-campaign__category">ファンダイビング</a>
             <a href="" class="page-campaign__category">体験ダイビング</a>
           </div>
-          <div class="page-campaign__card">
+          <div class="page-campaign__card page-campign__card-margin">
             <div class="page-campaign__card-body card">
               <a href="#">
                 <figure class="card__img card__img--big">
@@ -295,7 +301,7 @@
                 </div>
               </a>
               <div class="card__info card-text u-desktop">
-                <p class="card-text__explanation">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                <p class="card-text__explanation">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 <div class="card-text__block">
                   <p class="card-text__period">2023/6/1-9/30</p>
                   <p class="card-text__info">ご予約・お問い合わせはコチラ</p>
@@ -323,7 +329,7 @@
                 </div>
               </a>
               <div class="card__info card-text u-desktop">
-                <p class="card-text__explanation">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                <p class="card-text__explanation">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 <div class="card-text__block">
                   <p class="card-text__period">2023/6/1-9/30</p>
                   <p class="card-text__info">ご予約・お問い合わせはコチラ</p>

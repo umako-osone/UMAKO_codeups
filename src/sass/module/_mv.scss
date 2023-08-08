@@ -16,14 +16,13 @@
     background-image: url(../images/common/fish2.png);
     background-repeat: no-repeat;
     background-size: contain;
-    min-width: 10%;
-    width: 100%;
+    width: 31%;
     height: 12%;
     position: absolute;
     bottom: rem(-109);
     left: calc(50% - min(45vw, 60%));
     @include mq(md) {
-        max-width: 21%;
+        width: 21%;
         height: 30%;
         bottom: rem(-271);
     }

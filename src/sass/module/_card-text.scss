@@ -2,19 +2,21 @@
 
 .card-text {
     @include mq(md) {
+        display: flex;
+        flex-direction: column;
         padding: 0 rem(23) rem(43);
     }
 }
 .card-text__block {
     color: $accent;
     text-align: center;
-    // line-height: ;
     @include mq(md) {
         margin-top: rem(30);
     }
 }
 .card-text__explanation {
     @include mq(md) {
+        flex-grow: 1;
         margin-top: rem(25);
     }
 }
