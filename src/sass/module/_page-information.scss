@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.page-information__mv {
+  background-image: url(../images/common/information-sp.jpg);
+  @include mq(md) {
+    background-image: url(../images/common/information-mv.jpg);
+  }
+}

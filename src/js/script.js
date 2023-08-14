@@ -184,6 +184,29 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             });
         });
     });
+    // モーダル
+    $(document).ready(function() {
+        $('.js-gallery__item').click(function() {
+            var imgSrc = $(this).find('img').attr('src');
+            $('.overlay').fadeIn();
+            $('.overlay').append('<img src="' + imgSrc + '" class="modal-image">');
+            $('body').toggleClass('no-scroll');
+        });
+        $('.overlay').click(function() {
+            $(this).fadeOut();
+            $('.modal-image').remove();
+        });
+    });
+    // タブ
+    $(function () {
+        $(".js-tab").on("click", function () {
+            $(".current").removeClass("current");
+            $(this).addClass("current");
+            const index = $(this).index();
+            $(".js-tab-content").hide().eq(index).fadeIn(300);
+        });
+    });
+
 
 
 });

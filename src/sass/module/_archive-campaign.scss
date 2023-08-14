@@ -1,15 +1,15 @@
 @use "global" as *;
 
-.page-campaign__mv {
+.archive-campaign__mv {
     background-image: url(../images/common/campaign-sp.jpg);
     @include mq(md) {
         background-image: url(../images/common/campaign-mv.jpg);
     }
 }
-.page-campaign {
+.archive-campaign {
     position: relative;
 }
-.page-campaign__card-body {
+.archive-campaign__card-body {
     display: block;
     height: auto;
     margin: auto;
@@ -20,10 +20,10 @@
         width: 100%;
     }
 }
-.page-campign__card-margin {
+.archive-campign__card-margin {
     margin: rem(40) auto 0;
 }
-.page-campaign__card {
+.archive-campaign__card {
     max-width: rem(600);
     width: 100%;
     display: grid;
@@ -35,7 +35,7 @@
         gap: rem(80) rem(40);
     }
 }
-.page-campaign__tag {
+.archive-campaign__tag {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem rem(11);
@@ -43,15 +43,15 @@
         gap: 1rem rem(32);
     }
 }
-.page-campaign__category {
+.archive-campaign__category {
     text-transform: uppercase;
     color: $accent;
 }
-.page-campaign__category.is-active {
+.archive-campaign__category.is-active {
     color: $white;
     background-color: $accent;
 }
-.page-campaign__category {
+.archive-campaign__category {
     display: flex;
     width: rem(162);
     height: rem(34);
