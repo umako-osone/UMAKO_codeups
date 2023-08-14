@@ -20,7 +20,7 @@
     height: 12%;
     position: absolute;
     bottom: rem(-109);
-    left: calc(50% - min(45vw, 60%));
+    left: calc(50% - min(43vw, 60%));
     @include mq(md) {
         width: 21%;
         height: 30%;

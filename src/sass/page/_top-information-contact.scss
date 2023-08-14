@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.top-information-contact {
+  margin-top: rem(105.6);
+  @include mq(md) {
+    margin-top: rem(127.2);
+  }
+}

@@ -51,7 +51,6 @@
     padding-top: rem(31);
     @include mq(md) {
         padding-top: rem(60);
-        // margin-left: 3rem;
     }
 }
 .information__title {
@@ -77,4 +76,20 @@
     margin-top: rem(40);
     padding-bottom: rem(10);
     text-align: center;
+}
+
+.information__text-body.information__text-body--margin {
+    padding-top: 0;
+    @include mq(md) {
+        padding-top: rem(31);
+    }
+}
+.information__title.information__title--big {
+    font-size: rem(24);
+}
+.information__img.information__img--margin {
+    margin-top: rem(6);
+    @include mq(md) {
+        margin-top: 0;
+    }
 }
