@@ -1,0 +1,16 @@
+@use "global" as *;
+
+// .side__inner {
+//   width: 35%;
+// }
+.side__title {
+  display: flex;
+  align-items: center;
+  gap: rem(8);
+  font-size: rem(24);
+  font-weight: $regular;
+}
+.side__point {
+  width: rem(50);
+  height: rem(50);
+}

@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.home__mv {
+  background-image: url(../images/common/blog-sp.jpg);
+  @include mq(md) {
+    background-image: url(../images/common/blog-mv.jpg);
+  }
+}
+.home__inner {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: rem(80);
+}
+.home__items .blog-cards__items {
+  grid-template-columns: repeat(2, 1fr);
+}
