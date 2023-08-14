@@ -1,16 +1,22 @@
 @use "global" as *;
 
-// .side__inner {
-//   width: 35%;
-// }
 .side__title {
+  width: 100%;
+  height: rem(50);
   display: flex;
   align-items: center;
   gap: rem(8);
   font-size: rem(24);
   font-weight: $regular;
 }
-.side__point {
-  width: rem(50);
+.side__title::before {
+  content: "";
+  width: rem(8);
   height: rem(50);
+  background-color: $accent;
+}
+.side__title img {
+  width: rem(50);
+  height: 1rem(50);
+  margin-left: 1rem;
 }
