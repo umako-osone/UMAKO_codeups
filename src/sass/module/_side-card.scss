@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.side-card__block {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: $white;
+  box-shadow: 0 rem(4) rem(4) rgba($color:#000, $alpha:0.25);
+}
+.side-card__item {
+  margin-top: rem(20);
+}
+.side-card__item:not(:first-child) {
+  margin-top: rem(24);
+}
+.side-card__img {
+  width: rem(121);
+}
+.side-card__img img {
+  aspect-ratio: 121/90;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.side-card__date {
+  font-size: rem(12);
+  font-family: $english-font;
+}
+.side-card__title {
+  font-size: 1rem;
+  font-weight: $medium;
+}

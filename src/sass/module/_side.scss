@@ -1,5 +1,14 @@
 @use "global" as *;
 
+.side__inner {
+  max-width: rem(294);
+  width: 100%;
+  margin: auto;
+  @include mq(md) {
+    margin-left: rem(80);
+    
+  }
+}
 .side__title {
   width: 100%;
   height: rem(50);
@@ -8,6 +17,7 @@
   gap: rem(8);
   font-size: rem(24);
   font-weight: $regular;
+  color: $font;
 }
 .side__title::before {
   content: "";
@@ -18,5 +28,15 @@
 .side__title img {
   width: rem(50);
   height: 1rem(50);
-  margin-left: 1rem;
+  margin-left: rem(8);
+}
+.side__evaluation,
+.side__campaign {
+  margin-top: rem(84);
+}
+.side__evaluation-block {
+  margin-top: rem(24);
+}
+.side__archive {
+  margin-top: rem(76);
 }

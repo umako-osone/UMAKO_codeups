@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.archive-list {
+  color: $accent;
+  font-size: rem(24);
+}
+.archive-list__img {
+  width: rem(24);
+  height: rem(24);
+}
+.archive-list__item {
+  margin-left: rem(28);
+}
+.archive-list {
+  margin-top: rem(26);
+}
+.archive-list__items::before,
+.archive-list__month::before {
+  display: inline-block;
+  content: "";
+  border-bottom: rem(12.5) solid transparent;
+  border-left: rem(17) solid $accent;
+  border-top: rem(12.5) solid transparent;
+}
+.archive-list__month {
+  margin-left: rem(28);
+}

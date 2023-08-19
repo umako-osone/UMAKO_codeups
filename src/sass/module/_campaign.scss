@@ -109,3 +109,11 @@
 .campaign__next.swiper-button-next::after, .swiper-rtl .swiper-button-next::after {
     content: "";
 }
+
+.campaign__card.campaign__card--side {
+    width: rem(294);
+    margin-top: rem(26);
+}
+.campaign__card.campaign__card--side:not(:first-of-type) {
+    margin-top: rem(40);
+}

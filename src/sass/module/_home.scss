@@ -7,10 +7,17 @@
   }
 }
 .home__inner {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: rem(80);
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: rem(150);
+  }
 }
 .home__items .blog-cards__items {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1fr);
+  max-width: rem(600);
+  width: 100%;
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
