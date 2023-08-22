@@ -16,4 +16,8 @@
     position: absolute;
     display: inline-block;
 }
-
+.previouspostslink:hover::before {
+	border-top: 1px solid $white;
+    border-right: 1px solid $white;
+    transition: .3s border-top,border-right;
+}

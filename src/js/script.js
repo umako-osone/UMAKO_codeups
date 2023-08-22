@@ -45,7 +45,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
     // 背景色の後に画像
     // インフォメーション
-    $('.information__img').each(function(){
+    $('.js-information__img').each(function(){
         $(this).append('<div class="color"></div>');
         var color = $(this).find($('.color'));
         var img = $(this).find('img');
@@ -66,7 +66,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         });
     });
     // ボイス
-    $('.voice-card__img').each(function(){
+    $('.js-voice-card__img').each(function(){
         $(this).append('<div class="color"></div>');
         var color = $(this).find($('.color'));
         var img = $(this).find('img');
@@ -87,7 +87,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         });
     });
     // プライス
-    $('.price__img-pc').each(function(){
+    $('.js-price__img-pc').each(function(){
         $(this).append('<div class="color"></div>');
         var color = $(this).find($('.color'));
         var img = $(this).find('img');

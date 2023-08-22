@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.single__mv {
+  background-image: url(../images/common/blog-sp.jpg);
+  @include mq(md) {
+    background-image: url(../images/common/blog-mv.jpg);
+  }
+}
+.single__inner {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(178);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: rem(150);
+  }
+}
+.single__title {
+  font-size: rem(32);
+  font-weight: $medium;
+  width: 100%;
+  border-bottom: 1px solid $accent;
+}
+.single__img {
+  max-width: rem(600);
+  width: 100%;
+  margin: auto;
+    @include mq(md) {
+    max-width: rem(700);
+  }
+}
+.single__img img {
+  aspect-ratio: 700/469;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.single__text-block {
+  margin-top: rem(40);
+}
+.single__text {
+  line-height: 1.5;
+}
+.single__item {
+  margin-top: rem(40);
+}
+.single__list::before {
+  content: "";
+  background-image: url(../images/common/starfish-green.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: rem(18);
+  height: rem(18);
+  display: inline-block;
+}
+.single__lists {
+  margin-top: rem(40);
+}

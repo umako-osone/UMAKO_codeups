@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.archive-voice__mv {
+  background-image: url(../images/common/voice-sp.jpg);
+  @include mq(md) {
+    background-image: url(../images/common/voice-mv.jpg);
+  }
+}
+.archive-voice__inner {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(178);
+  }
+}
+.archive-voice__tag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem rem(11);
+  @include mq(md) {
+      gap: 1rem rem(32);
+  }
+}
+.archive-voice__items {
+  margin-top: rem(40);
+}
+.archive-voice__pagenavi {
+  padding-top: rem(89);
+  @include mq(md) {
+    padding-top: rem(81);
+  }
+}
+.archive-voice .voice-card__list {
+  gap: rem(40);
+  @include mq(md) {
+    gap: rem(80);
+  }
+}
