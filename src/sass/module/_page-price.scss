@@ -1,0 +1,96 @@
+@use "global" as *;
+
+.page-price__mv {
+  background-image: url(../images/common/price-mvsp.jpg);
+  @include mq(md) {
+    background-image: url(../images/common/price-mv.jpg);
+  }
+}
+.page-price__inner {
+  margin-top: rem(52);
+  @include mq(md) {
+    margin-top: rem(178);
+  }
+}
+.page-price__body {
+  @include mq(md) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.page-price__body:not(:first-of-type) {
+  margin-top: rem(80);
+}
+.page-price__item {
+  height: rem(60);
+  display: flex;
+  border-bottom: 1px solid $accent;
+  border-right: 1px solid $accent;
+  border-left: 1px solid $accent;
+  @include mq(md) {
+    width: rem(500);
+    padding-left: 1rem;
+  }
+}
+.page-price__item:first-of-type {
+  border-top: 1px solid $accent;
+}
+.page-price__title-body {
+  background-color: $accent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq(md) {
+      width: rem(200);
+  }
+}
+.page-price__title {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: rem(8);
+  color: $white;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: rem(8) 0;
+  @include mq(md) {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+.page-price__title::after {
+  background-image: url(../images/common/fish-point1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  width: rem(24);
+  height: rem(24);
+  display: inline-block;
+  @include mq(md) {
+    width: rem(61);
+    height: rem(54.46);
+  }
+}
+.page-price__matter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid $accent;
+  width: 63.472%;
+  text-align: center;
+  @include mq(md) {
+    justify-content: left;
+    width: rem(340);
+  }
+}
+.page-price__price {
+  text-align: right;
+  width: 36.528%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 1rem;
+  @include mq(md) {
+    width: rem(160);
+  }
+}

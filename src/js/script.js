@@ -206,7 +206,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             $(".js-tab-content").hide().eq(index).fadeIn(300);
         });
     });
-
+// アコーディオン
+    $(function () {
+    // タイトルをクリックすると
+        $(".js-accordion-title").on("click", function () {
+        $(this).toggleClass("open");
+        $(this).next().slideToggle(300);
+    });
+  });
 
 
 });

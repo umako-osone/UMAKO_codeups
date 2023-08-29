@@ -1,0 +1,81 @@
+@use "global" as *;
+
+.accordion {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: rem(600);
+  width: 100%;
+  margin-top: rem(52);
+  @include mq(md) {
+    max-width: rem(700);
+    margin-top: rem(150);
+  }
+}
+.accordion-title {
+  color: $white;
+  background-color: $accent;
+  cursor: pointer;
+  font-size: rem(16);
+  font-weight: $regular;
+  padding: 1rem;
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+.accordion-content {
+  display: none;
+  padding: 1rem;
+}
+.accordion-content p {
+  line-height: 1.5;
+}
+.accordion-title {
+  position: relative;
+}
+//縦線
+.accordion-title::before {
+  background: $white;
+  content: "";
+  height: rem(1);
+  position: absolute;
+  right: rem(25);
+  top: 50%;
+  transform: rotate(90deg);
+  transition: transform .3s ease-in-out;
+  width: rem(28);
+  @include mq(md) {
+    width: rem(32);
+  }
+}
+.accordion-title::after {
+  background: $white;
+  content: "";
+  height: rem(1);
+  position: absolute;
+  right: rem(25);
+  top: 50%;
+  transition: opacity .3s ease-in-out;
+  width: rem(28);
+  @include mq(md) {
+    width: rem(32);
+  }
+}
+.accordion-item:not(:first-of-type) {
+  margin-top: rem(40);
+}
+// クリック後
+.accordion-title.open::before {
+  transform: rotate(180deg);
+}
+.accordion-title.open::after {
+  opacity: 0;
+}
+.accordion-content {
+  margin-top: 1rem;
+  border: 1px solid $accent;
+  padding: 1rem rem(24);
+  @include mq(md) {
+    padding: rem(40);
+  }
+}
