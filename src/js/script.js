@@ -212,8 +212,28 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $(".js-accordion-title").on("click", function () {
         $(this).toggleClass("open");
         $(this).next().slideToggle(300);
+        });
     });
-  });
+      // フォームエラー表示　　出来てない！！
+    $('.js-contact-form__alert').hide();
+    $(document).ready(function() {
+        $('.contact-form__inner').on('submit', function(event) {
+        var hasEmptyFields = false;
+      // Check each required input field and textarea
+        $(this).find('[required]').each(function() {
+            if ($(this).val().trim() === '') {
+            hasEmptyFields = true;
+            return false; // Exit the loop early
+            }
+        });
+        if (hasEmptyFields) {
+            $('.js-contact-form__alert').show();
+            event.preventDefault(); // Prevent form submission
+            } else {
+            $('.js-contact-form__alert').hide();
+            }
+        });
+    });
 
 
 });

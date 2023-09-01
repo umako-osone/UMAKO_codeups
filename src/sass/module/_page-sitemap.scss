@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.page-sitemap__mv {
+  background-image: url(../images/common/siteMap-sp.jpg);
+  @include mq(md) {
+    background-image: url(../images/common/siteMap-mv.jpg);
+  }
+}
+.page-sitemap__mv.mv::before {
+  display: none;
+}
+.page-sitemap .navigation__item a {
+  color: $font;
+}
+.page-sitemap__nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: rem(26);
+  @include mq(md) {
+      margin-top: rem(8);
+  }
+}

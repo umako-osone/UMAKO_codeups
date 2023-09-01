@@ -47,3 +47,6 @@ body {
 .no-scroll {
   overflow: hidden;
 }
+::placeholder {
+  color: $l-green;
+}

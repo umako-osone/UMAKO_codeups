@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.page-thanks__inner {
+  max-width: rem(600);
+  width: 100%;
+  text-align: center;
+  @include mq(md) {
+    max-width: 100%;
+  }
+}
+.page-thanks__title {
+  font-size: 1rem;
+  font-weight: $regular;
+  line-height: 1.5;
+}
+.page-thanks__text {
+  margin-top: rem(40);
+  letter-spacing: -0.0235151em;
+}
