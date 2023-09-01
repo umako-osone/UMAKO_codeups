@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.list__items {
+  list-style-type:  decimal;
+  padding-left: 1rem;
+  line-height: 2;
+  margin-top: rem(40);
+}
+.list__title {
+  font-size: rem(24);
+  @include mq(md) {
+    font-size: rem(32);
+  }
+}
+.list__text-block {
+  margin-top: rem(40);
+}
+.list__text {
+  margin-top: rem(40);
+}
+.list__items {
+  margin-top: rem(40);
+}
+.list__items.list__items--none {
+  margin-top: 0;
+}
+.list__text.list__text--none {
+  margin-top: 0;
+}
