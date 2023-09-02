@@ -50,3 +50,8 @@ body {
 ::placeholder {
   color: $l-green;
 }
+
+main {
+  flex: 1;
+  overflow: hidden;
+}

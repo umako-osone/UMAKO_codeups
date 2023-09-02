@@ -1,5 +1,46 @@
 @use "global" as *;
 
-.error404__inner {
+.error404 {
   background-color: $accent;
+}
+.error404__inner {
+  background-image: url(../images/common/fish-point-bg.png);
+  background-repeat: no-repeat;
+  padding-bottom: rem(40);
+  @include mq(md) {
+    background-size: rem(698) rem(698);
+    padding-bottom: rem(148);
+  }
+}
+.error404__breadcrumb.breadcrumb {
+  color: $white;
+}
+.error404__title {
+  font-size: rem(80);
+  font-weight: $regular;
+  color: $white;
+  letter-spacing: 0.5em;
+  text-align: center;
+  text-indent: 0.5em;
+  margin-top: rem(70);
+  @include mq(md) {
+    font-size: rem(160);
+    margin-top: rem(120);
+  }
+}
+.error404__text-block {
+  @include mq(md) {
+    margin-top: rem(24);
+  }
+}
+.error404__text {
+  color: $white;
+  text-align: center;
+}
+.error404__btn {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
 }

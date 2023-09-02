@@ -214,26 +214,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $(this).next().slideToggle(300);
         });
     });
-      // フォームエラー表示　　出来てない！！
-    $('.js-contact-form__alert').hide();
-    $(document).ready(function() {
-        $('.contact-form__inner').on('submit', function(event) {
-        var hasEmptyFields = false;
-      // Check each required input field and textarea
-        $(this).find('[required]').each(function() {
-            if ($(this).val().trim() === '') {
-            hasEmptyFields = true;
-            return false; // Exit the loop early
-            }
-        });
-        if (hasEmptyFields) {
-            $('.js-contact-form__alert').show();
-            event.preventDefault(); // Prevent form submission
+    // フォームエラー表示　　出来てない！！
+    $(function() {
+        $('js-btn').on('click', function() {
+            if($('js-contact-form__item').val() === '') {
+                $('js-contact-form__alert').show();
+                $('js-contact-form__item').addClass('alert');
             } else {
-            $('.js-contact-form__alert').hide();
+                $('js-contact-form__alert').hide();
             }
-        });
-    });
+        })
+    })
+    
 
 
 });

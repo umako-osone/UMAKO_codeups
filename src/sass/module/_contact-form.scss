@@ -167,5 +167,9 @@
   color: $red;
   margin-bottom: rem(40);
   text-align: center;
+  display: none;
 }
 
+.contact-form__item.alert {
+  background-color: rgba($color: $red, $alpha: 0.2);
+}

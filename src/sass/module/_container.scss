@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container footer {
+  margin-top: 0;
+}

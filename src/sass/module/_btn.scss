@@ -73,5 +73,16 @@
 .btn:hover::before {
     transform: scale(1, 1);
 }
-
-
+.btn.btn--accent {
+    color: $accent;
+    background-color: $white;
+}
+.btn.btn--accent span {
+    background-color: $accent;
+}
+.btn.btn--accent span::after {
+    background-color: $accent;
+}
+.btn.btn--accent::after {
+    border: 1px solid $white;
+}
