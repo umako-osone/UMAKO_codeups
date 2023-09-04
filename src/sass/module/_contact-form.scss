@@ -159,6 +159,7 @@
 .contact-form__btn {
   margin-top: rem(24);
   text-align: center;
+  padding-bottom: rem(5);
   @include mq(md) {
     margin-top: rem(40);
   }
@@ -168,8 +169,4 @@
   margin-bottom: rem(40);
   text-align: center;
   display: none;
-}
-
-.contact-form__item.alert {
-  background-color: rgba($color: $red, $alpha: 0.2);
 }

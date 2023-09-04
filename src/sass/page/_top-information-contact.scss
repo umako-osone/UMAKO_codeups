@@ -2,6 +2,7 @@
 
 .top-information-contact {
   margin-top: rem(105.6);
+  padding-bottom: rem(5);
   @include mq(md) {
     margin-top: rem(127.2);
   }

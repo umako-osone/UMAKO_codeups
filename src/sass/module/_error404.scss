@@ -1,8 +1,6 @@
 @use "global" as *;
 
-.error404 {
-  background-color: $accent;
-}
+
 .error404__inner {
   background-image: url(../images/common/fish-point-bg.png);
   background-repeat: no-repeat;

@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.error__message {
+  display: none;
+  background-color: rgba($color: $red, $alpha: 0.2);
+  color: $white;
+  padding: 5px;
+}
+.error__field {
+  background-color: $red;
+  color: $white;
+}

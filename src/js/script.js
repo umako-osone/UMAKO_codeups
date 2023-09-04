@@ -214,24 +214,33 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $(this).next().slideToggle(300);
         });
     });
-    // フォームエラー表示　　出来てない！！
-    $(function() {
-        $('js-btn').on('click', function() {
-            if($('js-contact-form__item').val() === '') {
-                $('js-contact-form__alert').show();
-                $('js-contact-form__item').addClass('alert');
-            } else {
-                $('js-contact-form__alert').hide();
+    // フォームエラー表示
+    $(document).ready(function() {
+        $(".contact-form__inner").submit(function(event) {
+          // フォーム送信時にエラーメッセージを非表示にする
+            $(".error-message").hide();
+          // 必須項目の入力をチェックする
+            var isValid = true;
+            $("input[required], select[required], textarea[required]").each(function() {
+                if ($(this).val() === "") {
+                isValid = false;
+                $(this).addClass("error-field");
+                } else {
+                $(this).removeClass("error-field");
+                }
+            });
+          // 全ての必須項目が入力されているかチェック
+            if (!isValid) {
+                $(".contact-form__alert").show();
+                event.preventDefault(); // 送信を阻止
             }
-        })
-    })
-    
+            });
+        });
+
+
+
+
+
 
 
 });
-
-
-
-
-
-
