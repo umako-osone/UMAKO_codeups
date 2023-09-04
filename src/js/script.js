@@ -209,33 +209,53 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 // アコーディオン
     $(function () {
     // タイトルをクリックすると
-        $(".js-accordion-title").on("click", function () {
+        $("#js-accordion-title").on("click", function () {
         $(this).toggleClass("open");
         $(this).next().slideToggle(300);
         });
     });
     // フォームエラー表示
-    $(document).ready(function() {
-        $(".contact-form__inner").submit(function(event) {
-          // フォーム送信時にエラーメッセージを非表示にする
-            $(".error-message").hide();
-          // 必須項目の入力をチェックする
-            var isValid = true;
-            $("input[required], select[required], textarea[required]").each(function() {
-                if ($(this).val() === "") {
-                isValid = false;
-                $(this).addClass("error-field");
-                } else {
-                $(this).removeClass("error-field");
-                }
-            });
-          // 全ての必須項目が入力されているかチェック
-            if (!isValid) {
-                $(".contact-form__alert").show();
-                event.preventDefault(); // 送信を阻止
-            }
-            });
-        });
+    $(function() {
+        $('.js-contact-form__inner').validate( {
+            rules: {
+                name: {
+                    required: true,
+                },
+                email: {
+                    required: true,
+                },
+                tel: {
+                    required: true,
+                },
+                option: {
+                    required: true,
+                },
+                contents: {
+                    required: true,
+                },
+            },
+            messages: {
+                name: {
+                    required: "※必須項目が入力されていません。入力してください。",
+                },
+                email: {
+                    required: "※必須項目が入力されていません。入力してください。",
+                },
+                tel: {
+                    required: "※必須項目が入力されていません。入力してください。",
+                },
+                option: {
+                    required: "※必須項目が入力されていません。入力してください。",
+                },
+                contents: {
+                    required: "※必須項目が入力されていません。入力してください。",
+                },
+            },
+            errorPlacement: function(error, element) {
+                error.js-contact-form__alert
+            },
+        })
+    })
 
 
 
