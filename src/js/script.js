@@ -252,7 +252,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
                 },
             },
             errorPlacement: function(error, element) {
-                error.js-contact-form__alert
+                error.append('.js-contact-form__alert')
             },
         })
     })
