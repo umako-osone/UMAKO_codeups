@@ -249,14 +249,14 @@
           <p>top&ensp;&gt;&ensp;お問い合わせ</p>
         </div>
         <div class="page-contact__inner inner contact-form">
-          <p class="contact-form__alert js-contact-form__alert">※必須項目が入力されていません。入力してください。</p>
+          <span class="contact-form__alert js-contact-form__alert"></span>
           <form action="" method="post" class="contact-form__inner">
             <dl class="contact-form__items">
               <dt class="contact-form__title">
                 お名前<span>必須</span>
               </dt>
               <dd class="contact-form__item">
-                <input type="text" name="company" placeholder="山田&emsp;太郎" value="">
+                <input type="text" name="name" placeholder="山田&emsp;太郎" value="">
               </dd>
             </dl>
             <dl class="contact-form__items">
@@ -264,7 +264,7 @@
                 メールアドレス<span>必須</span>
               </dt>
               <dd class="contact-form__item">
-                <input type="email" name="mail_address" placeholder="codepus@example.com" value="" required>
+                <input type="email" name="email" placeholder="codepus@example.com" value="" required>
               </dd>
             </dl>
             <dl class="contact-form__items">
@@ -272,7 +272,7 @@
                 電話番号<span>必須</span>
               </dt>
               <dd class="contact-form__item">
-                <input type="text" name="tel" placeholder="000-0000-0000" value="" required>
+                <input type="tel" name="tel" placeholder="000-0000-0000" value="" required>
               </dd>
             </dl>
             <dl class="contact-form__items">
@@ -280,10 +280,10 @@
                 お問い合わせ項目<span>必須</span>
               </dt>
               <dd class="contact-form__item contact-form__item--border-none">
-                <label class="contact-form__radio"><input type="radio" name="diving-option" required><span>ダイビング講習について</span></label>
-                <label class="contact-form__radio"><input type="radio" name="diving-option" required><span>ファンデイビングについて</span></label>
-                <label class="contact-form__radio"><input type="radio" name="diving-option" required><span>体験ダイビングについて</span></label>
-                <label class="contact-form__radio"><input type="radio" name="diving-option" required><span>スペシャルダイビングについて</span></label>
+                <label class="contact-form__radio"><input type="radio" name="option" required><span>ダイビング講習について</span></label>
+                <label class="contact-form__radio"><input type="radio" name="option" required><span>ファンデイビングについて</span></label>
+                <label class="contact-form__radio"><input type="radio" name="option" required><span>体験ダイビングについて</span></label>
+                <label class="contact-form__radio"><input type="radio" name="option" required><span>スペシャルダイビングについて</span></label>
               </dd>
             </dl>
             <dl class="contact-form__items">
