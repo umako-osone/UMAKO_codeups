@@ -10,7 +10,6 @@
   @include mq(md) {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin-top: rem(150);
   }
 }
 .home__block {

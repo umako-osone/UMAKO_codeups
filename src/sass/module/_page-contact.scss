@@ -6,9 +6,4 @@
     background-image: url(../images/common/contact-mv.jpg);
   }
 }
-.page-contact__inner {
-  margin-top: rem(52);
-  @include mq(md) {
-    margin-top: rem(150);
-  }
-}
+

@@ -18,6 +18,10 @@
     @include mq(md) {
         flex-grow: 1;
         margin-top: rem(25);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 7;
+        overflow: hidden;
     }
 }
 .card-text__period {

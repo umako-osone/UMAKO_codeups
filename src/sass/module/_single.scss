@@ -7,12 +7,9 @@
   }
 }
 .single__inner {
-  margin-top: rem(80);
   @include mq(md) {
-    margin-top: rem(178);
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin-top: rem(150);
   }
 }
 .single__title {

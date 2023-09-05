@@ -206,7 +206,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             $(".js-tab-content").hide().eq(index).fadeIn(300);
         });
     });
-// アコーディオン
+    // ブログ
+    $(function() {
+        $('.archive-list__items').hover(function() {
+            $(this).children('ul').stop().slideToggle(200);
+        })
+    })
+    // アコーディオン
     $(function () {
     // タイトルをクリックすると
         $("#js-accordion-title").on("click", function () {

@@ -6,12 +6,6 @@
     background-image: url(../images/common/voice-mv.jpg);
   }
 }
-.archive-voice__inner {
-  margin-top: rem(80);
-  @include mq(md) {
-    margin-top: rem(178);
-  }
-}
 .archive-voice__tag {
   display: flex;
   flex-wrap: wrap;

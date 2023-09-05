@@ -14,6 +14,9 @@
 .archive-list {
   margin-top: rem(26);
 }
+.archive-list__old {
+  display: none;
+}
 .archive-list__items::before,
 .archive-list__month::before {
   display: inline-block;
@@ -24,4 +27,7 @@
 }
 .archive-list__month {
   margin-left: rem(28);
+}
+.archive-list__items:hover::before {
+  transform: rotate(90deg);
 }
