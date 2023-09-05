@@ -252,7 +252,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
                 },
             },
             errorPlacement: function(error, element) {
-                error.append('.js-contact-form__alert')
+                error.insertBefore('.js-contact-form__alert')
+            },
+            highlight: function(element) {
+                // エラーが発生したときの処理
+                $(element).addClass('error__field'); // エラークラスを追加して背景色を適用
+            },
+            unhighlight: function(element) {
+                // エラーが解消されたときの処理
+                $(element).removeClass('error__field'); // エラークラスを削除して背景色を解除
             },
         })
     })
