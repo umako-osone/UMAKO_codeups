@@ -189,7 +189,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $('.js-gallery__item').click(function() {
             var imgSrc = $(this).find('img').attr('src');
             $('.overlay').fadeIn();
-            $('.overlay').append('<img src="' + imgSrc + '" class="modal-image">');
+            $('.overlay').append('<img src="' + imgSrc + '" class="modal-image" alt="">');
             $('body').toggleClass('no-scroll');
         });
         $('.overlay').click(function() {

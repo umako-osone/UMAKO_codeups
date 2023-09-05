@@ -43,9 +43,9 @@
         gap: 1rem rem(32);
     }
 }
-.archive-campaign__category {
-    text-transform: uppercase;
-    color: $accent;
+.archive-campaign__category:hover {
+    background-color: $accent;
+    color: $white;
 }
 .archive-campaign__category.is-active {
     color: $white;
@@ -57,7 +57,10 @@
     height: rem(34);
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
+    color: $accent;
     font-size: rem(14);
     line-height: rem(22);
     border: 1px solid $accent;
+    transition: 0.3s color, 0.3s background-color;
 }
