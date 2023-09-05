@@ -215,7 +215,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     // アコーディオン
     $(function () {
     // タイトルをクリックすると
-        $("#js-accordion-title").on("click", function () {
+        $(".js-accordion-title").on("click", function () {
         $(this).toggleClass("open");
         $(this).next().slideToggle(300);
         });
