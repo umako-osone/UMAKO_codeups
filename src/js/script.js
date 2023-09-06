@@ -42,7 +42,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
                 prevEl: ".swiper-button-prev",
         },
     });
-
     // 背景色の後に画像
     // インフォメーション
     $('.js-information__img').each(function(){
@@ -50,7 +49,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         var color = $(this).find($('.color'));
         var img = $(this).find('img');
         var counter = 0;
-
         img.css('opacity','0');
         color.css('width','0%');
         //inviewを使って背景色が画面に現れたら処理をする
@@ -71,7 +69,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         var color = $(this).find($('.color'));
         var img = $(this).find('img');
         var counter = 0;
-
         img.css('opacity','0');
         color.css('width','0%');
         //inviewを使って背景色が画面に現れたら処理をする
@@ -92,7 +89,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         var color = $(this).find($('.color'));
         var img = $(this).find('img');
         var counter = 0;
-
         img.css('opacity','0');
         color.css('width','0%');
         //inviewを使って背景色が画面に現れたら処理をする
@@ -107,7 +103,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             };
         });
     });
-
     // fv超えたら色が変わる
     $(function () {
     $(window).on("scroll", function () {
@@ -150,22 +145,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             } else {
                 backToTopButton.removeClass('show');
             }
-
             if ($(this).scrollTop() + $(window).height() > footerOffset) {
                 backToTopButton.css('bottom', $(this).scrollTop() + $(window).height() - footerOffset + 50);
             } else {
                 backToTopButton.css('bottom', '20px');
             }
         });
-
             $('#back-to-top').on('click', function(e) {
             e.preventDefault();
             $('html, body').animate({ scrollTop: 0 }, '300');
         });
     });
-
-
-
 // トップ画像のアニメーション
     $(function(){
         $(".fv-slide__cover-left").animate({top: "-=100vh"}, 2000);
@@ -190,11 +180,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             var imgSrc = $(this).find('img').attr('src');
             $('.overlay').fadeIn();
             $('.overlay').append('<img src="' + imgSrc + '" class="modal-image" alt="">');
-            $('body').toggleClass('no-scroll');
+            $('body').addClass('no-scroll');
         });
         $('.overlay').click(function() {
             $(this).fadeOut();
             $('.modal-image').remove();
+            $('body').removeClass('no-scroll');
         });
     });
     // タブ
@@ -270,7 +261,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             },
         })
     })
-
+    // ブログアーカイブ
+    $(function() {
+        $('.archive-list__items').children('li').hover(function() {
+            $(this).children('.archive-list__past').stop().slideToggle(200);
+        })
+    })
 
 
 
