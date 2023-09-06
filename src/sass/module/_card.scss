@@ -100,14 +100,7 @@
     }
 }
 .card__title-body.card__title-body--big {
-    @include mq(md) {
-        padding: 1.5rem 1.5rem 0;
-    }
-}
-.card__price-body.card__price-body--big {
-    @include mq(md) {
-        padding: rem(13) rem(7) 0;
-    }
+    margin: 0;
 }
 .card__price-block.card__price-block--big {
     @include mq(md) {
@@ -136,4 +129,19 @@
 }
 .card__price-body.card__price-body--side {
     padding: rem(10) 0 rem(26);
+}
+.card__price-text {
+    padding: 1rem 0 rem(40);
+    margin: 0 1rem ;
+    @include mq(md) {
+        padding: rem(24) 0 rem(40);
+        margin: 0 rem(24);
+    }
+}
+.card__price-text .card__info {
+    padding: 0;
+    margin: 0;
+}
+.card__price-text .card-text__explanation {
+    margin-top: 0;
 }
