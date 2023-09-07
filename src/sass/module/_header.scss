@@ -58,6 +58,9 @@
     justify-content: center;
     align-items: center;
 }
+.header__item-en::first-letter {
+    text-transform: uppercase;
+}
 .header__item {
     height: inherit;
 }

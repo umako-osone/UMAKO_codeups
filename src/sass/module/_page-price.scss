@@ -6,12 +6,6 @@
     background-image: url(../images/common/price-mv.jpg);
   }
 }
-.page-price__inner {
-  margin-top: rem(52);
-  @include mq(md) {
-    margin-top: rem(178);
-  }
-}
 .page-price__body {
   @include mq(md) {
     display: flex;
@@ -19,7 +13,10 @@
   }
 }
 .page-price__body:not(:first-of-type) {
-  margin-top: rem(80);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
 }
 .page-price__item {
   height: rem(60);
@@ -76,11 +73,11 @@
   align-items: center;
   justify-content: center;
   border-right: 1px solid $accent;
-  width: 63.472%;
+  width: 84%;
   text-align: center;
   @include mq(md) {
     justify-content: left;
-    width: rem(340);
+    width: rem(319);
   }
 }
 .page-price__price {

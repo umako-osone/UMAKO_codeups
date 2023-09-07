@@ -21,6 +21,7 @@
   @include mq(md) {
     grid-template-columns: repeat(11, 1fr);
     position: relative;
+    margin-top: rem(76);
   }
 }
 .gallery__item:nth-of-type(6n+1),

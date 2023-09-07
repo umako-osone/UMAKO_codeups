@@ -131,7 +131,7 @@
     padding: rem(10) 0 rem(26);
 }
 .card__price-text {
-    padding: 1rem 0 rem(40);
+    padding: 1rem 0 0;
     margin: 0 1rem ;
     @include mq(md) {
         padding: rem(24) 0 rem(40);
@@ -144,4 +144,13 @@
 }
 .card__price-text .card-text__explanation {
     margin-top: 0;
+}
+.card__price-text .card__price-body {
+    padding: rem(6) 0 rem(15);
+    margin-top: rem(6);
+    border-top: 1px solid #408F95;
+    @include mq(md) {
+        padding: rem(18) 0 rem(25);
+        margin-top: 0;
+    }
 }

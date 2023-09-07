@@ -211,56 +211,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $(this).next().slideToggle(300);
         });
     });
-    // フォームエラー表示
-    $(function() {
-        $('.js-contact-form__inner').validate( {
-            rules: {
-                name: {
-                    required: true,
-                },
-                email: {
-                    required: true,
-                },
-                tel: {
-                    required: true,
-                },
-                option: {
-                    required: true,
-                },
-                contents: {
-                    required: true,
-                },
-            },
-            messages: {
-                name: {
-                    required: "※必須項目が入力されていません。入力してください。",
-                },
-                email: {
-                    required: "※必須項目が入力されていません。入力してください。",
-                },
-                tel: {
-                    required: "※必須項目が入力されていません。入力してください。",
-                },
-                option: {
-                    required: "※必須項目が入力されていません。入力してください。",
-                },
-                contents: {
-                    required: "※必須項目が入力されていません。入力してください。",
-                },
-            },
-            errorPlacement: function(error, element) {
-                error.insertBefore('.js-contact-form__alert')
-            },
-            highlight: function(element) {
-                // エラーが発生したときの処理
-                $(element).addClass('error__field'); // エラークラスを追加して背景色を適用
-            },
-            unhighlight: function(element) {
-                // エラーが解消されたときの処理
-                $(element).removeClass('error__field'); // エラークラスを削除して背景色を解除
-            },
-        })
-    })
     // ブログアーカイブ
     $(function() {
         $('.archive-list__items').children('li').hover(function() {

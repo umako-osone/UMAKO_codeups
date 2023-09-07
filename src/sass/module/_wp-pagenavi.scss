@@ -22,6 +22,9 @@
 	text-align: center;
 	text-decoration: none;
 	width: 100%;
+	@include mq(md) {
+    padding: rem(7) rem(15);
+  }
 }
 .wp-pagenavi a:hover {
 	color: $white;
@@ -45,5 +48,17 @@
   display: none;
   @include mq(md) {
     display: inline;
+  }
+}
+.wp-pagenavi.single__pagenavi {
+  margin-top: rem(41);
+  @include mq(md) {
+    margin-top: rem(88);
+  }
+}
+.wp-pagenavi.archive-voice__pagenavi {
+  margin-top: rem(89);
+  @include mq(md) {
+    margin-top: rem(89);
   }
 }

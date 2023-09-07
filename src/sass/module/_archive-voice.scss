@@ -17,15 +17,20 @@
 .archive-voice__items {
   margin-top: rem(40);
 }
-.archive-voice__pagenavi {
-  padding-top: rem(89);
-  @include mq(md) {
-    padding-top: rem(81);
-  }
-}
 .archive-voice .voice-card__list {
   gap: rem(40);
+  margin: auto;
   @include mq(md) {
-    gap: rem(80);
+    gap: rem(80) rem(40);
+    // margin: initial;
+  }
+}
+.archive-voice__item .voice-card__title h2 {
+  font-size: 1rem;
+  font-weight: $medium;
+  border-bottom: 1px solid $accent;
+  @include mq(md) {
+    font-size: rem(24);
+    margin-top: rem(8);
   }
 }

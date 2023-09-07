@@ -16,9 +16,10 @@
   cursor: pointer;
   font-size: rem(16);
   font-weight: $regular;
-  padding: 1rem;
+  padding: 1rem 0 1rem rem(11);
   @include mq(md) {
     font-size: rem(20);
+    padding: rem(24) 0 rem(24 rem(40));
   }
 }
 .accordion-content {
@@ -71,9 +72,9 @@
 }
 .accordion-content {
   margin-top: 1rem;
-  border: 1px solid $accent;
   padding: 1rem rem(24);
   @include mq(md) {
     padding: rem(40);
+    border: 1px solid $accent;
   }
 }
