@@ -190,16 +190,23 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
     // タブ
     $(function () {
-        $(".js-tab").on("click", function () {
+        $('.js-tab__category').on('click', function() {
+            $('.js-tab__category').removeClass('is-active');
+            $(this).addClass('is-active');
+        })
+    })
+    // インフォメーションタブ
+    $(function () {
+        $(".js-information-tab").on("click", function () {
             $(".current").removeClass("current");
             $(this).addClass("current");
             const index = $(this).index();
-            $(".js-tab-content").hide().eq(index).fadeIn(300);
+            $(".js-information-tab__content").hide().eq(index).fadeIn(300);
         });
     });
     // ブログ
     $(function() {
-        $('.archive-list__items').hover(function() {
+        $('.tab__category').hover(function() {
             $(this).children('ul').stop().slideToggle(200);
         })
     })
@@ -213,10 +220,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
     // ブログアーカイブ
     $(function() {
-        $('.archive-list__items').children('li').click(function() {
+        $('.archive-list__items').children('li').on('click', function() {
             $(this).children('.archive-list__past').stop().slideToggle(200);
-        })
-    })
+            // 矢印の回転を制御する部分
+            var arrow = $(this).find('.archive-list__items::before');
+            if (arrow.hasClass('rotated')) {
+                arrow.removeClass('rotated');
+            } else {
+                arrow.addClass('rotated');
+            }
+        });
+    });
 
 
 

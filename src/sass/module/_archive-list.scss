@@ -3,6 +3,7 @@
 .archive-list {
   color: $accent;
   font-size: rem(24);
+  cursor: pointer;
 }
 .archive-list__img {
   width: rem(24);
@@ -28,6 +29,6 @@
 .archive-list__month {
   margin-left: rem(28);
 }
-.archive-list__items:hover::before {
+.archive-list__items.rotated::before {
   transform: rotate(90deg);
 }

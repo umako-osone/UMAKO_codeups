@@ -1,0 +1,82 @@
+@use "global" as *;
+
+.information-tab {
+  width: 100%;
+}
+.information-tab__list {
+  display: flex;
+  gap: rem(19);
+  @include mq(md) {
+    gap: rem(90);
+  }
+}
+.information-tab__menu {
+  font-size: rem(14);
+  color: $accent;
+  width: rem(102);
+  height: rem(60);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: $l-green;
+  box-shadow: 0px 4px 4px rgba($color: $black, $alpha: .25);
+  cursor: pointer;
+  @include mq(md) {
+    font-size: rem(24);
+    width: rem(300);
+    height: rem(90);
+    gap: rem(8);
+  }
+}
+.information-tab__img1 {
+  @include mq(md) {
+    max-width: rem(61);
+    width: 100%;
+    display: block;
+  }
+}
+.information-tab__img2 {
+  @include mq(md) {
+    max-width: rem(61);
+    width: 100%;
+    display: none;
+  }
+}
+.information-tab__menu.current {
+  color: $white;
+  background-color: $accent;
+}
+.information-tab__menu.current .information-tab__img1 {
+  @include mq(md) {
+    display: none;
+  }
+}
+.information-tab__menu.current .information-tab__img2 {
+  @include mq(md) {
+    display: block;
+  }
+}
+.information-tab__content.information{
+  background-color: $white;
+}
+.information-tab__content {
+  display: none;
+  border: 1px solid $accent;
+  margin-top: 1rem;
+  padding: rem(21.3) rem(18.3);
+  @include mq(md) {
+    border: 1px solid $accent;
+    padding: rem(24);
+    margin-top: rem(24);
+  }
+}
+.information-tab__content .information__img-block {
+  margin-top: 0;
+}
+.information-tab__content.current {
+  display: block;
+}
+.information-tab__img {
+  margin-top: 24px;
+}

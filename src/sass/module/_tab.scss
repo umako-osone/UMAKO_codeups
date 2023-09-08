@@ -1,79 +1,31 @@
 @use "global" as *;
 
 .tab {
-  width: 100%;
-}
-.tab__list {
   display: flex;
-  gap: rem(19);
+  flex-wrap: wrap;
+  gap: 1rem rem(11);
   @include mq(md) {
-    gap: rem(90);
+      gap: 1rem rem(32);
   }
 }
-.tab__menu {
-  font-size: rem(14);
-  color: $accent;
-  width: rem(102);
-  height: rem(60);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: $l-green;
-  box-shadow: 0px 4px 4px rgba($color: $black, $alpha: .25);
-  cursor: pointer;
-  @include mq(md) {
-    font-size: rem(24);
-    width: rem(300);
-    height: rem(90);
-    gap: rem(8);
-  }
+.tab__category:hover {
+  background-color: $accent;
+  color: $white;
 }
-.tab__img1 {
-  @include mq(md) {
-    max-width: rem(61);
-    width: 100%;
-    display: block;
-  }
-}
-.tab__img2 {
-  @include mq(md) {
-    max-width: rem(61);
-    width: 100%;
-    display: none;
-  }
-}
-.tab__menu.current {
+.tab__category.is-active {
   color: $white;
   background-color: $accent;
 }
-.tab__menu.current .tab__img1 {
-  @include mq(md) {
-    display: none;
-  }
-}
-.tab__menu.current .tab__img2 {
-  @include mq(md) {
-    display: block;
-  }
-}
-.tab__content {
-  display: none;
+.tab__category {
+  display: flex;
+  width: rem(162);
+  height: rem(34);
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: $accent;
+  font-size: rem(14);
+  line-height: rem(22);
   border: 1px solid $accent;
-  margin-top: 1rem;
-  padding: rem(21.3) rem(18.3);
-  @include mq(md) {
-    border: 1px solid $accent;
-    padding: rem(24);
-    margin-top: rem(24);
-  }
-}
-.tab__content .information__img-block {
-  margin-top: 0;
-}
-.tab__content.current {
-  display: block;
-}
-.tab__img {
-  margin-top: 24px;
+  transition: 0.3s color, 0.3s background-color;
 }

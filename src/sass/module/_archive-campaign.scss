@@ -16,12 +16,10 @@
     background-color: $white;
     box-shadow: 0 rem(4) rem(4) rgba($color:#000, $alpha:0.25);
     width: 83.583%;
+    margin: rem(40) auto 0;
     @include mq(md) {
         width: 100%;
     }
-}
-.archive-campign__card-margin {
-    margin: rem(40) auto 0;
 }
 .archive-campaign__card {
     max-width: rem(600);
