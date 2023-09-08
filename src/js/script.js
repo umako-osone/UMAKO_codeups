@@ -213,7 +213,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
     // ブログアーカイブ
     $(function() {
-        $('.archive-list__items').children('li').hover(function() {
+        $('.archive-list__items').children('li').click(function() {
             $(this).children('.archive-list__past').stop().slideToggle(200);
         })
     })
