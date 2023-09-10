@@ -190,11 +190,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
     // タブ
     $(function () {
-        $('.js-tab__category').on('click', function() {
-            $('.js-tab__category').removeClass('is-active');
-            $(this).addClass('is-active');
-        })
-    })
+        $(".js-tab__category").click(function(e) {
+            e.preventDefault();
+            $(".js-tab__category").removeClass("is-active");
+            $(this).addClass("is-active");
+        });
+    });
     // インフォメーションタブ
     $(function () {
         $(".js-information-tab").on("click", function () {
@@ -231,6 +232,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             }
         });
     });
+// footerから
 
 
 

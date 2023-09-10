@@ -1,5 +1,21 @@
 @use "global" as *;
 
+.card__block {
+    display: block;
+    height: auto;
+    background-color: $white;
+    box-shadow: 0 rem(4) rem(4) rgba($color:#000, $alpha:0.25);
+    width: rem(280);
+    @include mq(md) {
+        width: rem(333);
+    }
+}
+.card__block--full {
+    width: 100%;
+    @include mq(md) {
+    width: 100%;
+    }
+}
 .card__img img {
     aspect-ratio: 280/188;
     width: 100%;
@@ -26,6 +42,11 @@
     line-height: 1.5;
     margin-top: rem(4);
     font-size: 1rem;
+}
+.card__title--bg {
+    @include mq(md) {
+    font-size: rem(24);
+    }
 }
 .card__title-body {
     margin-top: 1rem;
@@ -85,35 +106,35 @@
         font-size: rem(24);
     }
 }
-.card:hover {
+.card a:hover {
     opacity: .6;
 }
 
-.card__img.card__img--big img {
+.card__img--big img {
     @include mq(md) {
         aspect-ratio: 520/347;
     }
 }
-.card__title.card__title--big {
+.card__title--big {
     @include mq(md) {
         font-size: rem(24);
     }
 }
-.card__title-body.card__title-body--big {
+.card__title-body--big {
     margin: 0;
 }
-.card__price-block.card__price-block--big {
+.card__price-block--big {
     @include mq(md) {
         gap: rem(44);
     }
 }
-.card__img.card__img--side img {
+.card__img--side img {
     aspect-ratio: 294/188;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.card__title-body.card__title-body--side {
+.card__title-body--side {
     margin-top: rem(15);
     text-align: center;
 }
@@ -124,10 +145,10 @@
 .card__price.card__price--side {
     font-size: rem(32);
 }
-.card__price-decoration.card__price-decoration--side {
+.card__price-decoration--side {
     font-size: rem(20);
 }
-.card__price-body.card__price-body--side {
+.card__price-body--side {
     padding: rem(10) 0 rem(26);
 }
 .card__price-text {
@@ -142,10 +163,10 @@
     padding: 0;
     margin: 0;
 }
-.card__price-text .card-text__explanation {
+.card-text__explanation {
     margin-top: 0;
 }
-.card__price-text .card__price-body {
+.card__price-body {
     padding: rem(6) 0 rem(15);
     margin-top: rem(6);
     border-top: 1px solid #408F95;
