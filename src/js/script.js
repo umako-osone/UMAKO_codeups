@@ -194,6 +194,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             e.preventDefault();
             $(".js-tab__category").removeClass("is-active");
             $(this).addClass("is-active");
+
+            $(".navigation__item").click(function (e) {
+                e.preventDefault();
+                var tabId = $(this).data("tab-id");
+                $(".js-tab__category").removeClass("is-active");
+                $(".js-tab__content").hide();
+                $("#" + tabId).show();
+            });
         });
     });
     // インフォメーションタブ
