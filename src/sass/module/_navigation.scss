@@ -17,7 +17,7 @@
     align-items: flex-start;
     padding: rem(10) 0 rem(10);
 }
-.navigation__text.navigation__text--bold {
+.navigation__text--bold {
     font-weight: bold;
 }
 .navigation__item {
@@ -27,6 +27,7 @@
     padding-left: rem(18);
     display: block;
     width: 100%;
+    cursor: pointer;
 }
 .navigation__items {
     display: block;

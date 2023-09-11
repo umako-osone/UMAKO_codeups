@@ -78,16 +78,16 @@
     text-align: center;
 }
 
-.information__text-body.information__text-body--margin {
+.information__text-body--margin {
     padding-top: 0;
     @include mq(md) {
         padding-top: rem(62);
     }
 }
-.information__title.information__title--big {
+.information__title--big {
     font-size: rem(24);
 }
-.information__img.information__img--margin {
+.information__img--margin {
     margin-top: rem(6);
     @include mq(md) {
         margin-top: rem(0);
