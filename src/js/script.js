@@ -194,14 +194,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             e.preventDefault();
             $(".js-tab__category").removeClass("is-active");
             $(this).addClass("is-active");
-
-            $(".navigation__item").click(function (e) {
-                e.preventDefault();
-                var tabId = $(this).data("tab-id");
-                $(".js-tab__category").removeClass("is-active");
-                $(".js-tab__content").hide();
-                $("#" + tabId).show();
-            });
         });
     });
     // インフォメーションタブ
@@ -241,7 +233,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         });
     });
 // footerから
+    $(function() {
+        const urlParams = URLSearchParams(window.location.search);
+        const tabParam = urlParams.get('tab');
 
+        if(tabParam) {
+            $('.navigation__item a').each(function () {
+                const href =$(this).attr('href');
+                const tabValue = href.split('=')[1];
+                if(tabParam === tabValue) {
+                    $(this).addClass('current');
+                }
+            });
+        }
+    });
 
 
 

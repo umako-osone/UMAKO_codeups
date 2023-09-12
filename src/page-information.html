@@ -238,14 +238,14 @@
         <div class="page-information__mv mv">
           <h1 class="mv__heading heading">information</h1>
         </div>
-        <div class="page-aboutUs__breadcrumb breadcrumb inner">
+        <div class="page-information__breadcrumb breadcrumb inner">
           <p>top&ensp;&gt;&ensp;ダイビング情報</p>
         </div>
         <div class="top-page-information">
           <div class="page-information__inner inner">
             <div class="page-information__tab informaiton-tab">
               <ul class="information-tab__list">
-                <li class="information-tab__menu js-information-tab current" data-tab-id="tab1">
+                <li class="information-tab__menu js-information-tab current" tab="tab1">
                   <figure class="information-tab__img1">
                     <img src="./assets/images/common/fish-point1-blue.png" alt="鯨のイラスト" class="u-desktop">
                   </figure>
@@ -254,7 +254,7 @@
                   </figure>
                   ライセンス<br class="u-mobile">講習
                 </li>
-                <li class="information-tab__menu js-information-tab" data-tab-id="tab2">
+                <li class="information-tab__menu js-information-tab" tab="tab2">
                   <figure class="information-tab__img1">
                     <img src="./assets/images/common/fish-point2-blue.png" alt="鯨のイラスト" class="u-desktop">
                   </figure>
@@ -263,7 +263,7 @@
                   </figure>
                   ファン<br class="u-mobile">ダイビング
                 </li>
-                <li class="information-tab__menu js-information-tab" data-tab-id="tab3">
+                <li class="information-tab__menu js-information-tab" tab="tab3">
                   <figure class="information-tab__img1">
                     <img src="./assets/images/common/fish-point3-blue.png" alt="鯨のイラスト" class="u-desktop">
                   </figure>
@@ -273,7 +273,7 @@
                   体験<br class="u-mobile">ダイビング
                 </li>
               </ul>
-                <div class="information-tab__content js-information-tab__content information current" id="tab1">
+                <div class="information-tab__content js-information-tab__content information current">
                   <div class="information__img-block">
                     <div class="information__text-body information__text-body--margin">
                       <h2 class="information__title information__title--big">ライセンス講習</h2>
@@ -284,7 +284,7 @@
                     </figure>
                   </div>
                 </div>
-                <div class="information-tab__content js-information-tab__content information" id="tab2">
+                <div class="information-tab__content js-information-tab__content information">
                   <div class="information__img-block">
                     <div class="information__text-body">
                       <h2 class="information__title information__title--big">ファンダイビング</h2>
@@ -295,7 +295,7 @@
                     </figure>
                   </div>
                 </div>
-                <div class="information-tab__content js-information-tab__content information" id="tab3">
+                <div class="information-tab__content js-information-tab__content information">
                   <div class="information__img-block">
                     <div class="information__text-body">
                       <h2 class="information__title information__title--big">体験ダイビング</h2>
@@ -406,19 +406,19 @@
                 </a>
               </li>
               <li class="navigation__item">
-                <!-- <a href="page-information.html"> -->
-                  <p class="navigation__text-blank" data-tab-id="tab1">ライセンス講習</p>
-                <!-- </a> -->
+                <a href="page-information.html?tab=1">
+                  <p class="navigation__text-blank">ライセンス講習</p>
+                </a>
               </li>
               <li class="navigation__item">
-                <!-- <a href="page-information.html"> -->
-                  <p class="navigation__text-blank" data-tab-id="tab2">体験ダイビング</p>
-                <!-- </a> -->
+                <a href="page-information.html?tab=3">
+                  <p class="navigation__text-blank">体験ダイビング</p>
+                </a>
               </li>
               <li class="navigation__item">
-                <!-- <a href="page-information.html"> -->
-                  <p class="navigation__text-blank" data-tab-id="tab3">ファンダイビング</p>
-                <!-- </a> -->
+                <a href="page-information.html?tab=2">
+                  <p class="navigation__text-blank">ファンダイビング</p>
+                </a>
               </li>
               <li class="navigation__item">
                 <a href="home.html">
