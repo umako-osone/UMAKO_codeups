@@ -235,7 +235,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 // footerから
     $(function() {
         const urlParams = URLSearchParams(window.location.search);
-        const tabParam = urlParams.get('tab');
+        const tabParam = urlParams.get('id');
 
         if(tabParam) {
             $('.navigation__item a').each(function () {
