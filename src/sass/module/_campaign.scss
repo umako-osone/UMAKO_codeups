@@ -21,21 +21,21 @@
         padding-left: rem(10);
     }
 }
-// .campaign__card {
-//     display: block;
-//     height: auto;
-//     background-color: $white;
-//     box-shadow: 0 rem(4) rem(4) rgba($color:#000, $alpha:0.25);
-//     width: rem(280);
-//     @include mq(md) {
-//         width: rem(333);
-//     }
-// }
-// .campaign__card a {
-//     display: flex;
-//     flex-direction: column;
-//     height: 100%;
-// }
+.campaign__card {
+    display: block;
+    height: auto;
+    background-color: $white;
+    box-shadow: 0 rem(4) rem(4) rgba($color:#000, $alpha:0.25);
+    width: rem(280);
+    @include mq(md) {
+        width: rem(333);
+    }
+}
+.campaign__card a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 .campaign__btn {
     margin-top: rem(28);
     padding-bottom: rem(10);

@@ -230,10 +230,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
     // ブログアーカイブ
     $(function() {
-        $('.archive-list__items').children('li').on('click', function() {
+        $('.archive-list').children('li').on('click', function() {
             $(this).children('.archive-list__past').stop().slideToggle(200);
             // 矢印の回転を制御する部分
-            var arrow = $(this).find('.archive-list__items::before');
+            var arrow = $(this).find('.archive-list::before');
             if (arrow.hasClass('rotated')) {
                 arrow.removeClass('rotated');
             } else {
@@ -241,10 +241,5 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             }
         });
     });
-// footerから
-
-
-
-
 
 });

@@ -6,12 +6,6 @@
     background-image: url(../images/common/blog-mv.jpg);
   }
 }
-.single__inner {
-  @include mq(md) {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
-}
 .single__title-block {
   padding: rem(4) 0;
 }
@@ -88,4 +82,7 @@
   @include mq(md) {
     margin-top: 0;
   }
+}
+.single__pagenavi .wp-pagenavi__next {
+  margin-left: rem(82);
 }
