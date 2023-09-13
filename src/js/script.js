@@ -207,8 +207,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         const urlParams = new URLSearchParams(window.location.search);
         const tabId = urlParams.get("tabId");
         if (tabId) {
-            // タブがクエリパラメータで指定された場合、該当のタブにcurrentクラスを付与
             $(".current").removeClass("current");
+            // タブがクエリパラメータで指定された場合、該当のタブにcurrentクラスを付与
             $(`.js-information-tab[data-tab-id="${tabId}"]`).addClass("current");
             const index = $(`.js-information-tab[data-tab-id="${tabId}"]`).index();
             $(".js-information-tab__content").hide().eq(index).fadeIn(300);
