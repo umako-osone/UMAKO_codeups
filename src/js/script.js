@@ -204,6 +204,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             const index = $(this).index();
             $(".js-information-tab__content").hide().eq(index).fadeIn(300);
         });
+        const urlParams = new URLSearchParams(window.location.search);
+        const tabId = urlParams.get("tabId");
+        if (tabId) {
+            // タブがクエリパラメータで指定された場合、該当のタブにcurrentクラスを付与
+            $(".current").removeClass("current");
+            $(`.js-information-tab[data-tab-id="${tabId}"]`).addClass("current");
+            const index = $(`.js-information-tab[data-tab-id="${tabId}"]`).index();
+            $(".js-information-tab__content").hide().eq(index).fadeIn(300);
+        }
     });
     // ブログ
     $(function() {
@@ -233,20 +242,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         });
     });
 // footerから
-    $(function() {
-        const urlParams = URLSearchParams(window.location.search);
-        const tabParam = urlParams.get('id');
-
-        if(tabParam) {
-            $('.navigation__item a').each(function () {
-                const href =$(this).attr('href');
-                const tabValue = href.split('=')[1];
-                if(tabParam === tabValue) {
-                    $(this).addClass('current');
-                }
-            });
-        }
-    });
 
 
 
