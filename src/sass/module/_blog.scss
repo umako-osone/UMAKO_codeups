@@ -13,7 +13,6 @@
         width: 100%;
         height: rem(500);
         background-image: url(../images/common/blog-bg.jpg);
-        // background-position: top left;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -30,12 +29,6 @@
 .blog__title{
     @include mq(md) {
         padding-top: rem(90);
-    }
-}
-.blog__items {
-    margin-top: rem(28);
-    @include mq(md) {
-        margin-top: rem(77);
     }
 }
 .blog__btn {

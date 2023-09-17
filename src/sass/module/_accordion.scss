@@ -67,7 +67,6 @@
   opacity: 0;
 }
 .accordion-content {
-  display: none;
   padding: rem(19) rem(10);
   border: 1px solid $accent;
   @include mq(md) {

@@ -7,19 +7,12 @@
     gap: rem(50);
   }
 }
-.article__blog-card {
-  display: grid;
-  grid-template-columns: repeat(1fr);
+.article__blog-cards {
   max-width: rem(600);
   width: 100%;
-  gap: rem(80) rem(40);
   @include mq(md) {
     max-width: rem(706);
-    grid-template-columns: repeat(2, 1fr);
   }
-}
-.article__blog-card.blog-card {
-  margin-top: initial;
 }
 .article__side {
   margin-top: rem(88);

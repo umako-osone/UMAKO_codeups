@@ -40,12 +40,14 @@
         margin-top: rem(34);
     }
 }
-.voice-card__title h4 {
+.voice-card__title h3 {
     margin-top: rem(4);
     font-weight: $medium;
+    font-size: 1rem;
     // padding-bottom: rem(3);
     border-bottom: 1px solid $accent;
     @include mq(md) {
+        font-size: rem(24);
         margin-top: rem(7);
     }
 }
