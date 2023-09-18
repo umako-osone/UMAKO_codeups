@@ -1,15 +1,5 @@
 @use "global" as *;
 
-.contact-form {
-  max-width: rem(600);
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  @include mq(md) {
-    max-width: 100%;
-    width: rem(750);
-  }
-}
 .contact-form__items {
   border-bottom: 1px dashed $accent;
   padding-bottom: rem(24);

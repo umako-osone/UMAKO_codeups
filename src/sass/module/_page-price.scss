@@ -6,6 +6,11 @@
     background-image: url(../images/common/price-mv.jpg);
   }
 }
+.page-price__inner.inner {
+  @include mq(md) {
+    max-width: rem(750);
+  }
+}
 .page-price__body {
   @include mq(md) {
     display: flex;
@@ -38,7 +43,7 @@
   align-items: center;
   justify-content: center;
   @include mq(md) {
-      width: rem(200);
+      width: 18.519%;
   }
 }
 .page-price__title {
@@ -77,7 +82,7 @@
   text-align: center;
   @include mq(md) {
     justify-content: left;
-    width: rem(319);
+    width: 79.72%;
   }
 }
 .page-price__price {
@@ -88,6 +93,6 @@
   align-items: center;
   padding-right: 1rem;
   @include mq(md) {
-    width: rem(160);
+    width: 33.196%;
   }
 }

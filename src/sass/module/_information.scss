@@ -3,17 +3,18 @@
 .information {
     background-color: $light;
     position: relative;
-}
-.information__inner {
-    max-width: rem(600);
-    width: 100%;
     padding-top: rem(80);
     padding-bottom: rem(76);
     @include mq(md) {
-        max-width: 100%;
-        width: 100%;
-        padding-top: rem(94.5) ;
+        padding-top: rem(95) ;
         padding-bottom: rem(100) ;
+    }
+}
+.information__inner.inner {
+    max-width: rem(600);
+    width: 100%;
+    @include mq(md) {
+        max-width: rem(1130);
     }
 }
 .information__img-block {

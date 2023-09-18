@@ -1,15 +1,5 @@
 @use "global" as *;
 
-.accordion {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  max-width: rem(600);
-  width: 100%;
-  @include mq(md) {
-    max-width: rem(700);
-  }
-}
 .accordion-title {
   color: $white;
   background-color: $accent;
