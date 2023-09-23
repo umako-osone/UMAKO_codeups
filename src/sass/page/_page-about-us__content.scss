@@ -1,7 +1,6 @@
 @use "global" as *;
 
-.top-page-price {
-  margin-top: rem(52);
+.page-about-us__content {
   @include mq(md) {
     margin-top: rem(150);
   }

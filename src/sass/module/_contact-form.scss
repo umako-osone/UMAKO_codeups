@@ -9,9 +9,9 @@
   }
 }
 .contact-form__items:not(:first-of-type) {
-  margin-top: rem(24);
+  padding: rem(24) 0;
   @include mq(md) {
-    margin-top: rem(40);
+    padding: rem(40) 0;
   }
 }
 .contact-form__item {
@@ -20,7 +20,7 @@
   margin-top: 1rem;
   @include mq(md) {
     margin-top: 0;
-    width: 67%;
+    width: 68.6%;
   }
 }
 .contact-form__item input {
@@ -31,7 +31,7 @@
   display: inline-block;
   font-weight: bold;
   @include mq(md) {
-    width: 31.3%;
+    width: 31.4%;
   }
 }
 .contact-form__title span {

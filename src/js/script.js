@@ -211,7 +211,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             // タブがクエリパラメータで指定された場合、該当のタブにcurrentクラスを付与
             $(`.js-information-tab[data-tab-id="${tabId}"]`).addClass("current");
             const index = $(`.js-information-tab[data-tab-id="${tabId}"]`).index();
-            $(".js-information-tab__content").hide().eq(index).fadeIn(300);
+            $(".js-information-tab__content").hide().eq(index).fadeIn(100);
         }
     });
     // ブログ

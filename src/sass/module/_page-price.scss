@@ -23,14 +23,17 @@
     margin-top: rem(80);
   }
 }
+.page-price__items {
+  @include mq(md) {
+    width: 71.5%;
+  }
+}
 .page-price__item {
-  height: rem(60);
   display: flex;
   border-bottom: 1px solid $accent;
   border-right: 1px solid $accent;
   border-left: 1px solid $accent;
   @include mq(md) {
-    width: rem(500);
     padding-left: 1rem;
   }
 }
@@ -43,7 +46,7 @@
   align-items: center;
   justify-content: center;
   @include mq(md) {
-      width: 18.519%;
+      width: 28.5%;
   }
 }
 .page-price__title {
@@ -74,25 +77,21 @@
   }
 }
 .page-price__matter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-right: 1px solid $accent;
-  width: 84%;
   text-align: center;
+  border-right: 1px solid $accent;
+  width: 69.5%;
+  padding: rem(22) 0;
   @include mq(md) {
-    justify-content: left;
-    width: 79.72%;
+    width: 68%;
   }
 }
 .page-price__price {
-  text-align: right;
-  width: 36.528%;
   display: flex;
-  justify-content: end;
   align-items: center;
-  padding-right: 1rem;
+  justify-content: right;
+  width: 30.5%;
+  padding: rem(22) 1rem;
   @include mq(md) {
-    width: 33.196%;
+    width: 32%;
   }
 }
