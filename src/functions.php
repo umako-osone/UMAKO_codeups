@@ -22,7 +22,21 @@
         wp_enqueue_style('google-fonts-montserrat', 'https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap', false);
         wp_enqueue_style('swiper', 'https://unpkg.com/swiper@8/swiper-bundle.min.css', false);
         wp_enqueue_script('swiper', 'https://unpkg.com/swiper@8/swiper-bundle.min.js', array('jquery'), '8.0.0', true);
-        wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '1.0.1', true);
-        wp_enqueue_style('style-css', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0.1');
+        wp_enqueue_script('main-js', get_theme_file_uri() . '/assets/js/script.js', array('jquery'), '1.0.1', true);
+        wp_enqueue_style('style-css', get_theme_file_uri() . '/assets/css/style.css', array(), '1.0.1');
     }
     add_action('wp_enqueue_scripts', 'my_script_init');
+
+    // crossorigin属性を持つタグに対する対応
+    function add_rel_preconnect( $html, $handle, $href, $media ) {
+        if ( 'google-fonts-montserrat' === $handle || 'google-fonts-noto' === $handle || 'swiper' === $handle ) {
+            $html = <<<EOT
+            <link rel='preconnect' href='https://fonts.googleapis.com'>
+            <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+            $html
+            EOT;
+        }
+        return $html;
+    }
+
+    add_filter( 'style_loader_tag', 'add_rel_preconnect', 10, 4 );

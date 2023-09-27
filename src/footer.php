@@ -1,4 +1,5 @@
     <a href="page-contact.html" class="page-top-button js-page-top"><span></span></a>
+    </main>
     <footer class="footer top-footer js-footer">
       <div class="footer__inner inner">
         <div class="footer__img-block">
@@ -154,5 +155,6 @@
         </div>
       </div>
     </footer>
+    <?php wp_footer();  ?>
   </body>
 </html>
