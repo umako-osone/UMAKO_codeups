@@ -30,77 +30,14 @@
 	color: $white;
 	background-color: $accent;
 }
-.wp-pagenavi .current{
+.wp-pagenavi span.current{
 	color: $white;
 	background-color: $accent;
 	font-weight: bold;
 }
-.wp-pagenavi a:nth-of-type(2) {
-    margin-left: rem(40);
-}
-.wp-pagenavi a:last-of-type {
-    margin-left: rem(40);
-}
-.wp-pagenavi.single__pagenavi .nextpostslink {
-  margin-left: rem(82);
-}
-.wp-pagenavi .u-desktop {
-  display: none;
-  @include mq(md) {
+.wp-pagenavi .u_desktop {
+	display: none;
+	@include mq(md) {
     display: inline;
   }
-}
-.wp-pagenavi.single__pagenavi {
-  margin-top: rem(41);
-  @include mq(md) {
-    margin-top: rem(88);
-  }
-}
-.wp-pagenavi.archive-voice__pagenavi {
-  margin-top: rem(89);
-  @include mq(md) {
-    margin-top: rem(89);
-  }
-}
-// 前ページへ戻る
-.wp-pagenavi__previous {
-	position: relative;
-}
-.wp-pagenavi__previous::before {
-	content: "";
-	left: rem(13);
-	top: rem(13);
-	width: rem(12);
-	height: rem(12);
-	border-top: 1px solid $accent;
-	border-right: 1px solid $accent;
-	transform: rotate(-135deg);
-	position: absolute;
-	display: inline-block;
-}
-.wp-pagenavi__previous:hover::before {
-border-top: 1px solid $white;
-	border-right: 1px solid $white;
-	transition: .3s border-top,border-right;
-}
-// 次ページへ
-.wp-pagenavi__next {
-	position: relative;
-}
-.wp-pagenavi__next::after {
-	content: "";
-	left: rem(5);
-	top: rem(13);
-	width: rem(12);
-	height: rem(12);
-	border-top: 1px solid $accent;
-	border-right: 1px solid $accent;
-	transform: rotate(45deg);
-	position: absolute;
-	display: inline-block;
-}
-.wp-pagenavi__next:hover::after {
-	border-top: 1px solid $white;
-	border-right: 1px solid $white;
-	transition: .3s border-top,border-right;
 }

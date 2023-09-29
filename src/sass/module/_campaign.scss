@@ -110,10 +110,22 @@
     content: "";
 }
 
-.campaign__card.campaign__card--side {
-    width: rem(294);
-    margin-top: rem(26);
+.campaign__card--side {
+    max-width: rem(600);
+    width: 100%;
+    margin: auto;
+    @include mq(md) {
+        width: rem(294);
+        margin-top: rem(26);
+        margin-right: initial;
+        margin-left: initial;
+    }
 }
-.campaign__card.campaign__card--side:not(:first-of-type) {
+.campaign__card--side {
     margin-top: rem(40);
+}
+.campaign__card--side:first-of-type {
+    @include mq(md) {
+        margin-top: rem(40);
+    }
 }
