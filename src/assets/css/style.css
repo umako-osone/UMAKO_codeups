@@ -501,6 +501,7 @@ a {
 }
 
 .article__blog-cards {
+	margin: auto;
 	max-width: 37.5rem;
 	width: 100%;
 }
@@ -824,12 +825,13 @@ a {
 	content: "";
 }
 
-.campaign__card.campaign__card--side {
-	margin-top: 1.625rem;
-	width: 18.375rem;
+.campaign__card--side {
+	margin: auto;
+	max-width: 37.5rem;
+	width: 100%;
 }
 
-.campaign__card.campaign__card--side:not(:first-of-type) {
+.campaign__card--side {
 	margin-top: 2.5rem;
 }
 
@@ -2625,80 +2627,14 @@ a {
 	color: #fff;
 }
 
-.wp-pagenavi .current {
+.wp-pagenavi span.current {
 	background-color: #408F95;
 	color: #fff;
 	font-weight: bold;
 }
 
-.wp-pagenavi a:nth-of-type(2) {
-	margin-left: 2.5rem;
-}
-
-.wp-pagenavi a:last-of-type {
-	margin-left: 2.5rem;
-}
-
-.wp-pagenavi.single__pagenavi .nextpostslink {
-	margin-left: 5.125rem;
-}
-
-.wp-pagenavi .u-desktop {
+.wp-pagenavi .u_desktop {
 	display: none;
-}
-
-.wp-pagenavi.single__pagenavi {
-	margin-top: 2.5625rem;
-}
-
-.wp-pagenavi.archive-voice__pagenavi {
-	margin-top: 5.5625rem;
-}
-
-.wp-pagenavi__previous {
-	position: relative;
-}
-
-.wp-pagenavi__previous::before {
-	border-right: 1px solid #408F95;
-	border-top: 1px solid #408F95;
-	content: "";
-	display: inline-block;
-	height: 0.75rem;
-	left: 0.8125rem;
-	position: absolute;
-	top: 0.8125rem;
-	transform: rotate(-135deg);
-	width: 0.75rem;
-}
-
-.wp-pagenavi__previous:hover::before {
-	border-right: 1px solid #fff;
-	border-top: 1px solid #fff;
-	transition: 0.3s border-top, border-right;
-}
-
-.wp-pagenavi__next {
-	position: relative;
-}
-
-.wp-pagenavi__next::after {
-	border-right: 1px solid #408F95;
-	border-top: 1px solid #408F95;
-	content: "";
-	display: inline-block;
-	height: 0.75rem;
-	left: 0.3125rem;
-	position: absolute;
-	top: 0.8125rem;
-	transform: rotate(45deg);
-	width: 0.75rem;
-}
-
-.wp-pagenavi__next:hover::after {
-	border-right: 1px solid #fff;
-	border-top: 1px solid #fff;
-	transition: 0.3s border-top, border-right;
 }
 
 @media screen and (min-width: 768px) {
@@ -3054,6 +2990,19 @@ html {
 	position: absolute;
 	right: 12.4%;
 	top: 1.3%;
+}
+
+.campaign__card--side {
+	margin-left: 0;
+	margin-left: initial;
+	margin-right: 0;
+	margin-right: initial;
+	margin-top: 1.625rem;
+	width: 18.375rem;
+}
+
+.campaign__card--side:first-of-type {
+	margin-top: 2.5rem;
 }
 
 .card-text {
@@ -3870,16 +3819,8 @@ html {
 	padding: 0.4375rem 0.9375rem;
 }
 
-.wp-pagenavi .u-desktop {
+.wp-pagenavi .u_desktop {
 	display: inline;
-}
-
-.wp-pagenavi.single__pagenavi {
-	margin-top: 5.5rem;
-}
-
-.wp-pagenavi.archive-voice__pagenavi {
-	margin-top: 5.5625rem;
 }
 
 }
