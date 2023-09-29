@@ -546,12 +546,8 @@ a {
 }
 
 .blog-card__text {
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 5;
 	border-top: 1px solid #408F95;
-	display: -webkit-box;
 	margin-top: 0.25rem;
-	overflow: hidden;
 	padding: 1rem 0.125rem;
 }
 

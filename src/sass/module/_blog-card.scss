@@ -39,10 +39,6 @@
     padding: 1rem rem(2);
     margin-top: rem(4);
     border-top: 1px solid $accent;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
-    overflow: hidden;
 }
 .blog-card__item:hover::before {
     content: "";
