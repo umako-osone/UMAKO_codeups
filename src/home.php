@@ -42,14 +42,6 @@
                 </ul>
                 <!-- ページネーション -->
                 <div class="wp-pagenavi home__pagenavi">
-                  <!-- <a class="previouspostslink" rel="prev" href="#"><</a>
-                  <span class="current">1</span>
-                  <a class="page smaller" href="#">2</a>
-                  <a class="page smaller" href="#">3</a>
-                  <a class="page larger" href="#">4</a>
-                  <a class="page larger u-desktop" href="#">5</a>
-                  <a class="page larger u-desktop" href="#">6</a>
-                  <a class="nextpostslink" rel="next" href="#">></a> -->
                   <?php wp_pagenavi(); ?>
                 </div>
               </div>
