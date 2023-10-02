@@ -243,9 +243,9 @@
       <div class="page-sitemap__mv mv">
         <h1 class="mv__heading heading">site&ensp;map</h1>
       </div>
-      <div class="page-contact__breadcrumb breadcrumb inner">
-        <p>top&ensp;&gt;&ensp;サイトマップ</p>
-      </div>
+
+      <?php get_template_part('parts/breadcrumb'); ?>
+
       <div class="page-sitemap">
         <div class="page-sitemap__inner inner top-page-sitemap">
           <nav class="page-sitemap__nav navigation">

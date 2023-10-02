@@ -243,9 +243,9 @@
       <div class="page-contact__mv mv">
         <h1 class="mv__heading heading">contact</h1>
       </div>
-      <div class="page-contact__breadcrumb breadcrumb inner">
-        <p>top&ensp;&gt;&ensp;お問い合わせ&ensp;&gt;&ensp;送信完了</p>
-      </div>
+
+        <?php get_template_part('parts/breadcrumb'); ?>
+
       <div class="page-thanks__inner inner top-page-thanks">
           <section class="page-thanks">
           <h2 class="page-thanks__title">お問い合わせ内容を送信完了しました。</h2>

@@ -6,9 +6,9 @@
           <h1 class="mv__heading heading">blog</h1>
         </div>
         <div class="home__inner inner">
-          <div class="home__breadcrumb breadcrumb">
-            <p>top&ensp;&gt;&ensp;ブログ一覧</p>
-          </div>
+
+          <?php get_template_part('parts/breadcrumb'); ?>
+
           <div class="home__content">
             <div class="home__article article">
               <div class="article__blog-cards">

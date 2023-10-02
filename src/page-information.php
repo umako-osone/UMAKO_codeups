@@ -4,9 +4,9 @@
         <div class="page-information__mv mv">
           <h1 class="mv__heading heading">information</h1>
         </div>
-        <div class="page-information__breadcrumb breadcrumb inner">
-          <p>top&ensp;&gt;&ensp;ダイビング情報</p>
-        </div>
+
+        <?php get_template_part('parts/breadcrumb'); ?>
+
         <div class="top-page-information">
           <div class="page-information__inner inner">
             <div class="page-information__tab informaiton-tab">

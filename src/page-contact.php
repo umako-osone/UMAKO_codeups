@@ -6,9 +6,9 @@
           <h1 class="mv__heading heading">contact</h1>
         </div>
         <div class="page-contact__inner inner">
-          <div class="page-contact__breadcrumb breadcrumb">
-            <p>top&ensp;&gt;&ensp;お問い合わせ</p>
-          </div>
+
+          <?php get_template_part('parts/breadcrumb'); ?>
+
           <div class="page-contact__content">
             <div class="page-contact__form contact-form">
               <span class="contact-form__alert js-contact-form__alert"></span>

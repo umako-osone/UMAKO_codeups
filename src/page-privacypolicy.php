@@ -245,9 +245,9 @@
           <h1 class="mv__heading heading">site&ensp;map</h1>
         </div>
         <div class="page-privacypolicy__inner inner">
-          <div class="page-contact__breadcrumb breadcrumb">
-            <p>top&ensp;&gt;&ensp;サイトマップ</p>
-          </div>
+
+        <?php get_template_part('parts/breadcrumb'); ?>
+
           <div class="page-privacypolicy__list list">
             <h2 class="list__title">プライバシーポリシー</h2>
             <div class="list__text-block">

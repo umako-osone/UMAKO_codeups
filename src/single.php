@@ -6,9 +6,9 @@
     <h1 class="mv__heading heading">blog</h1>
   </div>
   <div class="single__inner inner">
-    <div class="single__breadcrumb breadcrumb">
-      <p>top&ensp;&gt;&ensp;ブログ一覧&ensp;&gt;&ensp;ブログ詳細</p>
-    </div>
+
+  <?php get_template_part('parts/breadcrumb'); ?>
+  
     <?php if(have_posts()): ?>
       <?php while(have_posts()): the_post(); ?>
 

@@ -243,9 +243,9 @@
       <div class="page-terms-of-service__mv mv">
         <h1 class="mv__heading heading">terms&ensp;of&ensp;service</h1>
       </div>
-      <div class="page-terms-of-service__breadcrumb breadcrumb inner">
-        <p>top&ensp;&gt;&ensp;利用規約</p>
-      </div>
+
+      <?php get_template_part('parts/breadcrumb'); ?>
+
       <section class="page-terms-of-service top-page-terms-of-service">
         <div class="page-terms-of-service__inner inner">
           <div class="page-terms-of-service__list list">

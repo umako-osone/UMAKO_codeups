@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
       <section class="page-about-us">
-        <div class="page-about-us__mv mv">
-          <h1 class="mv__heading heading">about&ensp;us</h1>
-        </div>
+
+      <?php get_template_part('parts/breadcrumb'); ?>
+
         <div class="page-about-us__inner inner">
           <div class="page-about-us__breadcrumb breadcrumb inner">
             <p>top&ensp;&gt;&ensp;私たちについて</p>

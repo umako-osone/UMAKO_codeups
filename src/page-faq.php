@@ -5,9 +5,9 @@
           <h1 class="mv__heading heading">FAQ</h1>
         </div>
         <div class="page-faq__inner inner">
-          <div class="page-faq__breadcrumb breadcrumb">
-            <p>top&ensp;&gt;&ensp;よくある質問</p>
-          </div>
+
+          <?php get_template_part('parts/breadcrumb'); ?>
+
           <div class="page-faq__content">
             <!-- アコーディオン -->
             <div class="page-faq__accordion accordion">

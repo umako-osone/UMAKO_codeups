@@ -6,9 +6,9 @@
           <h1 class="mv__heading heading">price</h1>
         </div>
         <div class="page-price__inner inner">
-          <div class="page-price__breadcrumb breadcrumb">
-            <p>top&ensp;&gt;&ensp;料金一覧</p>
-          </div>
+
+        <?php get_template_part('parts/breadcrumb'); ?>
+
           <div class="page-price__content">
             <div class="page-price__body">
               <div class="page-price__title-body">
