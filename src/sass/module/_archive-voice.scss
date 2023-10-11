@@ -22,7 +22,6 @@
   margin: auto;
   @include mq(md) {
     gap: rem(80) rem(40);
-    // margin: initial;
   }
 }
 .archive-voice__item .voice-card__title h2 {

@@ -44,7 +44,6 @@
     margin-top: rem(4);
     font-weight: $medium;
     font-size: 1rem;
-    // padding-bottom: rem(3);
     border-bottom: 1px solid $accent;
     @include mq(md) {
         font-size: rem(24);
