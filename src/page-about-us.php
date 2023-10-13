@@ -2,13 +2,13 @@
 
       <section class="page-about-us">
 
+        <div class="page-about-us__inner inner">
       <!-- パンくず -->
       <?php get_template_part('parts/breadcrumb'); ?>
 
-        <div class="page-about-us__inner inner">
-          <div class="page-about-us__breadcrumb breadcrumb inner">
+          <!-- <div class="page-about-us__breadcrumb breadcrumb inner">
             <p>top&ensp;&gt;&ensp;私たちについて</p>
-          </div>
+          </div> -->
           <div class="page-about-us__content">
             <div class="page-about-us__img about-us__img u-desktop">
               <figure class="about-us__img-left">

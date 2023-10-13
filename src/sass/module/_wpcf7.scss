@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.wpcf7-form-control-wrap {
+  display: block;
+}
+span.wpcf7-list-item {
+  margin: 0 30px 0 0; /* 項目右側の余白設定と、デフォルトの左側の余白を打ち消す */
+  position: relative;
+}
+.wpcf7-list-item-label {
+  cursor: pointer; /* labelにhoverした時にカーソルを表示させる */
+  font-size: 16px; /* 項目のフォントサイズ */
+}
+input[type="checkbox"] {
+  opacity: 0; /* デフォルトのチェックボックスを見えなくする */
+  position: absolute;
+}
+.wpcf7-list-item-label::before {
+  /* チェックボックスのデザイン */
+  border: 1px solid #333;
+  content: "";
+  display: inline-block;
+  height: 15px;
+  margin-right: 10px;
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+  width: 15px;
+}
+input[type="checkbox"]:checked + .wpcf7-list-item-label::after {
+  /* チェックアイコン */
+  background: url(アイコン画像のURL) no-repeat center;
+  background-size: contain;
+  content: "";
+  height: 15px;
+  left: 1px;
+  position: absolute;
+  top: 8px;
+  width: 15px;
+}
+input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
+  /* チェックしたボックスの背景色を設定 */
+  background-color: #ffffbc;
+}
