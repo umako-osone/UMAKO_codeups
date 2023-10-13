@@ -107,6 +107,8 @@
 }
 .contact-form__consent {
   margin-top: rem(40);
+  padding-bottom: rem(5);
+  text-align: center;
   @include mq(md) {
     margin-top: rem(80);
   }

@@ -1107,6 +1107,8 @@ a {
 
 .contact-form__consent {
 	margin-top: 2.5rem;
+	padding-bottom: 0.3125rem;
+	text-align: center;
 }
 
 .contact-form__consent-text span::before {
