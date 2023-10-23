@@ -39,4 +39,10 @@
         return $html;
     }
 
+    // Contact Form 7で自動挿入されるPタグ、brタグを削除
+    add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
+    function wpcf7_autop_return_false() {
+    return false;
+    }
+
     add_filter( 'style_loader_tag', 'add_rel_preconnect', 10, 4 );
