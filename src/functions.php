@@ -19,9 +19,9 @@
         wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.6.0.min.js', array(), '3.6.0', true);
 
         // その他のスクリプトとスタイルの読み込み
-        wp_enqueue_style('google-fonts-montserrat', 'https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap', false);
-        wp_enqueue_style('swiper', 'https://unpkg.com/swiper@8/swiper-bundle.min.css', false);
-        wp_enqueue_script('swiper', 'https://unpkg.com/swiper@8/swiper-bundle.min.js', array('jquery'), '8.0.0', true);
+        wp_enqueue_style('google-fonts-montserrat', '//fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap', false);
+        wp_enqueue_style('swiper-css', '//unpkg.com/swiper@8/swiper-bundle.min.css', false);
+        wp_enqueue_script('swiper-js', '//unpkg.com/swiper@8/swiper-bundle.min.js', array('jquery'), '8.0.0', true);
         wp_enqueue_script('main-js', get_theme_file_uri() . '/assets/js/script.js', array('jquery'), '1.0.1', true);
         wp_enqueue_style('style-css', get_theme_file_uri() . '/assets/css/style.css', array(), '1.0.1');
     }

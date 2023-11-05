@@ -34,7 +34,7 @@ $check-space: rem(5);//チェックマークと文字の距離
 $check-weight: 4px;//チェックマークの線の太さ(px)
 
 [type="checkbox"] {
-	// display: none;
+	display: none;
 
 	+ span {
 		display: inline-block;

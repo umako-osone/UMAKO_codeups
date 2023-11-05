@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html <?php language_attributes();?>>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -7,7 +7,21 @@
     <meta name="robots" content="noindex" />
     <?php wp_head(); ?>
   </head>
-  <body>
+
+  <?php
+    $campaign = esc_url( home_url('/campaign/'));
+    $aboutUs = esc_url( home_url('/about-us/'));
+    $information = esc_url( home_url('/information/'));
+    $home = esc_url( home_url('/blog/'));
+    $voice = esc_url( home_url('/voice/'));
+    $price = esc_url( home_url('/price/'));
+    $faq = esc_url( home_url('/faq/'));
+    $contact = esc_url( home_url('/contact/'));
+    $privacypolicy = esc_url( home_url('/privacypolicy/'));
+    $termsOfService = esc_url( home_url('/privacypolicy/'));
+  ?>
+
+
     <header class="header js-header">
       <div class="header__inner">
         <h1 class="header__logo">
@@ -23,49 +37,49 @@
         <nav class="header__nav u-desktop">
           <ul class="header__items">
             <li class="header__item">
-              <a href="archive-campaign.html">
-                <p class="header__item-en">campaign</p>
+              <a href="<?php echo $campaign?>">
+              <p class="header__item-en">campaign</p>
                 <p class="header__item-ja">キャンペーン</p>
               </a>
             </li>
             <li class="header__item">
-              <a href="page-about-us.html">
+              <a href="<?php echo $aboutUs?>">
                 <p class="header__item-en">about&ensp;us</p>
                 <p class="header__item-ja">私たちについて</p>
               </a>
             </li>
             <li class="header__item">
-              <a href="page-information.html">
+              <a href="<?php echo $information?>">
                 <p class="header__item-en">information</p>
                 <p class="header__item-ja">ダイビング情報</p>
               </a>
             </li>
             <li class="header__item">
-              <a href="home.html">
+              <a href="<?php echo $home?>">
                 <p class="header__item-en">blog</p>
                 <p class="header__item-ja">ブログ</p>
               </a>
             </li>
             <li class="header__item">
-              <a href="archive-voice.html">
+              <a href="<?php echo $voice?>">
                 <p class="header__item-en">voice</p>
                 <p class="header__item-ja">お客様の声</p>
               </a>
             </li>
             <li class="header__item">
-              <a href="page-price.html">
+              <a href="<?php echo $price?>">
                 <p class="header__item-en">price</p>
                 <p class="header__item-ja">料金一覧</p>
               </a>
             </li>
             <li class="header__item">
-              <a href="page-faq.html">
+              <a href="<?php echo $faq?>">
                 <p class="header__item-en">FAQ</p>
                 <p class="header__item-ja">よくある質問</p>
               </a>
             </li>
             <li class="header__item">
-              <a href="page-contact.html">
+              <a href="<?php echo $contact?>">
                 <p class="header__item-en">contact</p>
                 <p class="header__item-ja">お問い合わせ</p>
               </a>
@@ -77,7 +91,7 @@
             <nav class="drawer__nav navigation">
               <ul class="navigation__items">
                 <li class="navigation__item navigation__item--top">
-                  <a href="archive-campaign.html">
+                <a href="<?php echo $campaign?>">
                     <figure class="navigation__img">
                     <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/starfish.png" alt="ヒトデイラスト">
                   </figure>
@@ -85,24 +99,24 @@
                   </a>
                   <ul class="navigation__item-block">
                     <li class="navigation__item">
-                      <a href="archive-campaign.html">
+                    <a href="<?php echo $campaign?>">
                         <p class="navigation__text-blank">ライセンス取得</p>
                       </a>
                     </li>
                     <li class="navigation__item">
-                      <a href="archive-campaign.html">
+                      <a href="<?php echo $campaign?>">
                         <p class="navigation__text-blank">貸切体験ダイビング</p>
                       </a>
                     </li>
                     <li class="navigation__item">
-                      <a href="archive-campaign.html">
+                      <a href="<?php echo $campaign?>">
                         <p class="navigation__text-blank">ナイトダイビング</p>
                       </a>
                     </li>
                   </ul>
                 </li>
                 <li class="navigation__item navigation__item--top">
-                  <a href="page-about-us.html">
+                  <a href="<?php echo $aboutUs?>">
                     <figure class="navigation__img">
                     <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/starfish.png" alt="ヒトデイラスト">
                   </figure>
@@ -110,42 +124,42 @@
                   </a>
                   <ul class="navigation__item-block">
                     <li class="navigation__item navigation__item--top">
-                      <a href="page-information.html">
+                      <a href="<?php echo $information?>">
                         <figure class="navigation__img">
-                        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/starfish.png" alt="ヒトデイラスト">
-                      </figure>
+                          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/starfish.png" alt="ヒトデイラスト">
+                        </figure>
                         <p class="navigation__text navigation__text--bold">ダイビング情報</p>
                       </a>
                     </li>
                     <li class="navigation__item">
-                      <a href="page-information.html?tabId=tab1">
+                      <a href="<?php echo $information; ?>?tabId=tab1">
                         <p class="navigation__text-blank">ライセンス講習</p>
                       </a>
                     </li>
                     <li class="navigation__item">
-                      <a href="page-information.html?tabId=tab2">
+                    <a href="<?php echo $information; ?>?tabId=tab2">
                         <p class="navigation__text-blank">体験ダイビング</p>
                       </a>
                     </li>
                     <li class="navigation__item">
-                      <a href="page-information.html?tabId=tab3">
+                      <a href="<?php echo $information; ?>?tabId=tab3">
                         <p class="navigation__text-blank">ファンダイビング</p>
                       </a>
                     </li>
                   </ul>
                 </li>
                 <li class="navigation__item  navigation__item--top">
-                  <a href="home.html">
+                  <a href="<?php echo $home?>">
                     <figure class="navigation__img">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/starfish.png" alt="ヒトデイラスト">
-                  </figure>
+                      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/starfish.png" alt="ヒトデイラスト">
+                    </figure>
                     <p class="navigation__text">ブログ</p>
                   </a>
                 </li>
               </ul>
               <ul class="navigation__items-block">
                 <li class="navigation__item navigation__item--top">
-                  <a href="archive-voice.html">
+                  <a href="<?php echo $voice?>">
                     <figure class="navigation__img">
                     <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/starfish.png" alt="ヒトデイラスト">
                   </figure>
@@ -153,32 +167,32 @@
                   </a>
                 </li>
                 <li class="navigation__item  navigation__item--top">
-                  <a href="page-price.html">
+                  <a href="<?php echo $price?>">
                     <figure class="navigation__img">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/starfish.png" alt="ヒトデイラスト">
-                  </figure>
+                      <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/starfish.png" alt="ヒトデイラスト">
+                    </figure>
                     <p class="navigation__text navigation__text--bold">料金一覧</p>
                   </a>
                   <ul class="navigation__item-block">
                     <li class="navigation__item navigation__item--top">
-                      <a href="page-price.html">
+                      <a href="<?php echo $price?>">
                         <p class="navigation__text-blank">ライセンス講習</p>
                       </a>
                     </li>
                     <li class="navigation__item">
-                      <a href="page-price.html">
+                      <a href="<?php echo $price?>">
                         <p class="navigation__text-blank">体験ダイビング</p>
                       </a>
                     </li>
                     <li class="navigation__item">
-                      <a href="page-price.html">
+                      <a href="<?php echo $price?>">
                         <p class="navigation__text-blank">ファンダイビング</p>
                       </a>
                     </li>
                   </ul>
                 </li>
                   <li class="navigation__item  navigation__item--top">
-                    <a href="page-faq.html">
+                    <a href="<?php echo $faq?>">
                       <figure class="navigation__img">
                       <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/starfish.png" alt="ヒトデイラスト">
                     </figure>
@@ -186,7 +200,7 @@
                     </a>
                   </li>
                   <li class="navigation__item  navigation__item--top">
-                    <a href="page-privacypolicy.html">
+                  <a href="<?php echo $privacypolicy?>">
                       <figure class="navigation__img">
                       <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/starfish.png" alt="ヒトデイラスト">
                     </figure>
@@ -194,7 +208,7 @@
                     </a>
                   </li>
                 <li class="navigation__item  navigation__item--top">
-                  <a href="page-terms-of-service.html">
+                  <a href="<?php echo $termsOfService?>">
                     <figure class="navigation__img">
                       <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/starfish.png" alt="ヒトデイラスト">
                     </figure>
@@ -202,7 +216,7 @@
                   </a>
                 </li>
                 <li class="navigation__item navigation__item--top">
-                  <a href="page-contact.html">
+                  <a href="<?php echo $contact?>">
                     <figure class="navigation__img">
                       <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/starfish.png" alt="ヒトデイラスト">
                     </figure>
