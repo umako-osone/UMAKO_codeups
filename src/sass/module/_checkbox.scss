@@ -24,67 +24,67 @@
 //$border-r-btn: rem(50);
 
 /*チェックボックスの指定*/
-$check-fz: rem(14);//フォントサイズ
-$check-size: rem(20);//外枠の幅高さ
+// $check-fz: rem(14);//フォントサイズ
+// $check-size: rem(20);//外枠の幅高さ
 //$check-bg-cr: $accent;//外枠の背景色
-$check-border-cr: $accent;//外枠の色
-$check-bg-cr-inner: $red;//チェックマークの背景色
-$check-space: rem(5);//チェックマークと文字の距離
+// $check-border-cr: $accent;//外枠の色
+// $check-bg-cr-inner: $red;//チェックマークの背景色
+// $check-space: rem(5);//チェックマークと文字の距離
 //$check-space-betweenRadio: rem(20);//ラジオボタンの間の距離
-$check-weight: 4px;//チェックマークの線の太さ(px)
+// $check-weight: 4px;//チェックマークの線の太さ(px)
 
-[type="checkbox"] {
-	display: none;
+// input[type="checkbox"] {
+// 	display: none;
 
-	+ span {
-		display: inline-block;
-		position: relative;
-		padding: 0 0 0 calc($check-size + $check-space);
-		// margin: 0 $check-space-betweenRadio 0 0;
-		font-size: $check-fz;
-		line-height: 1;
-		cursor: pointer;
-		transition: 0.3s ease;
+// 	+ span {
+// 		display: inline-block;
+// 		position: relative;
+// 		padding: 0 0 0 calc($check-size + $check-space);
+// 		// margin: 0 $check-space-betweenRadio 0 0;
+// 		font-size: $check-fz;
+// 		line-height: 1;
+// 		cursor: pointer;
+// 		transition: 0.3s ease;
 
-		&::before {
-			position: absolute;
-			content: "";
-			top: 50%;
-			left: 0;
-			transform: translateY(-50%);
-			// background: $check-bg-cr;
-			border: 1px solid $check-border-cr;
-			width: $check-size;
-			height: $check-size;
-			display: block;
-		}
+// 		&::before {
+// 			position: absolute;
+// 			content: "";
+// 			top: 50%;
+// 			left: 0;
+// 			transform: translateY(-50%);
+// 			// background: $check-bg-cr;
+// 			border: 1px solid $check-border-cr;
+// 			width: $check-size;
+// 			height: $check-size;
+// 			display: block;
+// 		}
 
-		&::after {
-			opacity: 0;
-			transition: 0.3s ease;
-		}
-	}
+// 		&::after {
+// 			opacity: 0;
+// 			transition: 0.3s ease;
+// 		}
+// 	}
 
-	&:checked + span {
-		&::after {
-			content: "";
-			position: absolute;
-			top: 50%;
-			left: 0;
-			display: block;
-			opacity: 1;
-			/*チェックマークじゃない場合は以下を変更する*/
-			transform: translateY(-50%) rotate(-45deg);
-			width: calc($check-size * 0.9);
-			height: calc($check-size * 0.5);
-			margin-top: -0.1em;
-			margin-left: 0.1em;
-			border-left: $check-weight solid $check-bg-cr-inner;
-			border-bottom: $check-weight solid $check-bg-cr-inner;
+// 	&:checked + span {
+// 		&::after {
+// 			content: "";
+// 			position: absolute;
+// 			top: 50%;
+// 			left: 0;
+// 			display: block;
+// 			opacity: 1;
+// 			/*チェックマークじゃない場合は以下を変更する*/
+// 			transform: translateY(-50%) rotate(-45deg);
+// 			width: calc($check-size * 0.9);
+// 			height: calc($check-size * 0.5);
+// 			margin-top: -0.1em;
+// 			margin-left: 0.1em;
+// 			border-left: $check-weight solid $check-bg-cr-inner;
+// 			border-bottom: $check-weight solid $check-bg-cr-inner;
 
-		}
-	}
-}
+// 		}
+// 	}
+// }
 // select {
 	/*↓リセットCSS */
 	// border-radius: 0;
@@ -110,3 +110,39 @@ $check-weight: 4px;//チェックマークの線の太さ(px)
 		// border: 1px solid $border-cr;
 	// }
 // }
+
+.wpcf7-form-control-wrap {
+  display: block;
+}
+span.wpcf7-list-item {
+  margin: 0 30px 0 0; /* 項目右側の余白設定と、デフォルトの左側の余白を打ち消す */
+  position: relative;
+}
+.wpcf7-list-item-label {
+  cursor: pointer; /* labelにhoverした時にカーソルを表示させる */
+  font-size: 14px; /* 項目のフォントサイズ */
+}
+input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+.wpcf7-list-item-label::before {
+  /* チェックボックスのデザイン */
+  border: 1px solid #408F95;
+	content: "";
+	display: inline-block;
+	height: rem(10);
+	width: rem(10);
+}
+input[type="checkbox"]:checked + .wpcf7-list-item-label::after {
+  /* チェックアイコン */
+	border-left: 0.4375rem solid transparent;
+	border-right: 0.4375rem solid transparent;
+	border-top: 0.75rem solid #408F95;
+	content: "";
+	display: inline-block;
+	position: absolute;
+	right: 0.625rem;
+	top: 0.75rem;
+	transition: 0.3s transform;
+}

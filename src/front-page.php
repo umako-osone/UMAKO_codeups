@@ -23,25 +23,25 @@
               <div class="swiper-slide">
                 <picture class="fv__img">
                   <source srcset="./assets/images/common/fv-sp.jpg" media="(max-width: 768px)">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fv1.jpg" alt="海亀の画像">
+                  <img src="<?php echo get_theme_file_uri('/assets/images/common/fv1.jpg'); ?>" alt="海亀の画像">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture class="fv__img">
-                  <source srcset="./assets/images/common/fv2-sp.jpg" media="(max-width: 768px)">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fv2.jpg" alt="海亀とダイバーの画像">
+                  <source srcset="<?php echo get_theme_file_uri('/assets/images/common/fv2-sp.jpg'); ?>" media="(max-width: 768px)">
+                  <img src="<?php echo get_theme_file_uri('/assets/images/common/fv2.jpg'); ?>" alt="海亀とダイバーの画像">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture class="fv__img">
-                  <source srcset="./assets/images/common/fv3-sp.jpg" media="(max-width: 768px)">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fv3.jpg" alt="海に浮かぶヨットの画像">
+                  <source srcset="<?php echo get_theme_file_uri('/assets/images/common/fv3-sp.jpg'); ?>" media="(max-width: 768px)">
+                  <img src="<?php echo get_theme_file_uri('/assets/images/common/fv3.jpg'); ?>" alt="海に浮かぶヨットの画像">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture class="fv__img">
-                  <source srcset="./assets/images/common/fv4-sp.jpg" media="(max-width: 768px)">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fv4.jpg" alt="砂浜の画像">
+                  <source srcset="<?php echo get_theme_file_uri('/assets/images/common/fv4-sp.jpg'); ?>" media="(max-width: 768px)">
+                  <img src="<?php echo get_theme_file_uri('/assets/images/common/fv4.jpg'); ?>" alt="砂浜の画像">
                 </picture>
               </div>
             </div>
@@ -55,6 +55,9 @@
       <!-- キャンペーン -->
       <section class="campaign top-campaign">
         <div class="campaign__inner inner">
+        <?php
+        // get_template_part('/parts/title');
+        ?>
           <div class="campaign__title title">
             <div class="title__inner">
               <p class="title-en">campaign</p>
@@ -74,7 +77,7 @@
                   <div class="swiper-slide card__block">
                     <a href="#">
                       <figure class="card__img">
-                        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/campaign1.jpg" alt="海中を泳ぐ魚の画像">
+                        <img src="<?php echo get_theme_file_uri('/assets/images/common/campaign1.jpg'); ?>" alt="海中を泳ぐ魚の画像">
                       </figure>
                       <div class="card__info">
                         <div class="card__title-body">
@@ -94,7 +97,7 @@
                   <div class="swiper-slide card__block">
                     <a href="#">
                       <figure class="card__img">
-                        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/campaign2.jpg" alt="海中を泳ぐ魚の画像">
+                        <img src="<?php echo get_theme_file_uri('/assets/images/common/campaign2.jpg'); ?>" alt="海中を泳ぐ魚の画像">
                       </figure>
                       <div class="card__info">
                         <div class="card__title-body">
@@ -114,7 +117,7 @@
                   <div class="swiper-slide card__block">
                     <a href="#">
                       <figure class="card__img">
-                        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/campaign3.jpg" alt="海中を泳ぐ魚の画像">
+                        <img src="<?php echo get_theme_file_uri('/assets/images/common/campaign3.jpg'); ?>" alt="海中を泳ぐ魚の画像">
                       </figure>
                       <div class="card__info">
                         <div class="card__title-body">
@@ -134,7 +137,7 @@
                   <div class="swiper-slide card__block">
                     <a href="archive-campaign.html">
                       <figure class="card__img">
-                        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/campaign4.jpg" alt="海中を泳ぐ魚の画像">
+                        <img src="<?php echo get_theme_file_uri('/assets/images/common/campaign4.jpg'); ?>" alt="海中を泳ぐ魚の画像">
                       </figure>
                       <div class="card__info">
                         <div class="card__title-body">
@@ -162,6 +165,9 @@
       <!-- 私たちについて -->
       <section class="about-us top-about-us">
         <div class="about-us__inner inner">
+        <?php
+        // get_template_part('/parts/title');
+        ?>
           <div class="about-us__title title">
             <div class="title__inner">
               <p class="title-en">About us</p>
@@ -170,10 +176,10 @@
           </div>
           <div class="about-us__img">
             <figure class="about-us__img-left">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/aboutUs-left.jpg" alt="屋根のシーサーの画像">
+              <img src="<?php echo get_theme_file_uri('/assets/images/common/aboutUs-left.jpg'); ?>" alt="屋根のシーサーの画像">
             </figure>
             <figure class="about-us__img-right">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/aboutUs-right.jpg" alt="熱帯魚の画像">
+              <img src="<?php echo get_theme_file_uri('/assets/images/common/aboutUs-right.jpg'); ?>" alt="熱帯魚の画像">
             </figure>
           </div>
           <div class="about-us__text-body">
@@ -191,6 +197,9 @@
       <!-- インフォメーション -->
       <section class="information top-information">
         <div class="information__inner inner">
+        <?php
+        //  get_template_part('/parts/title');
+        ?>
           <div class="information__title title">
             <div class="title__inner">
               <p class="title-en">information</p>
@@ -200,7 +209,7 @@
           <div class="information__img-block">
             <div>
               <figure class="information__img js-information__img">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/infomation.jpg" alt="熱帯魚と珊瑚の画像">
+                <img src="<?php echo get_theme_file_uri("/assets/images/common/infomation.jpg"); ?>" alt="熱帯魚と珊瑚の画像">
               </figure>
             </div>
             <div class="information__text-body">
@@ -217,6 +226,9 @@
       <!-- ブログ -->
       <section class="blog top-blog">
         <div class="blog__inner inner">
+        <?php
+        // get_template_part('/parts/title');
+        ?>
           <div class="blog__title title">
             <div class="title__inner">
               <p class="title-en title-en--white">blog</p>
@@ -228,7 +240,7 @@
               <a href="home.html" class="blog-card__item">
                 <div>
                   <figure class="blog-card__img">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog1.jpg" alt="珊瑚の画像">
+                    <img src="<?php echo get_theme_file_uri('/assets/images/common/blog1.jpg'); ?>" alt="珊瑚の画像">
                   </figure>
                   <div class="blog-card__text-block">
                     <time class="blog-card__date" datetime="2023-11-17">2023.11/17</time>
@@ -243,7 +255,7 @@
               <a href="home.html" class="blog-card__item">
                 <div>
                   <figure class="blog-card__img">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog2.jpg" alt="海亀の画像">
+                    <img src="<?php echo get_theme_file_uri('/assets/images/common/blog2.jpg'); ?>" alt="海亀の画像">
                   </figure>
                   <div class="blog-card__text-block">
                     <time class="blog-card__date" datetime="2023-11-17">2023.11/17</time>
@@ -258,7 +270,7 @@
               <a href="home.html" class="blog-card__item">
                 <div>
                   <figure class="blog-card__img">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog3.jpg" alt="カクレクマノミの画像">
+                    <img src="<?php echo get_theme_file_uri('/assets/images/common/blog3.jpg'); ?>" alt="カクレクマノミの画像">
                   </figure>
                   <div class="blog-card__text-block">
                     <time class="blog-card__date" datetime="2023-11-17">2023.11/17</time>
@@ -278,6 +290,9 @@
       <!-- ボイス -->
       <section class="voice top-voice">
         <div class="voice__inner inner">
+        <?php
+        // get_template_part('/parts/title');
+        ?>
           <div class="voice__title title">
             <div class="title__inner">
               <p class="title-en">voice</p>
@@ -300,7 +315,7 @@
                         </div>
                       </div>
                       <figure class="voice-card__img js-voice-card__img">
-                        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice1.jpg" alt="珊瑚の画像">
+                        <img src="<?php echo get_theme_file_uri('/assets/images/common/voice1.jpg'); ?>" alt="珊瑚の画像">
                       </figure>
                     </div>
                     <p class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。</p>
@@ -319,7 +334,7 @@
                         </div>
                       </div>
                       <figure class="voice-card__img js-voice-card__img">
-                        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice2.jpg" alt="珊瑚の画像">
+                        <img src="<?php echo get_theme_file_uri('/assets/images/common/voice2.jpg'); ?>" alt="珊瑚の画像">
                       </figure>
                     </div>
                     <p class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。</p>
@@ -337,6 +352,9 @@
       <section class="price top-price">
         <div class="price__inner inner">
           <div class="price__block">
+          <?php
+          // get_template_part('/parts/title');
+          ?>
             <div class="price__title title">
               <div class="title__inner">
                 <p class="title-en">price</p>
@@ -344,7 +362,7 @@
               </div>
             </div>
             <figure class="price__img-sp u-mobile">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-sp.jpg" alt ="海亀の画像">
+              <img src="<?php echo get_theme_file_uri('/assets/images/common/price-sp.jpg'); ?>" alt ="海亀の画像">
             </figure>
             <div class="price__list-block">
               <div class="price__lists">
@@ -414,7 +432,7 @@
                 </dl>
               </div>
               <figure class="price__img-pc js-price__img-pc u-desktop">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/priceimg.jpg" alt="珊瑚礁と魚たちの画像">
+                <img src="<?php echo get_theme_file_uri('/assets/images/common/priceimg.jpg'); ?>" alt="珊瑚礁と魚たちの画像">
               </figure>
             </div>
           </div>

@@ -44,91 +44,103 @@ jQuery(function ($) {
       prevEl: ".swiper-button-prev"
     }
   });
+
   // 背景色の後に画像
   // インフォメーション
-  $('.js-information__img').each(function () {
-    $(this).append('<div class="color"></div>');
-    var color = $(this).find($('.color'));
-    var img = $(this).find('img');
-    var counter = 0;
-    img.css('opacity', '0');
-    color.css('width', '0%');
-    //inviewを使って背景色が画面に現れたら処理をする
-    color.on('inview', function () {
-      if (counter == 0) {
-        $(this).delay(200).animate({
-          'width': '100%'
-        }, 700, function () {
-          img.css('opacity', '1');
-          $(this).css({
-            'left': '0',
-            'right': 'auto'
-          });
-          $(this).animate({
-            'width': '0%'
-          }, 700);
+  jQuery(document).ready(function ($) {
+    $('.js-information__img').each(function () {
+        $(this).append('<div class="color"></div>');
+        var color = $(this).find('.color');
+        var img = $(this).find('img');
+        var counter = 0;
+        img.css('opacity', '0');
+        color.css('width', '0%');
+        // Waypoint プラグインを使用して画面内に表示されたら処理を実行
+        color.waypoint(function () {
+            if (counter === 0) {
+                $(this.element).delay(200).animate({
+                    'width': '100%'
+                }, 700, function () {
+                    img.css('opacity', '1');
+                    $(this).css({
+                        'left': '0',
+                        'right': 'auto'
+                    });
+                    $(this).animate({
+                        'width': '0%'
+                    }, 700);
+                });
+                counter = 1;
+            }
+        }, {
+            offset: '100%' // 要素が画面下端からどれだけ離れた位置で実行するかを指定
         });
-        counter = 1;
-      }
-      ;
     });
-  });
-  // ボイス
-  $('.js-voice-card__img').each(function () {
-    $(this).append('<div class="color"></div>');
-    var color = $(this).find($('.color'));
-    var img = $(this).find('img');
-    var counter = 0;
-    img.css('opacity', '0');
-    color.css('width', '0%');
-    //inviewを使って背景色が画面に現れたら処理をする
-    color.on('inview', function () {
-      if (counter == 0) {
-        $(this).delay(200).animate({
-          'width': '100%'
-        }, 700, function () {
-          img.css('opacity', '1');
-          $(this).css({
-            'left': '0',
-            'right': 'auto'
-          });
-          $(this).animate({
-            'width': '0%'
-          }, 700);
+});
+// ボイス
+  jQuery(document).ready(function ($) {
+    $('.js-voice-card__img').each(function () {
+        $(this).append('<div class="color"></div>');
+        var color = $(this).find('.color');
+        var img = $(this).find('img');
+        var counter = 0;
+        img.css('opacity', '0');
+        color.css('width', '0%');
+        // Waypoint プラグインを使用して画面内に表示されたら処理を実行
+        color.waypoint(function () {
+            if (counter === 0) {
+                $(this.element).delay(200).animate({
+                    'width': '100%'
+                }, 700, function () {
+                    img.css('opacity', '1');
+                    $(this).css({
+                        'left': '0',
+                        'right': 'auto'
+                    });
+                    $(this).animate({
+                        'width': '0%'
+                    }, 700);
+                });
+                counter = 1;
+            }
+        }, {
+            offset: '100%' // 要素が画面下端からどれだけ離れた位置で実行するかを指定
         });
-        counter = 1;
-      }
-      ;
     });
-  });
+});
+
   // プライス
-  $('.js-price__img-pc').each(function () {
-    $(this).append('<div class="color"></div>');
-    var color = $(this).find($('.color'));
-    var img = $(this).find('img');
-    var counter = 0;
-    img.css('opacity', '0');
-    color.css('width', '0%');
-    //inviewを使って背景色が画面に現れたら処理をする
-    color.on('inview', function () {
-      if (counter == 0) {
-        $(this).delay(200).animate({
-          'width': '100%'
-        }, 700, function () {
-          img.css('opacity', '1');
-          $(this).css({
-            'left': '0',
-            'right': 'auto'
-          });
-          $(this).animate({
-            'width': '0%'
-          }, 700);
+  jQuery(document).ready(function ($) {
+    $('.js-price__img-pc').each(function () {
+        $(this).append('<div class="color"></div>');
+        var color = $(this).find('.color');
+        var img = $(this).find('img');
+        var counter = 0;
+        img.css('opacity', '0');
+        color.css('width', '0%');
+        // Waypoint プラグインを使用して画面内に表示されたら処理を実行
+        color.waypoint(function () {
+            if (counter === 0) {
+                $(this.element).delay(200).animate({
+                    'width': '100%'
+                }, 700, function () {
+                    img.css('opacity', '1');
+                    $(this).css({
+                        'left': '0',
+                        'right': 'auto'
+                    });
+                    $(this).animate({
+                        'width': '0%'
+                    }, 700);
+                });
+                counter = 1;
+            }
+        }, {
+            offset: '100%' // 要素が画面下端からどれだけ離れた位置で実行するかを指定
         });
-        counter = 1;
-      }
-      ;
     });
-  });
+});
+
   // fv超えたら色が変わる
   $(function () {
     $(window).on("scroll", function () {

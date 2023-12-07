@@ -9,15 +9,15 @@
           <div class="page-about-us__content">
             <div class="page-about-us__img about-us__img u-desktop">
               <figure class="about-us__img-left">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/aboutUs-left.jpg" alt="屋根のシーサーの画像">
+                <img src="<?php echo get_theme_file_uri('/assets/images/common/aboutUs-left.jpg'); ?>" alt="屋根のシーサーの画像">
               </figure>
               <figure class="about-us__img-right">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/aboutUs-right.jpg" alt="熱帯魚の画像">
+                <img src="<?php echo get_theme_file_uri('/assets/images/common/aboutUs-right.jpg'); ?>" alt="熱帯魚の画像">
               </figure>
             </div>
             <div class="about-us__img page-about-us__img-sp u-mobile">
               <figure class="about-us__img-sp">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/aboutUs-right.jpg" alt="熱帯魚の画像">
+                <img src="<?php echo get_theme_file_uri('/assets/images/common/aboutUs-right.jpg'); ?>" alt="熱帯魚の画像">
               </figure>
             </div>
             <div class="page-about-us__text-body about-us__text-body">
@@ -29,31 +29,62 @@
             </div>
             <div class="page-about-us__gallery gallery">
               <div class="gallery__tilte title">
-                <div class="title__inner">
+                <?php
+                // get_template_part('/parts/title');
+                ?>
                   <p class="title-en">Gallery</p>
                   <h2 class="title-ja">フォト</h2>
-                </div>
               </div>
             </div>
             <div class="gallery__overlay overlay" id="js-overlay"></div>
             <div class="gallery__items">
               <figure class="gallery__item js-gallery__item">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/gallery1.jpg" alt="珊瑚礁と魚たちの画像">
+                <?php
+                $image = get_field("gallery1_images");
+                $url = $image["url"];
+                $alt = $image["alt"];
+                ?>
+                <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>">
               </figure>
               <figure class="gallery__item js-gallery__item">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/gallery2.jpg" alt="浅瀬に浮かぶ2艘の船の画像">
+              <?php
+                $image = get_field("gallery2_images");
+                $url = $image["url"];
+                $alt = $image["alt"];
+                ?>
+                <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>">
               </figure>
               <figure class="gallery__item js-gallery__item">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/gallery3.jpg" alt="2匹の熱帯魚の画像">
+              <?php
+                $image = get_field("gallery3_images");
+                $url = $image["url"];
+                $alt = $image["alt"];
+                ?>
+                <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>">
               </figure>
               <figure class="gallery__item js-gallery__item">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/gallery4.jpg" alt="1匹の熱帯魚の画像">
+              <?php
+                $image = get_field("gallery4_images");
+                $url = $image["url"];
+                $alt = $image["alt"];
+                ?>
+                <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>">
               </figure>
               <figure class="gallery__item js-gallery__item">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/gallery5.jpg" alt="海の中の沢山の小さい魚の画像">
+              <?php
+                $image = get_field("gallery5_images");
+                $url = $image["url"];
+                $alt = $image["alt"];
+                ?>
+                <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>">
               </figure>
               <figure class="gallery__item js-gallery__item">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/gallery6.jpg" alt="珊瑚礁と2匹の熱帯魚の画像">
+              <?php
+                $image = get_field("gallery6_images");
+                $url = $image["url"];
+                $alt = $image["alt"];
+                ?>
+                <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>">
               </figure>
             </div>
           </div>

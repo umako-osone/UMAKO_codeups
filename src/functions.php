@@ -46,3 +46,10 @@
     }
 
     add_filter( 'style_loader_tag', 'add_rel_preconnect', 10, 4 );
+
+    function enqueue_scripts() {
+        wp_enqueue_script('waypoint', 'https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js', array('jquery'), '4.0.1', true);
+        wp_enqueue_script('your-custom-script', get_template_directory_uri() . '/path/to/your-custom-script.js', array('jquery', 'waypoint'), '1.0', true);
+    }
+    add_action('wp_enqueue_scripts', 'enqueue_scripts');
+    
