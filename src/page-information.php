@@ -14,28 +14,28 @@
               <ul class="information-tab__list">
                 <li class="information-tab__menu js-information-tab current" data-tab-id="tab1">
                   <figure class="information-tab__img1">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fish-point1-blue.png" alt="鯨のイラスト" class="u-desktop">
+                    <img src="<?php echo get_theme_file_uri('/assets/images/common/fish-point1-blue.png'); ?>" alt="鯨のイラスト" class="u-desktop">
                   </figure>
                   <figure class="information-tab__img2">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fish-point1-white.png" alt="鯨のイラスト" class="u-desktop">
+                    <img src="<?php echo get_theme_file_uri('/assets/images/common/fish-point1-white.png'); ?>" alt="鯨のイラスト" class="u-desktop">
                   </figure>
                   ライセンス<br class="u-mobile">講習
                 </li>
                 <li class="information-tab__menu js-information-tab" data-tab-id="tab2">
                   <figure class="information-tab__img1">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fish-point3-blue.png" alt="鯨のイラスト" class="u-desktop">
+                    <img src="<?php echo get_theme_file_uri('/assets/images/common/fish-point3-blue.png'); ?>" alt="鯨のイラスト" class="u-desktop">
                   </figure>
                   <figure class="information-tab__img2">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fish-point1-white.png" alt="鯨のイラスト" class="u-desktop">
+                    <img src="<?php echo get_theme_file_uri('/assets/images/common/fish-point1-white.png'); ?>" alt="鯨のイラスト" class="u-desktop">
                   </figure>
                   体験<br class="u-mobile">ダイビング
                 </li>
                 <li class="information-tab__menu js-information-tab" data-tab-id="tab3">
                   <figure class="information-tab__img1">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fish-point2-blue.png" alt="鯨のイラスト" class="u-desktop">
+                    <img src="<?php echo get_theme_file_uri('/assets/images/common/fish-point2-blue.png'); ?>" alt="鯨のイラスト" class="u-desktop">
                   </figure>
                   <figure class="information-tab__img2">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fish-point1-white.png" alt="鯨のイラスト" class="u-desktop">
+                    <img src="<?php echo get_theme_file_uri('/assets/images/common/fish-point1-white.png'); ?>" alt="鯨のイラスト" class="u-desktop">
                   </figure>
                   ファン<br class="u-mobile">ダイビング
                 </li>

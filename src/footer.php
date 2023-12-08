@@ -56,17 +56,17 @@
                 </a>
               </li>
               <li class="navigation__item">
-                <a href="page-information.html?tabId=tab1">
+                <a href="<?php echo get_permalink(get_page_by_path('page-information')); ?>?tabId=tab1">
                   <p class="navigation__text-blank">ライセンス講習</p>
                 </a>
               </li>
               <li class="navigation__item">
-                <a href="page-information.html?tabId=tab2">
+                <a href="<?php echo get_permalink(get_page_by_path('page-information')); ?>?tabId=tab2">
                   <p class="navigation__text-blank">体験ダイビング</p>
                 </a>
               </li>
               <li class="navigation__item">
-                <a href="page-information.html?tabId=tab3">
+                <a href="<?php echo get_permalink(get_page_by_path('page-information')); ?>?tabId=tab3">
                   <p class="navigation__text-blank">ファンダイビング</p>
                 </a>
               </li>

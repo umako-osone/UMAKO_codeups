@@ -269,15 +269,14 @@ jQuery(function ($) {
   });
   // ブログアーカイブ
   $(function () {
-    $('.archive-list').children('li').on('click', function () {
-      $(this).children('.archive-list__past').stop().slideToggle(200);
+    $('.js-archive-list__year').on('click', function () {
+      $('.archive-list__past').stop().slideToggle(200);
       // 矢印の回転を制御する部分
-      var arrow = $(this).find('.archive-list::before');
-      if (arrow.hasClass('rotated')) {
-        arrow.removeClass('rotated');
-      } else {
-        arrow.addClass('rotated');
-      }
-    });
+      $('.js-archive-list__img--1').toggleClass('rotated');
+  
   });
+});
+
+
+
 });

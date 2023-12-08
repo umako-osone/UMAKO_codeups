@@ -3,7 +3,7 @@
       <!-- ブログ -->
       <section class="home">
         <div class="home__mv mv">
-          <h1 class="mv__heading heading">blog</h1>
+          <h1 class="mv__heading heading">blog月別一覧</h1>
         </div>
         <div class="home__inner inner">
 
