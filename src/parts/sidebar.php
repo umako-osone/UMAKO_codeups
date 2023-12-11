@@ -130,15 +130,15 @@
         <!-- <div class="side__archive-list archive-lists"></div> -->
         <ul class="archive-list js-archive-list">
           <li class="archive-list__items">
-            <div class="archive-list__year js-archive-list__year">
+            <div class="archive-list__year--this js-archive-list__year--this">
               <figure class="archive-list__img archive-list__img--1 js-archive-list__img--1">
                 <img src="<?php echo get_theme_file_uri('/assets/images/common/Polygon2.jpg'); ?>" alt="">
               </figure>
               2023
             </div>
-            <ul class="archive-list__past">
+            <ul class="archive-list__past--1">
             <div class="archive-list__month js-archive-list__month">
-              <figure class="archive-list__img js-archive-list__img">
+              <figure class="archive-list__img">
                 <img src="<?php echo get_theme_file_uri('/assets/images/common/Polygon2.jpg'); ?>" alt="">
               </figure>
               <?php wp_get_archives('type=monthly'); ?>
@@ -148,18 +148,18 @@
         </ul>
         <ul class="archive-list js-archive-list">
           <li class="archive-list__items js-archive-list__items">
-            2022
-            <ul class="archive-list__past">
-              <?php wp_get_archives('type=monthly'); ?>
-              <!-- <li class="archive-list__month">
-                12月
-              </li>
-              <li class="archive-list__month">
-                11月
-              </li>
-              <li class="archive-list__month">
-                10月
-              </li> -->
+          <div class="archive-list__year--last js-archive-list__year--last">
+              <figure class="archive-list__img archive-list__img--2 js-archive-list__img--2">
+                <img src="<?php echo get_theme_file_uri('/assets/images/common/Polygon2.jpg'); ?>" alt="">
+              </figure>
+              2022
+            </div>
+            <ul class="archive-list__past--2">
+            <div class="archive-list__month js-archive-list__month">
+              <figure class="archive-list__img">
+                <img src="<?php echo get_theme_file_uri('/assets/images/common/Polygon2.jpg'); ?>" alt="">
+              </figure>
+              <?php wp_get_archives('type=monthly', 'dateformat=("Y")'); ?>
             </ul>
           </li>
         </ul>

@@ -57,7 +57,6 @@ if ($terms) {
     }
 }
 ?>
-</div>
             <?php
               $args = array(
                 "post_type" => "campaign",
